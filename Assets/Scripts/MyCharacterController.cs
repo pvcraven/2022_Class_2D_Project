@@ -69,4 +69,11 @@ public class MyCharacterController : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + sceneChangeObject.sceneChange);
         }
     }
+    void OnGUI()
+    {
+        // Dispaly our score
+        GUIStyle guiStyle = new GUIStyle(GUI.skin.label);
+        guiStyle.fontSize = 24; //modify the font height
+        GUI.Label(new Rect(10, 10, 100, 50), "Score: " + score, guiStyle);
+    }
 }
