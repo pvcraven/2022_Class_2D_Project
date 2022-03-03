@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/CravenScene.unity
+    guid: 335c2783d4fb00846a9ebcfb63f8301b
+  - enabled: 1
+    path: Assets/Scenes/SceneLeviBenes.unity
+    guid: 627da4ea6723b6e418831658ccbc641d
   m_configObjects: {}
