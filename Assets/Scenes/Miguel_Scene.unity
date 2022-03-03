@@ -215,6 +215,9 @@ GameObject:
   m_Component:
   - component: {fileID: 511897638}
   - component: {fileID: 511897637}
+  - component: {fileID: 511897640}
+  - component: {fileID: 511897639}
+  - component: {fileID: 511897641}
   m_Layer: 0
   m_Name: character_miguel
   m_TagString: Untagged
@@ -287,6 +290,93 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &511897639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511897636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0fbfd343d1d6844ca425982bbc9e85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  runSpeed: 5
+--- !u!50 &511897640
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511897636}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!60 &511897641
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511897636}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33263326, y: 0.3234111}
+      - {x: -0.06840968, y: 0.32567644}
+      - {x: -0.07924652, y: 0.26054788}
+      - {x: -0.13624835, y: 0.25084722}
+      - {x: -0.14263177, y: 0.082023025}
+      - {x: -0.281044, y: 0.08852196}
+      - {x: -0.2984643, y: 0.14051306}
+      - {x: -0.446311, y: 0.13801098}
+      - {x: -0.45082474, y: -0.013607502}
+      - {x: -0.39597774, y: -0.0075553656}
+      - {x: -0.38015032, y: -0.0957669}
+      - {x: -0.34584785, y: -0.084309995}
+      - {x: -0.32673597, y: -0.14784515}
+      - {x: -0.3219807, y: -0.18928486}
+      - {x: -0.26301336, y: -0.19695717}
+      - {x: -0.26019454, y: -0.25938147}
+      - {x: -0.20352292, y: -0.2608208}
+      - {x: -0.18950796, y: -0.32793474}
+      - {x: 0.18496704, y: -0.33012223}
+      - {x: 0.19756675, y: -0.26301098}
+      - {x: 0.27543354, y: -0.26898253}
+      - {x: 0.26135778, y: -0.20546913}
+      - {x: 0.32229137, y: -0.20162255}
+      - {x: 0.32976818, y: -0.13839972}
+      - {x: 0.385911, y: -0.14177775}
+      - {x: 0.39320016, y: 0.26212907}
+      - {x: 0.3389331, y: 0.2676221}
 --- !u!1 &699248019
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 699248021}
   - component: {fileID: 699248020}
+  - component: {fileID: 699248022}
   m_Layer: 0
   m_Name: Miguel_cookie
   m_TagString: Untagged
@@ -369,6 +460,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &699248022
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699248019}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1110540646
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2008324238}
   - component: {fileID: 2008324237}
+  - component: {fileID: 2008324239}
   m_Layer: 0
   m_Name: tree_miguel
   m_TagString: Untagged
@@ -616,3 +724,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &2008324239
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008324236}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 0.16, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.08834982, y: 0.88555396}
+      - {x: -0.13027668, y: 0.9109864}
+      - {x: -0.21820307, y: 0.68225706}
+      - {x: -0.30925703, y: 0.4057095}
+      - {x: -0.42542315, y: 0.293738}
+      - {x: -0.4178505, y: 0.062116742}
+      - {x: -0.44359493, y: -0.12499118}
+      - {x: -0.3410473, y: -0.3315742}
+      - {x: -0.15376663, y: -0.4163407}
+      - {x: -0.1564436, y: -0.8541968}
+      - {x: -0.20176888, y: -0.8531182}
+      - {x: -0.22007656, y: -0.8989044}
+      - {x: -0.22348642, y: -1.0127162}
+      - {x: -0.06479025, y: -1.0127164}
+      - {x: 0.10783005, y: -1.0089264}
+      - {x: 0.20752716, y: -1.004324}
+      - {x: 0.2294774, y: -0.9793279}
+      - {x: 0.21475649, y: -0.8681621}
+      - {x: 0.14937925, y: -0.84835243}
+      - {x: 0.16081667, y: -0.53647935}
+      - {x: 0.16083622, y: -0.4042387}
+      - {x: 0.40264797, y: -0.39997077}
+      - {x: 0.4760337, y: -0.18509138}
+      - {x: 0.4504943, y: -0.04905057}
+      - {x: 0.4007616, y: 0.016758919}
+      - {x: 0.34170294, y: 0.072026014}
+      - {x: 0.36019897, y: 0.12163353}
+      - {x: 0.37992716, y: 0.17178047}
+      - {x: 0.40001678, y: 0.23053539}
+      - {x: 0.40836382, y: 0.47088277}
+      - {x: 0.37283802, y: 0.7377428}
+      - {x: 0.35376358, y: 0.7976217}
+      - {x: 0.2733693, y: 0.80958426}
+      - {x: 0.17897987, y: 0.86647964}
