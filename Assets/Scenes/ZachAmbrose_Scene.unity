@@ -337,8 +337,8 @@ GameObject:
   m_Component:
   - component: {fileID: 868058186}
   - component: {fileID: 868058185}
-  - component: {fileID: 868058187}
   - component: {fileID: 868058188}
+  - component: {fileID: 868058187}
   m_Layer: 0
   m_Name: ZachAmbrose_Carrot
   m_TagString: Untagged
@@ -420,10 +420,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 868058184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79f6e96daecf93742a6b95d952b5d97a, type: 3}
+  m_Script: {fileID: 11500000, guid: fd738031a1fd1f848948e259f3cb084c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 10
+  sceneChange: -2
 --- !u!60 &868058188
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -434,7 +434,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
