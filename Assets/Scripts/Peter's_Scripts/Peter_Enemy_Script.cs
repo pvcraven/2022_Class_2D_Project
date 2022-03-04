@@ -20,8 +20,6 @@ public class Peter_Enemy_Script : MonoBehaviour
     void FixedUpdate()
     {
 
-        //float moveHorizontal = direction;
-
         Vector3 movement = new Vector3(move_horizontal, move_vertical);
         GetComponent<Rigidbody2D>().velocity = movement * move_speed;
 
@@ -36,11 +34,11 @@ public class Peter_Enemy_Script : MonoBehaviour
         }
         
         // Checking y values (to not move y axis make each = "spawn" position)
-        if (transform.position.x > top_y)
+        if (transform.position.y > top_y)
         {
             move_vertical = -1;
         }
-        if (transform.position.x < bottom_y)
+        if (transform.position.y < bottom_y)
         {
             move_vertical = 1;
         }
