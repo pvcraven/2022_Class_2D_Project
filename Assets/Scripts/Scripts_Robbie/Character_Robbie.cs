@@ -31,7 +31,7 @@ public class Character_Robbie : MonoBehaviour
         // (required to have one)
         body = GetComponent<Rigidbody2D>();
 
-        scoreText.fontSize = 24;
+        scoreText.fontSize = 20;
 
         canMove = false;
         StartCoroutine(OpeningDialogue());
