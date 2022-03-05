@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/IsaacScene.unity
     guid: 5ed274930c0ad9640bfda23289b59601
   - enabled: 1
+    path: Assets/Scenes/scene_ZachWemhoff.unity
+    guid: cb9871bafeb4e894bb0e86b29c95aeff
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
