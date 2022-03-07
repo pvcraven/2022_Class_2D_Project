@@ -599,6 +599,7 @@ GameObject:
   - component: {fileID: 1358379671}
   - component: {fileID: 1358379672}
   - component: {fileID: 1358379670}
+  - component: {fileID: 1358379673}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -689,7 +690,8 @@ MonoBehaviour:
   scoreGO: {fileID: 562791563}
   scoreText: {fileID: 562791565}
   dialogueText: {fileID: 1743809918}
-  dialoguePath: Assets/Text/Text_Robbie/ThisIsWallace.txt
+  openingDialoguePath: Assets/Text/Text_Robbie/ThisIsWallace.txt
+  allergyDialoguePath: Assets/Text/Text_Robbie/WallaceHasAllergies.txt
 --- !u!50 &1358379671
 Rigidbody2D:
   serializedVersion: 4
@@ -724,7 +726,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.36787084}
+  m_Offset: {x: -0.0050003827, y: -0.35787}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -735,7 +737,33 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.90867543, y: 0.17293376}
+  m_Size: {x: 0.81866807, y: 0.1529321}
+  m_EdgeRadius: 0
+--- !u!61 &1358379673
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358379667}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000059604645, y: -0.02000168}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9199934, y: 0.8999918}
   m_EdgeRadius: 0
 --- !u!1 &1407994629
 GameObject:

@@ -14,6 +14,7 @@ public class Character_Robbie : MonoBehaviour
     Rigidbody2D body;
 
     bool canMove;
+    bool hasDied; // Keeps track of whether or not the player has any deaths
 
     float horizontal;
     float vertical;
@@ -23,7 +24,11 @@ public class Character_Robbie : MonoBehaviour
     public GameObject scoreGO;
     public Text scoreText;
     public Text dialogueText;
-    public string dialoguePath;
+    public string openingDialoguePath;
+    public string allergyDialoguePath;
+
+    float characterOriginX;
+    float characterOriginY;
 
     void Start()
     {
@@ -31,10 +36,14 @@ public class Character_Robbie : MonoBehaviour
         // (required to have one)
         body = GetComponent<Rigidbody2D>();
 
+        characterOriginX = transform.position.x;
+        characterOriginY = transform.position.y;
+
+        hasDied = false;
+
         scoreText.fontSize = 20;
 
-        canMove = false;
-        StartCoroutine(OpeningDialogue());
+        StartCoroutine(ReadDialogue(new StreamReader(openingDialoguePath)));
     }
 
     void Update()
@@ -57,8 +66,9 @@ public class Character_Robbie : MonoBehaviour
             vertical *= moveLimiter;
         }
 
-        // Set player velocity
-        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        if(canMove){
+            body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D colliderEvent)
@@ -75,6 +85,18 @@ public class Character_Robbie : MonoBehaviour
             Destroy(colliderEvent.gameObject);
             scoreText.text = "Pumpkin Points: " + score;
         }
+        else if(colliderEvent.gameObject.CompareTag("Enemy"))
+        {
+            // Respawn the player, they keep their points
+            body.velocity = new Vector2(0, 0);
+            transform.position = new Vector2(characterOriginX, characterOriginY);
+
+            if(!hasDied)
+            {
+                hasDied = true;
+                StartCoroutine(ReadDialogue(new StreamReader(allergyDialoguePath)));
+            }
+        }
 
         // Did we run into an object that will cause a scene change?
         SceneChangeScript sceneChangeObject = colliderEvent.gameObject.GetComponent(typeof(SceneChangeScript))
@@ -87,20 +109,19 @@ public class Character_Robbie : MonoBehaviour
         }
     }
 
-    IEnumerator OpeningDialogue()
+    IEnumerator ReadDialogue(StreamReader dialogueReader)
     {
-        // creates a streamreader object and reads the opening dialogue
+        canMove = false;
         string line;
-        StreamReader readDialogue = new StreamReader(dialoguePath);
         scoreGO.SetActive(false);
         dialogueText.gameObject.SetActive(true);
         yield return new WaitForSeconds(.5f);
 
-        while((line = readDialogue.ReadLine()) != " ")
+        while((line = dialogueReader.ReadLine()) != " ")
         {
             dialogueText.text = line;
             yield return new WaitForSeconds(.5f);
-            while((line = readDialogue.ReadLine()) != "")
+            while((line = dialogueReader.ReadLine()) != "")
             {
                 dialogueText.text = line;
                 yield return new WaitForSeconds(.5f);
@@ -108,10 +129,13 @@ public class Character_Robbie : MonoBehaviour
         }
 
         yield return new WaitForSeconds(1f);
+
+        //reverts all changes made, letting the player continue playing
         scoreGO.SetActive(true);
+        dialogueText.text = "";
         dialogueText.gameObject.SetActive(false);
         canMove = true;
-        Debug.Log(scoreGO.activeSelf);
-        StopCoroutine(OpeningDialogue());
+        dialogueReader.Close();
+        StopCoroutine(ReadDialogue(dialogueReader));
     }
 }
