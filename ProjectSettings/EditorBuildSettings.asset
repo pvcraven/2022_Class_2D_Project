@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EanScene.unity
     guid: dde53d57253485c4c926a35e4e16dafc
+  - enabled: 1
+    path: Assets/Scenes/scene_daniel.unity
+    guid: 19288ff3dd74b4648abc597aa7c555d7
+  - enabled: 1
+    path: Assets/Scenes/endscene.unity
+    guid: 0465933e64693854c8d3768a126a1173
   m_configObjects: {}
