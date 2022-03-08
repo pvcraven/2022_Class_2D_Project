@@ -18,7 +18,6 @@ public class EanCharacterController : MonoBehaviour
 
     float horizontal;
     float vertical;
-    float moveLimiter = 0.7f;
 
     public float runSpeed = 5.0f;
     public float jumpHeight = 5.0f;
