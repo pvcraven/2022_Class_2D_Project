@@ -3,12 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - PickUp
+  - EanGround
+  - EanFlag
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - interactable
   - Water
   - UI
   - 
@@ -38,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Tile Ground
+    uniqueID: 1015372707
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
