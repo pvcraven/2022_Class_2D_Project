@@ -8216,8 +8216,8 @@ PolygonCollider2D:
       - {x: -0.17352605, y: -0.049214065}
       - {x: -0.26769257, y: -0.27246088}
       - {x: -0.25219202, y: -0.7352077}
-      - {x: -0.21959496, y: -1.0042002}
-      - {x: 0.073421, y: -0.98471117}
+      - {x: -0.12431288, y: -0.6945336}
+      - {x: 0.0496006, y: -0.6988652}
       - {x: 0.08648825, y: -0.6823709}
       - {x: 0.07479286, y: -0.3342148}
       - {x: 0.27500892, y: 0.10220736}
@@ -9384,7 +9384,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1100685858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0fbfd343d1d6844ca425982bbc9e85a, type: 3}
+  m_Script: {fileID: 11500000, guid: 06a37dc9df1e2324c82563ab41c75e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
@@ -17518,6 +17518,7 @@ GameObject:
   - component: {fileID: 1822361084}
   - component: {fileID: 1822361083}
   - component: {fileID: 1822361085}
+  - component: {fileID: 1822361087}
   m_Layer: 0
   m_Name: Peter_Bluerberry_Man
   m_TagString: Enemy
@@ -17601,7 +17602,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -17625,6 +17626,27 @@ PolygonCollider2D:
       - {x: 0.04604292, y: -0.38021564}
       - {x: 0.047257185, y: -0.37020254}
       - {x: 0.43785858, y: -0.11661434}
+--- !u!50 &1822361087
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822361082}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1831766934
 GameObject:
   m_ObjectHideFlags: 0
@@ -18003,6 +18025,7 @@ GameObject:
   - component: {fileID: 1856579545}
   - component: {fileID: 1856579544}
   - component: {fileID: 1856579543}
+  - component: {fileID: 1856579547}
   m_Layer: 0
   m_Name: Peter_Bluerberry_Man (1)
   m_TagString: Enemy
@@ -18020,7 +18043,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -18110,6 +18133,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1856579547
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856579542}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1860910084
 GameObject:
   m_ObjectHideFlags: 0
@@ -19260,9 +19304,9 @@ PolygonCollider2D:
       - {x: -0.2719953, y: 0.42347834}
       - {x: -0.17352605, y: -0.049214065}
       - {x: -0.26769257, y: -0.27246088}
-      - {x: -0.25219202, y: -0.7352077}
-      - {x: -0.21959496, y: -1.0042002}
-      - {x: 0.106702924, y: -0.96807027}
+      - {x: -0.25219202, y: -0.67565644}
+      - {x: -0.08858222, y: -0.706444}
+      - {x: 0.059062004, y: -0.6941345}
       - {x: 0.08648825, y: -0.6823709}
       - {x: 0.07479286, y: -0.3342148}
       - {x: 0.27500892, y: 0.10220736}
