@@ -686,12 +686,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  interactable:
+    serializedVersion: 2
+    m_Bits: 8
+  boxCastDistance: 0.1
   runSpeed: 5
   scoreGO: {fileID: 562791563}
   scoreText: {fileID: 562791565}
   dialogueText: {fileID: 1743809918}
   openingDialoguePath: Assets/Text/Text_Robbie/ThisIsWallace.txt
   allergyDialoguePath: Assets/Text/Text_Robbie/WallaceHasAllergies.txt
+  shopDialoguePath: Assets/Text/Text_Robbie/ShopkeepRequest.txt
+  boxCastSize: 0.1
 --- !u!50 &1358379671
 Rigidbody2D:
   serializedVersion: 4
@@ -988,7 +994,7 @@ GameObject:
   - component: {fileID: 2089895913}
   - component: {fileID: 2089895912}
   - component: {fileID: 2089895911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

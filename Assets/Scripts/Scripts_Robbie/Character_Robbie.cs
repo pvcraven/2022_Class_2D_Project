@@ -13,6 +13,10 @@ public class Character_Robbie : MonoBehaviour
 
     Rigidbody2D body;
 
+    BoxCollider2D bc2d; // Handles boxCasting, which tells if the player interacts with things
+    public LayerMask interactable;
+    public float boxCastDistance;
+
     bool canMove;
     bool hasDied; // Keeps track of whether or not the player has any deaths
 
@@ -26,15 +30,19 @@ public class Character_Robbie : MonoBehaviour
     public Text dialogueText;
     public string openingDialoguePath;
     public string allergyDialoguePath;
+    public string shopDialoguePath;
 
     float characterOriginX;
     float characterOriginY;
+
+    public float boxCastSize;
 
     void Start()
     {
         // Get the rigid body component for the player character.
         // (required to have one)
         body = GetComponent<Rigidbody2D>();
+        bc2d = GetComponent<BoxCollider2D>();
 
         characterOriginX = transform.position.x;
         characterOriginY = transform.position.y;
@@ -52,6 +60,29 @@ public class Character_Robbie : MonoBehaviour
         {
             horizontal = Input.GetAxisRaw("Horizontal"); 
             vertical = Input.GetAxisRaw("Vertical"); 
+        }
+
+        if(Input.GetKeyDown("space"))
+        {
+            RaycastHit2D hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.down, boxCastDistance, interactable);
+
+            if (!hit)
+            {
+                hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.up, boxCastDistance, interactable);
+            }
+            if (!hit)
+            {
+                hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.right, boxCastDistance, interactable);
+            }
+            if (!hit)
+            {
+                hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.left, boxCastDistance, interactable);
+            }
+            if (hit)
+            {
+                dialogueText.color = new Color(1f, .75f, .8f);
+                StartCoroutine(ReadDialogue(new StreamReader(shopDialoguePath)));
+            }
         }
     }
 
@@ -136,6 +167,7 @@ public class Character_Robbie : MonoBehaviour
         dialogueText.gameObject.SetActive(false);
         canMove = true;
         dialogueReader.Close();
+        dialogueText.color = Color.white;
         StopCoroutine(ReadDialogue(dialogueReader));
     }
 }
