@@ -13,6 +13,7 @@ public class Peter_Controller_Script : MonoBehaviour
     float vertical;
     float moveLimiter = 0.7f;
 
+    public Vector3 respawnPos;
     public float runSpeed = 5.0f;
 
     void Start()
@@ -77,11 +78,13 @@ public class Peter_Controller_Script : MonoBehaviour
         GUI.Label(new Rect(10, 10, 100, 50), "Score: " + score, guiStyle);
     }
 
+    // Handeling enemy collisions
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag.Equals("Enemy"))
         {
-            gameObject.SetActive(false);
+            // Respawning player at start (does not reset pickups)
+            gameObject.transform.position = respawnPos;
         }
     }
 }
