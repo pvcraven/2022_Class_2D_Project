@@ -10,6 +10,11 @@ public class dan_enemy_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        // Get objects current position
+        Vector2 position = transform.position;
+        // Calculate movement
+        float newY = Mathf.Sin(Time.time * speed);
+        // Set objects Y to new calculated Y
+        transform.position = new Vector2(transform.position.x, newY);
     }
 }
