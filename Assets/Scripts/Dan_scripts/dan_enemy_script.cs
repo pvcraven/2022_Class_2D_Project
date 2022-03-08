@@ -10,7 +10,6 @@ public class dan_enemy_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float y = Mathf.PingPong(Time.time * speed, 1) * 6 - 3;
-        gameObject.transform.position[1] = y;
+
     }
 }
