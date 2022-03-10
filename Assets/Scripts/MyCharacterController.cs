@@ -75,7 +75,7 @@ public class MyCharacterController : MonoBehaviour
     {
         // Dispaly our score
         GUIStyle guiStyle = new GUIStyle(GUI.skin.label);
-        guiStyle.fontSize = 24; //modify the font height
-        GUI.Label(new Rect(10, 10, 100, 50), "Score: " + score, guiStyle);
+        guiStyle.fontSize = 32; //modify the font height
+        GUI.Label(new Rect(10, 10, 250, 50), "Score: " + score, guiStyle);
     }
 }
