@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MyCharacterController : MonoBehaviour
+public class GraysonCharacterController : MonoBehaviour
 {
     public int score = 0;
 
@@ -28,8 +28,8 @@ public class MyCharacterController : MonoBehaviour
     void Update()
     {
         // Get our axis values
-        horizontal = Input.GetAxisRaw("Horizontal"); 
-        vertical = Input.GetAxisRaw("Vertical"); 
+        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
     }
 
     void FixedUpdate()
@@ -58,13 +58,15 @@ public class MyCharacterController : MonoBehaviour
             // Yes, change the score
             score += scoreObject.points;
             // Destroy the object
+            sound.Play();
             Destroy(colliderEvent.gameObject);
         }
 
         // Did we run into an object that will cause a scene change?
         SceneChangeScript sceneChangeObject = colliderEvent.gameObject.GetComponent(typeof(SceneChangeScript))
                                               as SceneChangeScript;
-        if (sceneChangeObject != null) {
+        if (sceneChangeObject != null)
+        {
             // Yes, get our current scene index
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             // Load up the scene accourding to the sceneChange value
