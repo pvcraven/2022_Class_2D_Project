@@ -32,7 +32,8 @@ public class Character_Robbie : MonoBehaviour
     public string openingDialoguePath;
     public string allergyDialoguePath;
     public string shopDialoguePath;
-    public AudioSource dialogueSounds;
+    public AudioSource dialogueSound;
+    public AudioSource pickupSound;
 
     float characterOriginX;
     float characterOriginY;
@@ -115,6 +116,7 @@ public class Character_Robbie : MonoBehaviour
             // Yes, change the score
             score += scoreObject.points;
             // Destroy the object
+            pickupSound.Play();
             Destroy(colliderEvent.gameObject);
             scoreText.text = "Pumpkin Points: " + score;
         }
@@ -157,11 +159,12 @@ public class Character_Robbie : MonoBehaviour
             while((line = dialogueReader.ReadLine()) != "")
             {
                 dialogueText.text = line;
-                yield return new WaitForSeconds(.5f);
                 if(speaker)
                 {
-                    dialogueSounds.Play();
+                    dialogueSound.pitch = Random.Range(.5f, 1.5f);
+                    dialogueSound.Play();
                 }
+                yield return new WaitForSeconds(.5f);
             }
         }
 
