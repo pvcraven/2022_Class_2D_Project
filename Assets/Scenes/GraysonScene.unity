@@ -20792,7 +20792,6 @@ GameObject:
   - component: {fileID: 624472147}
   - component: {fileID: 624472146}
   - component: {fileID: 624472145}
-  - component: {fileID: 624472149}
   m_Layer: 0
   m_Name: Coin_Grayson (2)
   m_TagString: PickUp
@@ -20915,18 +20914,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &624472149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624472143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 265db66dc95b9c944a832dd118fe0e58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &644764974
 GameObject:
   m_ObjectHideFlags: 0
@@ -21331,8 +21318,8 @@ GameObject:
   - component: {fileID: 777430724}
   - component: {fileID: 777430723}
   - component: {fileID: 777430722}
-  - component: {fileID: 777430725}
   - component: {fileID: 777430726}
+  - component: {fileID: 777430727}
   m_Layer: 0
   m_Name: Character_Grayson
   m_TagString: Player
@@ -21427,20 +21414,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &777430725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777430721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0fbfd343d1d6844ca425982bbc9e85a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  runSpeed: 10
 --- !u!58 &777430726
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21457,6 +21430,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.08
+--- !u!114 &777430727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777430721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2cb2bbf85e09c4f9892fef98741538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  runSpeed: 10
+  sound: {fileID: 1882649772}
 --- !u!1 &832566641
 GameObject:
   m_ObjectHideFlags: 0
@@ -24031,7 +24019,6 @@ GameObject:
   - component: {fileID: 1417509286}
   - component: {fileID: 1417509285}
   - component: {fileID: 1417509287}
-  - component: {fileID: 1417509288}
   m_Layer: 0
   m_Name: Coin_Grayson
   m_TagString: PickUp
@@ -24169,18 +24156,6 @@ MonoBehaviour:
   freqency: 10
   magnitude: 10
   offset: 0
---- !u!114 &1417509288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417509281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 265db66dc95b9c944a832dd118fe0e58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1420141036
 GameObject:
   m_ObjectHideFlags: 0
@@ -25025,7 +25000,6 @@ GameObject:
   - component: {fileID: 1608893167}
   - component: {fileID: 1608893166}
   - component: {fileID: 1608893165}
-  - component: {fileID: 1608893169}
   m_Layer: 0
   m_Name: Coin_Grayson (1)
   m_TagString: PickUp
@@ -25148,18 +25122,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1608893169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608893163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 265db66dc95b9c944a832dd118fe0e58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1707665231
 GameObject:
   m_ObjectHideFlags: 0
@@ -25696,7 +25658,7 @@ GameObject:
   - component: {fileID: 1882649772}
   m_Layer: 0
   m_Name: SoundAffects
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25711,8 +25673,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 757c1a584799d0c4cb58eb86b6a4176c, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

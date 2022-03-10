@@ -14540,11 +14540,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1100685858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06a37dc9df1e2324c82563ab41c75e93, type: 3}
+  m_Script: {fileID: 11500000, guid: 1cce5d1317785f44ebfa88554a00b89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  respawnPos: {x: -13.19, y: -4.77, z: 0}
+  spawnPosition: {x: -13.19, y: -4.77, z: 0}
   runSpeed: 5
 --- !u!60 &1100685863
 PolygonCollider2D:
