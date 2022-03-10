@@ -4,11 +4,28 @@ using UnityEngine;
 
 public class SoundSFX : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public AudioSource playSound;
 
-    void OnTriggerEnter(Collider other)
+    public AudioSource sound;
+    // Start is called before the first frame update
+    void Start ()
     {
-        playSound.Play();
+        Debug.Log("start debug");
+        sound.GetComponent<AudioSource>();
+    }
+
+    void update ()
+    {
+        
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("If statement");
+        if (collision.gameObject.tag == "Player")
+        {
+            sound.Play();
+            Debug.Log("debug");
+            Destroy(collision.gameObject);
+        }
     }
 }

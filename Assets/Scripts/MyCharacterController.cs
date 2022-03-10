@@ -16,6 +16,8 @@ public class MyCharacterController : MonoBehaviour
 
     public float runSpeed = 5.0f;
 
+    public AudioSource sound;
+
     void Start()
     {
         // Get the rigid body component for the player character.

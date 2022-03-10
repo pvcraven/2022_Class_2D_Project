@@ -9,6 +9,10 @@ TagManager:
   - EanGround
   - EanFlag
   - Upgrade
+  - potion
+  - mushroom
+  - cookie
+  - icecream
   layers:
   - Default
   - TransparentFX
