@@ -23,14 +23,16 @@ public class Character_Robbie : MonoBehaviour
     float horizontal;
     float vertical;
     float moveLimiter = 0.7f;
-
     public float runSpeed = 5.0f;
+    
     public GameObject scoreGO;
     public Text scoreText;
+
     public Text dialogueText;
     public string openingDialoguePath;
     public string allergyDialoguePath;
     public string shopDialoguePath;
+    public AudioSource dialogueSounds;
 
     float characterOriginX;
     float characterOriginY;
@@ -51,7 +53,7 @@ public class Character_Robbie : MonoBehaviour
 
         scoreText.fontSize = 20;
 
-        StartCoroutine(ReadDialogue(new StreamReader(openingDialoguePath)));
+        StartCoroutine(ReadDialogue(new StreamReader(openingDialoguePath), false));
     }
 
     void Update()
@@ -81,7 +83,7 @@ public class Character_Robbie : MonoBehaviour
             if (hit)
             {
                 dialogueText.color = new Color(1f, .75f, .8f);
-                StartCoroutine(ReadDialogue(new StreamReader(shopDialoguePath)));
+                StartCoroutine(ReadDialogue(new StreamReader(shopDialoguePath), true));
             }
         }
     }
@@ -125,7 +127,7 @@ public class Character_Robbie : MonoBehaviour
             if(!hasDied)
             {
                 hasDied = true;
-                StartCoroutine(ReadDialogue(new StreamReader(allergyDialoguePath)));
+                StartCoroutine(ReadDialogue(new StreamReader(allergyDialoguePath), false));
             }
         }
 
@@ -140,7 +142,7 @@ public class Character_Robbie : MonoBehaviour
         }
     }
 
-    IEnumerator ReadDialogue(StreamReader dialogueReader)
+    IEnumerator ReadDialogue(StreamReader dialogueReader, bool speaker)
     {
         canMove = false;
         string line;
@@ -156,6 +158,10 @@ public class Character_Robbie : MonoBehaviour
             {
                 dialogueText.text = line;
                 yield return new WaitForSeconds(.5f);
+                if(speaker)
+                {
+                    dialogueSounds.Play();
+                }
             }
         }
 
@@ -168,6 +174,6 @@ public class Character_Robbie : MonoBehaviour
         canMove = true;
         dialogueReader.Close();
         dialogueText.color = Color.white;
-        StopCoroutine(ReadDialogue(dialogueReader));
+        StopCoroutine(ReadDialogue(dialogueReader, speaker));
     }
 }
