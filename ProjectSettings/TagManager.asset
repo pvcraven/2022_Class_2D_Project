@@ -8,6 +8,7 @@ TagManager:
   - PickUp
   - EanGround
   - EanFlag
+  - Upgrade
   layers:
   - Default
   - TransparentFX
