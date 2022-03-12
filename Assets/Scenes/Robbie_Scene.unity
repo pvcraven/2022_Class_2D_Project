@@ -600,10 +600,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePath: Assets/Text/Text_Robbie/BanditLines1.txt
+  alternatePath: Assets/Text/Text_Robbie/BanditLines2.txt
   color: {r: 0.38679248, g: 0, b: 0, a: 1}
   dialogueSound: {fileID: 464258244}
   lowPitch: 0.5
   highPitch: 1
+  interactedOnce: 0
 --- !u!61 &464258246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126625,10 +126627,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePath: Assets/Text/Text_Robbie/GrandpasLines.txt
+  alternatePath: Assets/Text/Text_Robbie/GrandpasLines2.txt
   color: {r: 0.2235294, g: 1, b: 0.8307565, a: 1}
   dialogueSound: {fileID: 1738665140}
   lowPitch: 0.25
   highPitch: 0.5
+  interactedOnce: 0
 --- !u!61 &1738665142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127245,10 +127249,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePath: Assets/Text/Text_Robbie/ShopkeepRequest.txt
+  alternatePath: Assets/Text/Text_Robbie/ShopkeepLines2.txt
   color: {r: 1, g: 0, b: 0.86594677, a: 1}
   dialogueSound: {fileID: 2089895914}
   lowPitch: 1
   highPitch: 1.5
+  interactedOnce: 0
 --- !u!1001 &2071026383950303680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -127259,6 +127265,10 @@ PrefabInstance:
     - target: {fileID: 2071026383461153793, guid: a4d32b7c0d57f714ebe89f11e2d709a8, type: 3}
       propertyPath: m_Name
       value: DecorativeBoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071026383461153796, guid: a4d32b7c0d57f714ebe89f11e2d709a8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2071026383461153797, guid: a4d32b7c0d57f714ebe89f11e2d709a8, type: 3}
       propertyPath: m_RootOrder

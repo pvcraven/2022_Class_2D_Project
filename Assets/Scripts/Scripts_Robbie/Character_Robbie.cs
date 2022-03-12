@@ -83,15 +83,23 @@ public class Character_Robbie : MonoBehaviour
             {
                 hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.left, boxCastDistance, interactable);
             }
-            if (hit)
+            if (hit && canMove)
             {
                 DialogueHolder dialogueInfo = hit.transform.gameObject.GetComponent<DialogueHolder>();
                 Color color = dialogueInfo.color;
-                string dialoguePath = dialogueInfo.dialoguePath;
+                string dialoguePath;
+                if(!dialogueInfo.interactedOnce)
+                {             
+                    dialoguePath = dialogueInfo.dialoguePath;
+                }
+                else
+                {
+                    dialoguePath = dialogueInfo.alternatePath;
+                }
                 dialogueSound = dialogueInfo.dialogueSound;
                 float lowPitch = dialogueInfo.lowPitch;
                 float highPitch = dialogueInfo.highPitch;
-                StartCoroutine(ReadDialogue(new StreamReader(dialoguePath), dialogueSound, color, lowPitch, highPitch));
+                StartCoroutine(ReadDialogue(new StreamReader(dialoguePath), dialogueSound, color, lowPitch, highPitch, dialogueInfo.interactedOnce, dialogueInfo));
             }
         }
     }
@@ -176,7 +184,7 @@ public class Character_Robbie : MonoBehaviour
         StopCoroutine(ReadDialogue(dialogueReader));
     }
 
-    IEnumerator ReadDialogue(StreamReader dialogueReader, AudioSource dialogueSound, Color color, float lowPitch, float highPitch)
+    IEnumerator ReadDialogue(StreamReader dialogueReader, AudioSource dialogueSound, Color color, float lowPitch, float highPitch, bool interactedOnce, DialogueHolder dialogueInfo)
     {
         canMove = false;
         string line;
@@ -205,7 +213,8 @@ public class Character_Robbie : MonoBehaviour
         canMove = true;
         dialogueReader.Close();
         dialogueText.color = Color.white;
-        StopCoroutine(ReadDialogue(dialogueReader, dialogueSound, color, lowPitch, highPitch));
+        if(!dialogueInfo.interactedOnce) StartCoroutine(dialogueInfo.firstInteraction());
+        StopCoroutine(ReadDialogue(dialogueReader, dialogueSound, color, lowPitch, highPitch, interactedOnce, dialogueInfo));
     }
 
     IEnumerator DelaySceneChange(SceneChangeScript sceneChangeObject)
