@@ -143,12 +143,7 @@ public class Character_Robbie : MonoBehaviour
         // Did we run into an object that will cause a scene change?
         SceneChangeScript sceneChangeObject = colliderEvent.gameObject.GetComponent(typeof(SceneChangeScript))
                                               as SceneChangeScript;
-        if (sceneChangeObject != null) {
-            // Yes, get our current scene index
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            // Load up the scene accourding to the sceneChange value
-            UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + sceneChangeObject.sceneChange);
-        }
+        if (sceneChangeObject != null) StartCoroutine(DelaySceneChange(sceneChangeObject));
     }
 
     IEnumerator ReadDialogue(StreamReader dialogueReader)
@@ -211,5 +206,16 @@ public class Character_Robbie : MonoBehaviour
         dialogueReader.Close();
         dialogueText.color = Color.white;
         StopCoroutine(ReadDialogue(dialogueReader, dialogueSound, color, lowPitch, highPitch));
+    }
+
+    IEnumerator DelaySceneChange(SceneChangeScript sceneChangeObject)
+    {
+        dialogueText.gameObject.SetActive(true);
+        sceneChangeObject.gameObject.SetActive(false);
+        dialogueText.text = "CONGRATS! YOU FOUND THE BOOT!";
+        yield return new WaitForSeconds(1f);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        // Load up the scene accourding to the sceneChange value
+        UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + sceneChangeObject.sceneChange);
     }
 }
