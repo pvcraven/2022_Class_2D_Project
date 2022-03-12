@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 464258242}
   - component: {fileID: 464258245}
   - component: {fileID: 464258244}
+  - component: {fileID: 464258246}
   m_Layer: 3
   m_Name: Bandit_Kid_Robbie
   m_TagString: Untagged
@@ -500,10 +501,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cf7005e784d22bc4f934b67896f8efc1, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 13e6134b255e2e7468bc71c325d79f57, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: -0.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -599,10 +600,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePath: Assets/Text/Text_Robbie/BanditLines1.txt
-  color: {r: 0.38679248, g: 0, b: 0, a: 0}
+  color: {r: 0.38679248, g: 0, b: 0, a: 1}
   dialogueSound: {fileID: 464258244}
-  lowPitch: 0.25
-  highPitch: 0.75
+  lowPitch: 0.5
+  highPitch: 1
+--- !u!61 &464258246
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464258241}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!4 &494415301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2071026383461153797, guid: a4d32b7c0d57f714ebe89f11e2d709a8, type: 3}
@@ -126416,6 +126443,7 @@ GameObject:
   - component: {fileID: 1738665138}
   - component: {fileID: 1738665141}
   - component: {fileID: 1738665140}
+  - component: {fileID: 1738665142}
   m_Layer: 3
   m_Name: Grandpa_Robbie
   m_TagString: Untagged
@@ -126499,7 +126527,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 91adcbb1574bdda41ae2878daa35ac50, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -126601,6 +126629,32 @@ MonoBehaviour:
   dialogueSound: {fileID: 1738665140}
   lowPitch: 0.25
   highPitch: 0.5
+--- !u!61 &1738665142
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738665137}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1743809916
 GameObject:
   m_ObjectHideFlags: 0
