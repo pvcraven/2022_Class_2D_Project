@@ -85,7 +85,23 @@ public class Character_Robbie : MonoBehaviour
             }
             if (hit && canMove)
             {
+                //Completes any special actions from NPCs
+                GameObjectSwitch objectOnOffSwitch = hit.transform.gameObject.GetComponent<GameObjectSwitch>();
+                if(objectOnOffSwitch != null)
+                {
+                    objectOnOffSwitch.GameObjectOnOff();
+                }
+
                 DialogueHolder dialogueInfo = hit.transform.gameObject.GetComponent<DialogueHolder>();
+
+                GrandpasGift grandpasGift = hit.transform.gameObject.GetComponent<GrandpasGift>();
+                if(grandpasGift != null && dialogueInfo.interactedOnce)
+                {
+                    StartCoroutine(grandpasGift.GiftPlayer(this.gameObject.GetComponent<Character_Robbie>()));
+                    StartCoroutine(TurnOnScoreTemporarily());
+                }
+
+                //Finds the correct dialogue info for the NPC
                 Color color = dialogueInfo.color;
                 string dialoguePath;
                 if(!dialogueInfo.interactedOnce)
@@ -134,6 +150,7 @@ public class Character_Robbie : MonoBehaviour
             pickupSound.Play();
             Destroy(colliderEvent.gameObject);
             scoreText.text = "Pumpkin Points: " + score;
+            StartCoroutine(TurnOnScoreTemporarily());
         }
         else if(colliderEvent.gameObject.CompareTag("Enemy"))
         {
@@ -226,5 +243,13 @@ public class Character_Robbie : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         // Load up the scene accourding to the sceneChange value
         UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + sceneChangeObject.sceneChange);
+    }
+
+    IEnumerator TurnOnScoreTemporarily()
+    {
+        scoreGO.gameObject.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        scoreGO.gameObject.SetActive(false);
+        StopCoroutine(TurnOnScoreTemporarily());
     }
 }
