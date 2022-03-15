@@ -7880,7 +7880,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 105.03257, y: -19.443628}
+  m_Offset: {x: 105.03257, y: -19.336079}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7891,7 +7891,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 25.86473, y: 1.1344414}
+  m_Size: {x: 25.86473, y: 0.91934395}
   m_EdgeRadius: 0
 --- !u!61 &900283623
 BoxCollider2D:
@@ -7906,7 +7906,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 58.149265, y: -19.443628}
+  m_Offset: {x: 58.149265, y: -19.285194}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7917,7 +7917,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 43.312508, y: 1.1344414}
+  m_Size: {x: 43.312508, y: 0.81757355}
   m_EdgeRadius: 0
 --- !u!61 &900283624
 BoxCollider2D:
@@ -7932,7 +7932,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 71.22014, y: 30.508873}
+  m_Offset: {x: 71.22014, y: 30.67919}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7943,7 +7943,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 95.6897, y: 0.9598236}
+  m_Size: {x: 95.6897, y: 0.6191902}
   m_EdgeRadius: 0
 --- !u!1 &989511556
 GameObject:
@@ -126972,6 +126972,7 @@ GameObject:
   - component: {fileID: 1738665141}
   - component: {fileID: 1738665142}
   - component: {fileID: 1738665143}
+  - component: {fileID: 1738665140}
   m_Layer: 3
   m_Name: Grandpa_Robbie_2
   m_TagString: Untagged
@@ -127044,6 +127045,18 @@ Transform:
   m_Father: {fileID: 59777601}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738665140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738665137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e724f2d3811c8489c307cf223dea7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1738665141
 MonoBehaviour:
   m_ObjectHideFlags: 0

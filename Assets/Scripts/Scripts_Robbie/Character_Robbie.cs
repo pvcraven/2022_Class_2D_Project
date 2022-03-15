@@ -95,10 +95,9 @@ public class Character_Robbie : MonoBehaviour
                 DialogueHolder dialogueInfo = hit.transform.gameObject.GetComponent<DialogueHolder>();
 
                 GrandpasGift grandpasGift = hit.transform.gameObject.GetComponent<GrandpasGift>();
-                if(grandpasGift != null && dialogueInfo.interactedOnce)
+                if(grandpasGift != null && !(dialogueInfo.interactedOnce))
                 {
                     StartCoroutine(grandpasGift.GiftPlayer(this.gameObject.GetComponent<Character_Robbie>()));
-                    StartCoroutine(TurnOnScoreTemporarily());
                 }
 
                 //Finds the correct dialogue info for the NPC
@@ -193,7 +192,6 @@ public class Character_Robbie : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         //reverts all changes made, letting the player continue playing
-        scoreGO.SetActive(true);
         dialogueText.text = "";
         dialogueText.gameObject.SetActive(false);
         canMove = true;
@@ -224,7 +222,6 @@ public class Character_Robbie : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         //reverts all changes made, letting the player continue playing
-        scoreGO.SetActive(true);
         dialogueText.text = "";
         dialogueText.gameObject.SetActive(false);
         canMove = true;
@@ -245,7 +242,7 @@ public class Character_Robbie : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + sceneChangeObject.sceneChange);
     }
 
-    IEnumerator TurnOnScoreTemporarily()
+    public IEnumerator TurnOnScoreTemporarily()
     {
         scoreGO.gameObject.SetActive(true);
         yield return new WaitForSeconds(3f);

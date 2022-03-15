@@ -9,6 +9,7 @@ public class GrandpasGift : MonoBehaviour
         yield return new WaitForSeconds(33f);
         character.score += 1000000;
         character.scoreText.text = "Pumpkin Points: " + character.score;
+        StartCoroutine(character.TurnOnScoreTemporarily());
         StopCoroutine(GiftPlayer(character));
     }
 }
