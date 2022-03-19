@@ -16,6 +16,11 @@ public class Miguel_Character : MonoBehaviour
 
     public float runSpeed = 5.0f;
     public float fallSpeed = 2.5f;
+    
+    public AudioSource icecreamCookieSound;
+    public AudioSource mushroomSound;
+    public AudioSource potionSound;
+
 
     void Start()
     {
@@ -56,8 +61,22 @@ public class Miguel_Character : MonoBehaviour
         {
             // Yes, change the score
             score += scoreObject.points;
+
             // Destroy the object
             Destroy(colliderEvent.gameObject);
+
+            //Play sound effect
+            if (colliderEvent.gameObject.CompareTag("cookie") || colliderEvent.gameObject.CompareTag("icecream")) {
+                icecreamCookieSound.Play();
+            }
+            
+            if (colliderEvent.gameObject.CompareTag("mushroom")) {
+                mushroomSound.Play();
+            }
+
+            if (colliderEvent.gameObject.CompareTag("potion")) {
+                potionSound.Play();
+            }
         }
 
         // Did we run into an object that will cause a scene change?

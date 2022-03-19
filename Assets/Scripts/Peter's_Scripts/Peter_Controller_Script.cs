@@ -5,16 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Peter_Controller_Script : MonoBehaviour
 {
-    public int score = 0;
-
     Rigidbody2D body;
 
+    int score = 0;
     float horizontal;
     float vertical;
     float moveLimiter = 0.7f;
 
     public Vector3 respawnPos;
     public float runSpeed = 5.0f;
+
+    public AudioSource death_audio;
+    public AudioSource positive_pickup_audio;
+    public AudioSource negative_pickup_audio;
 
     void Start()
     {
@@ -55,6 +58,15 @@ public class Peter_Controller_Script : MonoBehaviour
         {
             // Yes, change the score
             score += scoreObject.points;
+            // Playing 2 dif sounds if positive pickup or negative pickup
+            if (scoreObject.points >= 0)
+            {
+                positive_pickup_audio.Play();
+            }
+            if (scoreObject.points < 0)
+            {
+                negative_pickup_audio.Play();
+            }
             // Destroy the object
             Destroy(colliderEvent.gameObject);
         }
@@ -85,6 +97,8 @@ public class Peter_Controller_Script : MonoBehaviour
         {
             // Respawning player at start (does not reset pickups)
             gameObject.transform.position = respawnPos;
+            death_audio.Play();
         }
     }
+
 }
