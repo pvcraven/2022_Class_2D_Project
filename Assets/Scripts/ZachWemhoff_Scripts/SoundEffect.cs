@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class SoundEffect : MonoBehaviour
 {
-    public AudioSource collectSource;
+    public AudioClip saw;
 
     // Start is called before the first frame update
     void Start()
     {
-        collectSource = GetComponent<AudioSource>();
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = saw;
     }
 
     // Update is called once per frame
@@ -18,7 +19,7 @@ public class SoundEffect : MonoBehaviour
         
     }
 
-    void OnCollisionEnter()  //Plays Sound Whenever collision detected
+    void OnTriggerEnter2D()  //Plays Sound Whenever collision detected
     {
         GetComponent<AudioSource>().Play();
     }
