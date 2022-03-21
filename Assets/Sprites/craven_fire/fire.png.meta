@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 2358d53441cfc2f4089ca9eb370a35a7
+guid: 79d1796e7fd41d949b3ff8470d6394a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4968008086504596477
-    second: fire-Sheet_0
+      213: 8334651344603559088
+    second: fire_0
   - first:
-      213: 6570165332615113789
-    second: fire-Sheet_1
+      213: 9204931480678746970
+    second: fire_1
   - first:
-      213: -7290563029401776619
-    second: fire-Sheet_2
+      213: -8359625512513901107
+    second: fire_2
   - first:
-      213: 5282931242644924960
-    second: fire-Sheet_3
+      213: 7804807344221744696
+    second: fire_3
   - first:
-      213: 3571219304615207533
-    second: fire-Sheet_4
+      213: -9112466456087325836
+    second: fire_4
   - first:
-      213: 1091321049220409101
-    second: fire-Sheet_5
+      213: 173077104931781641
+    second: fire_5
   - first:
-      213: 7601073315862824960
-    second: fire-Sheet_6
+      213: -4815649327972379770
+    second: fire_6
   - first:
-      213: -3646078508724144122
-    second: fire-Sheet_7
+      213: 1034857412894652757
+    second: fire_7
   - first:
-      213: -6809562960318325279
-    second: fire-Sheet_8
+      213: 429675774711054156
+    second: fire_8
   - first:
-      213: -3027565267603407356
-    second: fire-Sheet_9
+      213: -5467760050751137256
+    second: fire_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,11 +117,59 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fire-Sheet_0
+      name: fire_0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30c10aa87f61e0bb0800000000000000
-      internalID: -4968008086504596477
+      spriteID: 0b4b3d13d31aaa370800000000000000
+      internalID: 8334651344603559088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire-Sheet_1
+      name: fire_1
       rect:
         serializedVersion: 2
         x: 16
@@ -156,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3c2c1e4f8aed2b50800000000000000
-      internalID: 6570165332615113789
+      spriteID: a5bcaaf696c7ebf70800000000000000
+      internalID: 9204931480678746970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire-Sheet_2
+      name: fire_2
       rect:
         serializedVersion: 2
         x: 32
@@ -177,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51e49e34d87b2da90800000000000000
-      internalID: -7290563029401776619
+      spriteID: dcde05733e4acfb80800000000000000
+      internalID: -8359625512513901107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire-Sheet_3
+      name: fire_3
       rect:
         serializedVersion: 2
         x: 48
@@ -198,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02ae9aa99fdb05940800000000000000
-      internalID: 5282931242644924960
+      spriteID: 83e62bc8dee305c60800000000000000
+      internalID: 7804807344221744696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire-Sheet_4
+      name: fire_4
       rect:
         serializedVersion: 2
         x: 64
@@ -219,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d626b9259058f8130800000000000000
-      internalID: 3571219304615207533
+      spriteID: 4739041c9040a8180800000000000000
+      internalID: -9112466456087325836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire-Sheet_5
+      name: fire_5
       rect:
         serializedVersion: 2
         x: 80
@@ -240,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0760b256b6252f00800000000000000
-      internalID: 1091321049220409101
+      spriteID: 90c363eb5b4e66200800000000000000
+      internalID: 173077104931781641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire-Sheet_6
+      name: fire_6
       rect:
         serializedVersion: 2
         x: 96
@@ -261,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00844b798ef6c7960800000000000000
-      internalID: 7601073315862824960
+      spriteID: 6839b5b53706b2db0800000000000000
+      internalID: -4815649327972379770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire-Sheet_7
+      name: fire_7
       rect:
         serializedVersion: 2
         x: 112
@@ -282,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 608bf400ae6866dc0800000000000000
-      internalID: -3646078508724144122
+      spriteID: 559f3c8855d8c5e00800000000000000
+      internalID: 1034857412894652757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire-Sheet_8
+      name: fire_8
       rect:
         serializedVersion: 2
         x: 128
@@ -303,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ed9192f0929f71a0800000000000000
-      internalID: -6809562960318325279
+      spriteID: c4f3e3037d386f500800000000000000
+      internalID: 429675774711054156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire-Sheet_9
+      name: fire_9
       rect:
         serializedVersion: 2
         x: 144
@@ -324,8 +372,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40e303a0e6debf5d0800000000000000
-      internalID: -3027565267603407356
+      spriteID: 81a18e9043d9e14b0800000000000000
+      internalID: -5467760050751137256
       vertices: []
       indices: 
       edges: []
