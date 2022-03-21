@@ -36,6 +36,7 @@ public class Character_Robbie : MonoBehaviour
     AudioSource dialogueSound;
 
     public AudioSource pickupSound;
+    public AudioSource goalSound;
 
     float characterOriginX;
     float characterOriginY;
@@ -234,6 +235,7 @@ public class Character_Robbie : MonoBehaviour
     IEnumerator DelaySceneChange(SceneChangeScript sceneChangeObject)
     {
         dialogueText.gameObject.SetActive(true);
+        goalSound.Play();
         sceneChangeObject.gameObject.SetActive(false);
         dialogueText.text = "CONGRATS! YOU FOUND THE BOOT!";
         yield return new WaitForSeconds(1f);
