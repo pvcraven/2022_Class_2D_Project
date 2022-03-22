@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ZachWemhoffCharacterScript : MonoBehaviour
+public class LeviBenesCharController : MonoBehaviour
 {
     public int score = 0;
 
@@ -16,8 +16,9 @@ public class ZachWemhoffCharacterScript : MonoBehaviour
 
     public float runSpeed = 5.0f;
 
-    public AudioSource coinSound;
-    public AudioSource negativeSound;
+    public AudioSource sound;
+    public AudioSource increaseScoreSound;
+    public AudioSource decreaseScoreSound;
 
     void Start()
     {
@@ -58,17 +59,17 @@ public class ZachWemhoffCharacterScript : MonoBehaviour
         {
             // Yes, change the score
             score += scoreObject.points;
-            if (scoreObject.points > 0)
+            // Determine if object increases or decreases score
+            if (scoreObject.points >= 0)
             {
-                coinSound.Play();
+                increaseScoreSound.Play();
             }
             if (scoreObject.points < 0)
             {
-                negativeSound.Play();
+                decreaseScoreSound.Play();
             }
             // Destroy the object
             Destroy(colliderEvent.gameObject);
-
         }
 
         // Did we run into an object that will cause a scene change?
