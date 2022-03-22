@@ -17,6 +17,11 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
     public Vector3 spawnPosition;
     public float runSpeed = 5.0f;
 
+    public AudioClip increaseScoreSound;
+    public AudioClip enemyDeathSound;
+    public AudioClip deathSound;
+
+
     void Start()
     {
         // Get the rigid body component for the player character.
@@ -58,6 +63,12 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
             // Yes, change the score
             score += scoreObject.points;
 
+            if (scoreObject.points > 0)
+            {
+                //Play score increase sound
+                AudioSource.PlayClipAtPoint(increaseScoreSound, transform.position);
+
+            }
             // Destroy the object
             Destroy(colliderEvent.gameObject);
         }
@@ -69,6 +80,7 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
         {
             // Yes, get our current scene index
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
             // Load up the scene accourding to the sceneChange value
             UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + sceneChangeObject.sceneChange);
         }
@@ -87,10 +99,13 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
         if (Enemy && score < 14)
         {
             gameObject.transform.position = spawnPosition;
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
         }
 
         if (col.gameObject.tag.Equals("Enemy") && score >= 14) {
             col.gameObject.SetActive(false);
+            //Play score increase sound
+            AudioSource.PlayClipAtPoint(enemyDeathSound, transform.position);
         }
     }
 }
