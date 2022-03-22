@@ -13,6 +13,7 @@ TagManager:
   - mushroom
   - cookie
   - icecream
+  - EanDeadly
   layers:
   - Default
   - TransparentFX
