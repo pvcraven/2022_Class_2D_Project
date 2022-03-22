@@ -17,6 +17,7 @@ public class ZachWemhoffCharacterScript : MonoBehaviour
     public float runSpeed = 5.0f;
 
     public AudioSource coinSound;
+    public AudioSource negativeSound;
 
     void Start()
     {
@@ -57,8 +58,15 @@ public class ZachWemhoffCharacterScript : MonoBehaviour
         {
             // Yes, change the score
             score += scoreObject.points;
+            if (scoreObject.points > 0)
+            {
+                coinSound.Play();
+            }
+            if (scoreObject.points < 0)
+            {
+                negativeSound.Play();
+            }
             // Destroy the object
-            coinSound.Play();
             Destroy(colliderEvent.gameObject);
 
         }
