@@ -8,10 +8,12 @@ TagManager:
   - PickUp
   - EanGround
   - EanFlag
+  - Upgrade
   - potion
   - mushroom
   - cookie
   - icecream
+  - EanDeadly
   layers:
   - Default
   - TransparentFX

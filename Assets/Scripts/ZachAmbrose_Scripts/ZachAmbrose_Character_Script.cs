@@ -9,8 +9,6 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
 
     Rigidbody2D body;
 
-    //Vector3 radishPosition;
-    //public GameObject() radish;
 
     float horizontal;
     float vertical;
@@ -18,6 +16,11 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
 
     public Vector3 spawnPosition;
     public float runSpeed = 5.0f;
+
+    public AudioClip increaseScoreSound;
+    public AudioClip enemyDeathSound;
+    public AudioClip deathSound;
+
 
     void Start()
     {
@@ -53,13 +56,20 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
         // Did we run into an object that will affect our score?
         ScoreScript scoreObject = colliderEvent.gameObject.GetComponent(typeof(ScoreScript))
                                   as ScoreScript;
+        
 
         if (scoreObject != null)
         {
             // Yes, change the score
             score += scoreObject.points;
+
+            if (scoreObject.points > 0)
+            {
+                //Play score increase sound
+                AudioSource.PlayClipAtPoint(increaseScoreSound, transform.position);
+
+            }
             // Destroy the object
-            //radishPosition = gameObject.transform.position;
             Destroy(colliderEvent.gameObject);
         }
 
@@ -70,6 +80,7 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
         {
             // Yes, get our current scene index
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
             // Load up the scene accourding to the sceneChange value
             UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + sceneChangeObject.sceneChange);
         }
@@ -78,21 +89,23 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
     {
         // Dispaly our score
         GUIStyle guiStyle = new GUIStyle(GUI.skin.label);
-        guiStyle.fontSize = 18; //modify the font height
-        GUI.Label(new Rect(10, 10, 100, 50), "Score: " + score, guiStyle);
+        guiStyle.fontSize = 20; //modify the font height
+        GUI.Label(new Rect(50, 40, 100, 50), "Score: " + score, guiStyle);
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag.Equals("Enemy") && score < 14)
+        bool Enemy = col.gameObject.tag.Equals("Enemy");
+        if (Enemy && score < 14)
         {
             gameObject.transform.position = spawnPosition;
-            score = 0;
-          //  Instantiate(radish, radishPosition);
-        } 
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
+        }
+
         if (col.gameObject.tag.Equals("Enemy") && score >= 14) {
             col.gameObject.SetActive(false);
-            Debug.Log("hello");
+            //Play score increase sound
+            AudioSource.PlayClipAtPoint(enemyDeathSound, transform.position);
         }
     }
 }

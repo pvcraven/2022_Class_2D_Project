@@ -12,6 +12,9 @@ public class EanCharacterController : MonoBehaviour
     public Sprite stillSprite = null;
     public Sprite rightSprite = null;
     public Sprite leftSprite = null;
+    public AudioSource winSound = null;
+    public AudioSource gameOverSound = null;
+
 
     Rigidbody2D body;
     SpriteRenderer spriteRender;
@@ -19,8 +22,9 @@ public class EanCharacterController : MonoBehaviour
     float horizontal;
     float vertical;
 
-    public float runSpeed = 5.0f;
-    public float jumpHeight = 5.0f;
+    public float runSpeed;
+    public float jumpHeight;
+    public AudioSource coinSound;
 
     private bool canJump = true;
     
@@ -39,7 +43,7 @@ public class EanCharacterController : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetKeyDown("w") && canJump)
         {
-            canJump = false;
+            //canJump = false;
             Debug.Log("Jump!");
             body.velocity = new Vector2(horizontal * runSpeed, jumpHeight);
         } else
@@ -62,18 +66,36 @@ public class EanCharacterController : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "EanGround")
+        {
+            canJump = true;
+        } else if (collision.gameObject.tag == "EanDeadly")
+        {
+            gameOverSound.Play();
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            // Reload the scene 
+            UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex);
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "EanGround")
+        {
+            canJump = false;
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D colliderEvent)
     {
         // Did we run into an object that will affect our score?
         ScoreScript scoreObject = colliderEvent.gameObject.GetComponent(typeof(ScoreScript))
                                   as ScoreScript;
 
-        if (colliderEvent.gameObject.tag == "Respawn")
-        {
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            // Reload the scene 
-            UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex);
-        } else if (colliderEvent.gameObject.tag == "EanGround")
+       
+        if (colliderEvent.gameObject.tag == "EanGround")
         {
             canJump = true;
         }
@@ -82,8 +104,10 @@ public class EanCharacterController : MonoBehaviour
         {
             // Yes, change the score
             score += scoreObject.points;
+            coinSound.Play();
             // Destroy the object
             Destroy(colliderEvent.gameObject);
+            
         }
 
         // Did we run into an object that will cause a scene change?
@@ -91,6 +115,7 @@ public class EanCharacterController : MonoBehaviour
                                               as SceneChangeScript;
         if (sceneChangeObject != null)
         {
+            winSound.Play();
             // Yes, get our current scene index
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             // Load up the scene accourding to the sceneChange value

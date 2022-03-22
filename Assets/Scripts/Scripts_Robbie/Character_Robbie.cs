@@ -31,9 +31,12 @@ public class Character_Robbie : MonoBehaviour
     public Text dialogueText;
     public string openingDialoguePath;
     public string allergyDialoguePath;
-    public string shopDialoguePath;
-    public AudioSource dialogueSound;
+
+    string dialoguePath;
+    AudioSource dialogueSound;
+
     public AudioSource pickupSound;
+    public AudioSource goalSound;
 
     float characterOriginX;
     float characterOriginY;
@@ -54,7 +57,7 @@ public class Character_Robbie : MonoBehaviour
 
         scoreText.fontSize = 20;
 
-        StartCoroutine(ReadDialogue(new StreamReader(openingDialoguePath), false));
+        StartCoroutine(ReadDialogue(new StreamReader(openingDialoguePath)));
     }
 
     void Update()
@@ -81,10 +84,38 @@ public class Character_Robbie : MonoBehaviour
             {
                 hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.left, boxCastDistance, interactable);
             }
-            if (hit)
+            if (hit && canMove)
             {
-                dialogueText.color = new Color(1f, .75f, .8f);
-                StartCoroutine(ReadDialogue(new StreamReader(shopDialoguePath), true));
+                //Completes any special actions from NPCs
+                GameObjectSwitch objectOnOffSwitch = hit.transform.gameObject.GetComponent<GameObjectSwitch>();
+                if(objectOnOffSwitch != null)
+                {
+                    objectOnOffSwitch.GameObjectOnOff();
+                }
+
+                DialogueHolder dialogueInfo = hit.transform.gameObject.GetComponent<DialogueHolder>();
+
+                GrandpasGift grandpasGift = hit.transform.gameObject.GetComponent<GrandpasGift>();
+                if(grandpasGift != null && !(dialogueInfo.interactedOnce))
+                {
+                    StartCoroutine(grandpasGift.GiftPlayer(this.gameObject.GetComponent<Character_Robbie>()));
+                }
+
+                //Finds the correct dialogue info for the NPC
+                Color color = dialogueInfo.color;
+                string dialoguePath;
+                if(!dialogueInfo.interactedOnce)
+                {             
+                    dialoguePath = dialogueInfo.dialoguePath;
+                }
+                else
+                {
+                    dialoguePath = dialogueInfo.alternatePath;
+                }
+                dialogueSound = dialogueInfo.dialogueSound;
+                float lowPitch = dialogueInfo.lowPitch;
+                float highPitch = dialogueInfo.highPitch;
+                StartCoroutine(ReadDialogue(new StreamReader(dialoguePath), dialogueSound, color, lowPitch, highPitch, dialogueInfo.interactedOnce, dialogueInfo));
             }
         }
     }
@@ -119,6 +150,7 @@ public class Character_Robbie : MonoBehaviour
             pickupSound.Play();
             Destroy(colliderEvent.gameObject);
             scoreText.text = "Pumpkin Points: " + score;
+            StartCoroutine(TurnOnScoreTemporarily());
         }
         else if(colliderEvent.gameObject.CompareTag("Enemy"))
         {
@@ -129,22 +161,17 @@ public class Character_Robbie : MonoBehaviour
             if(!hasDied)
             {
                 hasDied = true;
-                StartCoroutine(ReadDialogue(new StreamReader(allergyDialoguePath), false));
+                StartCoroutine(ReadDialogue(new StreamReader(allergyDialoguePath)));
             }
         }
 
         // Did we run into an object that will cause a scene change?
         SceneChangeScript sceneChangeObject = colliderEvent.gameObject.GetComponent(typeof(SceneChangeScript))
                                               as SceneChangeScript;
-        if (sceneChangeObject != null) {
-            // Yes, get our current scene index
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            // Load up the scene accourding to the sceneChange value
-            UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + sceneChangeObject.sceneChange);
-        }
+        if (sceneChangeObject != null) StartCoroutine(DelaySceneChange(sceneChangeObject));
     }
 
-    IEnumerator ReadDialogue(StreamReader dialogueReader, bool speaker)
+    IEnumerator ReadDialogue(StreamReader dialogueReader)
     {
         canMove = false;
         string line;
@@ -159,11 +186,6 @@ public class Character_Robbie : MonoBehaviour
             while((line = dialogueReader.ReadLine()) != "")
             {
                 dialogueText.text = line;
-                if(speaker)
-                {
-                    dialogueSound.pitch = Random.Range(.5f, 1.5f);
-                    dialogueSound.Play();
-                }
                 yield return new WaitForSeconds(.5f);
             }
         }
@@ -171,12 +193,62 @@ public class Character_Robbie : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         //reverts all changes made, letting the player continue playing
-        scoreGO.SetActive(true);
+        dialogueText.text = "";
+        dialogueText.gameObject.SetActive(false);
+        canMove = true;
+        dialogueReader.Close();
+        StopCoroutine(ReadDialogue(dialogueReader));
+    }
+
+    IEnumerator ReadDialogue(StreamReader dialogueReader, AudioSource dialogueSound, Color color, float lowPitch, float highPitch, bool interactedOnce, DialogueHolder dialogueInfo)
+    {
+        canMove = false;
+        string line;
+        scoreGO.SetActive(false);
+        dialogueText.gameObject.SetActive(true);
+        dialogueText.color = color;
+        while((line = dialogueReader.ReadLine()) != " ")
+        {
+            dialogueText.text = line;
+            yield return new WaitForSeconds(.5f);
+            while((line = dialogueReader.ReadLine()) != "")
+            {
+                dialogueText.text = line;
+                dialogueSound.pitch = Random.Range(lowPitch, highPitch);
+                dialogueSound.Play();
+                yield return new WaitForSeconds(.5f);
+            }
+        }
+
+        yield return new WaitForSeconds(1f);
+
+        //reverts all changes made, letting the player continue playing
         dialogueText.text = "";
         dialogueText.gameObject.SetActive(false);
         canMove = true;
         dialogueReader.Close();
         dialogueText.color = Color.white;
-        StopCoroutine(ReadDialogue(dialogueReader, speaker));
+        if(!dialogueInfo.interactedOnce) StartCoroutine(dialogueInfo.firstInteraction());
+        StopCoroutine(ReadDialogue(dialogueReader, dialogueSound, color, lowPitch, highPitch, interactedOnce, dialogueInfo));
+    }
+
+    IEnumerator DelaySceneChange(SceneChangeScript sceneChangeObject)
+    {
+        dialogueText.gameObject.SetActive(true);
+        goalSound.Play();
+        sceneChangeObject.gameObject.SetActive(false);
+        dialogueText.text = "CONGRATS! YOU FOUND THE BOOT!";
+        yield return new WaitForSeconds(1f);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        // Load up the scene accourding to the sceneChange value
+        UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + sceneChangeObject.sceneChange);
+    }
+
+    public IEnumerator TurnOnScoreTemporarily()
+    {
+        scoreGO.gameObject.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        scoreGO.gameObject.SetActive(false);
+        StopCoroutine(TurnOnScoreTemporarily());
     }
 }

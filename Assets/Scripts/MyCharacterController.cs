@@ -17,6 +17,8 @@ public class MyCharacterController : MonoBehaviour
     public float runSpeed = 5.0f;
 
     public AudioSource sound;
+    public AudioSource scoreIncreaseSound;
+    public AudioSource scoreDecreaseSound;
 
     void Start()
     {
@@ -57,6 +59,8 @@ public class MyCharacterController : MonoBehaviour
         {
             // Yes, change the score
             score += scoreObject.points;
+
+           
             // Destroy the object
             Destroy(colliderEvent.gameObject);
         }
