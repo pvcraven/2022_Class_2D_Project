@@ -24,6 +24,7 @@ public class Character_Robbie : MonoBehaviour
     float vertical;
     float moveLimiter = 0.7f;
     public float runSpeed = 5.0f;
+    public Animator animator;
     
     public GameObject scoreGO;
     public Text scoreText;
@@ -66,6 +67,9 @@ public class Character_Robbie : MonoBehaviour
         {
             horizontal = Input.GetAxisRaw("Horizontal"); 
             vertical = Input.GetAxisRaw("Vertical"); 
+
+            animator.SetFloat("Speed X", horizontal);
+            animator.SetFloat("Speed Y", vertical);
         }
 
         if(Input.GetKeyDown("space"))
@@ -157,6 +161,8 @@ public class Character_Robbie : MonoBehaviour
             // Respawn the player, they keep their points
             body.velocity = new Vector2(0, 0);
             transform.position = new Vector2(characterOriginX, characterOriginY);
+            animator.SetFloat("Speed X", 0);
+            animator.SetFloat("Speed Y", 0);
 
             if(!hasDied)
             {
