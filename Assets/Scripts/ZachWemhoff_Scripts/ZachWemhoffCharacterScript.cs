@@ -19,11 +19,16 @@ public class ZachWemhoffCharacterScript : MonoBehaviour
     public AudioSource coinSound;
     public AudioSource negativeSound;
 
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
+
     void Start()
     {
         // Get the rigid body component for the player character.
         // (required to have one)
         body = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,8 +49,14 @@ public class ZachWemhoffCharacterScript : MonoBehaviour
             vertical *= moveLimiter;
         }
 
+        if (horizontal > 0.1)
+            spriteRenderer.flipX = false;
+        else
+            spriteRenderer.flipX = true;
+
         // Set player velocity
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        animator.SetFloat("HorizontalSpeed", Mathf.Abs(horizontal));
     }
 
     void OnTriggerEnter2D(Collider2D colliderEvent)
