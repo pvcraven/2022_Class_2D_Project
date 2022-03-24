@@ -19,11 +19,19 @@ public class Peter_Controller_Script : MonoBehaviour
     public AudioSource positive_pickup_audio;
     public AudioSource negative_pickup_audio;
 
+    public GameObject bow_child;
+    public SpriteRenderer bow_arrow;
+
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
+
     void Start()
     {
         // Get the rigid body component for the player character.
         // (required to have one)
         body = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,8 +52,23 @@ public class Peter_Controller_Script : MonoBehaviour
             vertical *= moveLimiter;
         }
 
+        if (horizontal > 0.1)
+        {
+
+            spriteRenderer.flipX = true;
+            bow_arrow.flipX = false;
+            bow_child.transform.Translate (1, 0, 0);
+        }
+        if (horizontal < -0.1)
+        {
+            spriteRenderer.flipX = false;
+            bow_arrow.flipX = true;
+        }
+
         // Set player velocity
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        animator.SetFloat("HorizontalSpeed", Mathf.Abs(horizontal));
+        animator.SetFloat("VerticalSpeed", Mathf.Abs(vertical));
     }
 
     void OnTriggerEnter2D(Collider2D colliderEvent)
