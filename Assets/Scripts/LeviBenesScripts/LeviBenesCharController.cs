@@ -50,7 +50,7 @@ public class LeviBenesCharController : MonoBehaviour
             vertical *= moveLimiter;
         }
 
-        if (horizontal > -0.1)
+        if (horizontal > 0.1)
         {
             spriteRenderer.flipX = false;
         } else if (horizontal < -0.1)
@@ -61,6 +61,7 @@ public class LeviBenesCharController : MonoBehaviour
         // Set player velocity
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
         animator.SetFloat("HorizontalSpeed", Mathf.Abs(horizontal));
+        animator.SetFloat("VerticalSpeed", Mathf.Abs(vertical));
     }
 
     void OnTriggerEnter2D(Collider2D colliderEvent)
