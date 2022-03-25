@@ -18,11 +18,18 @@ public class GraysonCharacterController : MonoBehaviour
 
     public AudioSource sound;
 
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
+
+
     void Start()
     {
         // Get the rigid body component for the player character.
         // (required to have one)
         body = GetComponent<Rigidbody2D>();
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -45,6 +52,14 @@ public class GraysonCharacterController : MonoBehaviour
 
         // Set player velocity
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+
+        if (horizontal > 0.1)
+            spriteRenderer.flipX = false;
+        else
+            spriteRenderer.flipX = true;
+
+        animator.SetFloat("HorizontalSpeed", Mathf.Abs(horizontal));
+
     }
 
     void OnTriggerEnter2D(Collider2D colliderEvent)
@@ -81,3 +96,5 @@ public class GraysonCharacterController : MonoBehaviour
         GUI.Label(new Rect(10, 10, 100, 50), "Score: " + score, guiStyle);
     }
 }
+
+
