@@ -54,5 +54,4 @@ public class Percy_Movement : MonoBehaviour
         percysAnimator.SetBool("Walking", true);
         StopCoroutine(BeginWalkingAgain());
     }
-
 }
