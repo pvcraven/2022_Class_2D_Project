@@ -12,6 +12,9 @@ public class Peter_Controller_Script : MonoBehaviour
     float vertical;
     float moveLimiter = 0.7f;
 
+    private Vector3 right_bow_pos = new Vector3(.51f, 0f, 0f);
+    private Vector3 left_bow_pos = new Vector3(-.51f, 0f, 0f);
+
     public Vector3 respawnPos;
     public float runSpeed = 5.0f;
 
@@ -19,11 +22,20 @@ public class Peter_Controller_Script : MonoBehaviour
     public AudioSource positive_pickup_audio;
     public AudioSource negative_pickup_audio;
 
+    public GameObject bow_child;
+    public SpriteRenderer bow_arrow;
+    public Animator bowAnimator;
+
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
+
     void Start()
     {
         // Get the rigid body component for the player character.
         // (required to have one)
         body = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -31,6 +43,12 @@ public class Peter_Controller_Script : MonoBehaviour
         // Get our axis values
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
+        // Dealing with firing my bow
+        if (Input.GetKeyDown("space"))
+        {
+            bowAnimator.SetBool("FireKey", true);
+        }
     }
 
     void FixedUpdate()
@@ -44,8 +62,24 @@ public class Peter_Controller_Script : MonoBehaviour
             vertical *= moveLimiter;
         }
 
+        if (horizontal > 0.1)
+        {
+
+            spriteRenderer.flipX = true;
+            bow_arrow.flipX = false;
+            bow_child.transform.position = gameObject.transform.position + right_bow_pos;
+        }
+        if (horizontal < -0.1)
+        {
+            spriteRenderer.flipX = false;
+            bow_arrow.flipX = true;
+            bow_child.transform.position = gameObject.transform.position + left_bow_pos;
+        }
+
         // Set player velocity
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        animator.SetFloat("HorizontalSpeed", Mathf.Abs(horizontal));
+        animator.SetFloat("VerticalSpeed", Mathf.Abs(vertical));
     }
 
     void OnTriggerEnter2D(Collider2D colliderEvent)

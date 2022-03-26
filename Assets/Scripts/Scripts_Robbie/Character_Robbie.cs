@@ -105,6 +105,13 @@ public class Character_Robbie : MonoBehaviour
                     StartCoroutine(grandpasGift.GiftPlayer(this.gameObject.GetComponent<Character_Robbie>()));
                 }
 
+                Percy_Movement percyMovement = hit.transform.gameObject.GetComponent<Percy_Movement>();
+                if(percyMovement != null)
+                {
+                    percyMovement.interacting = true;
+                    StartCoroutine(percyMovement.BeginWalkingAgain());
+                }
+
                 //Finds the correct dialogue info for the NPC
                 Color color = dialogueInfo.color;
                 string dialoguePath;
@@ -215,10 +222,12 @@ public class Character_Robbie : MonoBehaviour
         dialogueText.color = color;
         while((line = dialogueReader.ReadLine()) != " ")
         {
+            Debug.Log("Hello");
             dialogueText.text = line;
             yield return new WaitForSeconds(.5f);
             while((line = dialogueReader.ReadLine()) != "")
             {
+                Debug.Log("hello");
                 dialogueText.text = line;
                 dialogueSound.pitch = Random.Range(lowPitch, highPitch);
                 dialogueSound.Play();
