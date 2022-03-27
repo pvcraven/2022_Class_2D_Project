@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class MyAnimatedCharacterController : MonoBehaviour
+public class MyShootingCharacterController : MonoBehaviour
 {
     public int score = 0;
 
@@ -20,6 +20,8 @@ public class MyAnimatedCharacterController : MonoBehaviour
     public AudioSource sound;
     public AudioSource scoreIncreaseSound;
     public AudioSource scoreDecreaseSound;
+
+    public GameObject bulletPrefab;
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
@@ -37,12 +39,23 @@ public class MyAnimatedCharacterController : MonoBehaviour
     {
         // Get our axis values
         horizontal = Input.GetAxisRaw("Horizontal"); 
-        vertical = Input.GetAxisRaw("Vertical"); 
+        vertical = Input.GetAxisRaw("Vertical");
+        // Has the mouse been pressed?
+        if (Input.GetMouseButtonDown(0))
+        {
+            //var screenPoint = new Vector3(Input.mousePosition);
+            Debug.Log("Mouse down ");
+            var bullet = Instantiate(bulletPrefab, body.position, Quaternion.identity);
+            var bulletbody = bullet.GetComponent<Rigidbody2D>();
+            bulletbody.velocity = new Vector2(4, 0);
+            //screenPoint.z = 10.0f; //distance of the plane from the camera
+            //transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
+
+        }
     }
 
     void FixedUpdate()
     {
-
         // If player is running diagonally, we don't want them to move extra-fast.
         if (horizontal != 0 && vertical != 0) // Check for diagonal movement
         {
@@ -59,7 +72,6 @@ public class MyAnimatedCharacterController : MonoBehaviour
         // Set player velocity
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
         animator.SetFloat("HorizontalSpeed", Mathf.Abs(horizontal));
-
 
     }
 
