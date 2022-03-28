@@ -50,7 +50,7 @@ public class Isaac_Character : MonoBehaviour
 
         if (horizontal > 0.1)
             spriteRenderer.flipX = false;
-        else
+        else if (horizontal < -0.1)
             spriteRenderer.flipX = true;
 
         // Set player velocity
