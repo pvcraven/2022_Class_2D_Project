@@ -84,7 +84,7 @@ public class Character_Robbie : MonoBehaviour
 
             if(ghostSeen && ghost.position.y > -50)
             {
-                ghost.Translate(-.015f, 0, 0);
+                ghost.Translate(-.0275f, 0, 0);
             }
         }
 
