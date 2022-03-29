@@ -5986,6 +5986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowPrefab: {fileID: 2910096621514599393, guid: be83db6c44229b14b8062c592ce46cd1, type: 3}
   bowSprite: {fileID: 191942946}
+  arrowSpeed: 8
 --- !u!1 &192637027
 GameObject:
   m_ObjectHideFlags: 0
@@ -70459,6 +70460,7 @@ GameObject:
   - component: {fileID: 953163929}
   - component: {fileID: 953163930}
   - component: {fileID: 953163931}
+  - component: {fileID: 953163932}
   m_Layer: 0
   m_Name: character_LeviBenes
   m_TagString: Enemy
@@ -70548,6 +70550,7 @@ MonoBehaviour:
   right_x: 21
   top_y: -4.6
   bottom_y: -4.6
+  enemyAnimator: {fileID: 953163932}
 --- !u!50 &953163930
 Rigidbody2D:
   serializedVersion: 4
@@ -70603,6 +70606,25 @@ PolygonCollider2D:
       - {x: 0.49383163, y: -0.51555645}
       - {x: 0.4560299, y: 0.67713326}
       - {x: 0.3627491, y: 0.7704126}
+--- !u!95 &953163932
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953163926}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a2bcb0f8789d9614c8d5d48d1290af39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &953557401
 GameObject:
   m_ObjectHideFlags: 0
@@ -78493,7 +78515,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1217640666
 Transform:
   m_ObjectHideFlags: 0
@@ -78546,6 +78568,7 @@ MonoBehaviour:
   right_x: 22.9
   top_y: 16
   bottom_y: 1.5
+  enemyAnimator: {fileID: 953163932}
 --- !u!212 &1217640669
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101948,7 +101971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1748489940
 Transform:
   m_ObjectHideFlags: 0
@@ -102001,6 +102024,7 @@ MonoBehaviour:
   right_x: 22.9
   top_y: 16
   bottom_y: 1.5
+  enemyAnimator: {fileID: 953163932}
 --- !u!212 &1748489943
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -106754,7 +106778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1942539228
 Transform:
   m_ObjectHideFlags: 0
@@ -106807,6 +106831,7 @@ MonoBehaviour:
   right_x: 22.9
   top_y: 16
   bottom_y: 1.5
+  enemyAnimator: {fileID: 953163932}
 --- !u!212 &1942539231
 SpriteRenderer:
   m_ObjectHideFlags: 0

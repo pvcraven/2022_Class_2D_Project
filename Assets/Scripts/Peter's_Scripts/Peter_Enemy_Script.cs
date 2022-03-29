@@ -17,6 +17,8 @@ public class Peter_Enemy_Script : MonoBehaviour
     int move_horizontal = 0;
     int move_vertical = 0;
 
+    public Animator enemyAnimator;
+
     void FixedUpdate()
     {
 
@@ -32,7 +34,7 @@ public class Peter_Enemy_Script : MonoBehaviour
         {
             move_horizontal = -1;
         }
-        
+
         // Checking y values (to not move y axis make each = "spawn" position)
         if (transform.position.y > top_y)
         {
@@ -42,6 +44,14 @@ public class Peter_Enemy_Script : MonoBehaviour
         {
             move_vertical = 1;
         }
+    }
+
+    void IdleMoment()
+    {
+        enemyAnimator.SetBool("Moving", false);
+        move_horizontal = 0;
+        move_vertical = 0;
+        enemyAnimator.SetBool("Moving", true);
     }
 
 }
