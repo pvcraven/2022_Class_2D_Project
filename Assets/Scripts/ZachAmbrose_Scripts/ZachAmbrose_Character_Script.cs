@@ -9,6 +9,9 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
 
     Rigidbody2D body;
 
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
+
 
     float horizontal;
     float vertical;
@@ -27,6 +30,8 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
         // Get the rigid body component for the player character.
         // (required to have one)
         body = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -46,9 +51,18 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
             horizontal *= moveLimiter;
             vertical *= moveLimiter;
         }
+        
+        if (horizontal > 0.1)
+            spriteRenderer.flipX = false;
+        
+        else if (horizontal < -0.1)
+            spriteRenderer.flipX = true;
+        
 
         // Set player velocity
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        animator.SetFloat("HorizontalSpeed", Mathf.Abs(horizontal));
+        animator.SetFloat("VerticalSpeed", Mathf.Abs(vertical));
     }
 
     void OnTriggerEnter2D(Collider2D colliderEvent)

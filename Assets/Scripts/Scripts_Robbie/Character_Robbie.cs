@@ -24,6 +24,11 @@ public class Character_Robbie : MonoBehaviour
     float vertical;
     float moveLimiter = 0.7f;
     public float runSpeed = 5.0f;
+    public Animator animator;
+
+    public Animator ghostAnimator;
+    private bool ghostSeen;
+    public Transform ghost;
     
     public GameObject scoreGO;
     public Text scoreText;
@@ -53,6 +58,7 @@ public class Character_Robbie : MonoBehaviour
         characterOriginX = transform.position.x;
         characterOriginY = transform.position.y;
 
+        ghostSeen = false;
         hasDied = false;
 
         scoreText.fontSize = 20;
@@ -66,6 +72,20 @@ public class Character_Robbie : MonoBehaviour
         {
             horizontal = Input.GetAxisRaw("Horizontal"); 
             vertical = Input.GetAxisRaw("Vertical"); 
+
+            animator.SetFloat("Speed X", horizontal);
+            animator.SetFloat("Speed Y", vertical);
+
+            if(gameObject.transform.position.y > 35.5f && gameObject.transform.position.x > 32f)
+            {
+                ghostAnimator.SetBool("FloatingAway", true);
+                ghostSeen = true;
+            }
+
+            if(ghostSeen && ghost.position.y > -50)
+            {
+                ghost.Translate(-.015f, 0, 0);
+            }
         }
 
         if(Input.GetKeyDown("space"))
@@ -99,6 +119,13 @@ public class Character_Robbie : MonoBehaviour
                 if(grandpasGift != null && !(dialogueInfo.interactedOnce))
                 {
                     StartCoroutine(grandpasGift.GiftPlayer(this.gameObject.GetComponent<Character_Robbie>()));
+                }
+
+                Percy_Movement percyMovement = hit.transform.gameObject.GetComponent<Percy_Movement>();
+                if(percyMovement != null)
+                {
+                    percyMovement.interacting = true;
+                    StartCoroutine(percyMovement.BeginWalkingAgain());
                 }
 
                 //Finds the correct dialogue info for the NPC
@@ -157,6 +184,8 @@ public class Character_Robbie : MonoBehaviour
             // Respawn the player, they keep their points
             body.velocity = new Vector2(0, 0);
             transform.position = new Vector2(characterOriginX, characterOriginY);
+            animator.SetFloat("Speed X", 0);
+            animator.SetFloat("Speed Y", 0);
 
             if(!hasDied)
             {
@@ -209,10 +238,12 @@ public class Character_Robbie : MonoBehaviour
         dialogueText.color = color;
         while((line = dialogueReader.ReadLine()) != " ")
         {
+            Debug.Log("Hello");
             dialogueText.text = line;
             yield return new WaitForSeconds(.5f);
             while((line = dialogueReader.ReadLine()) != "")
             {
+                Debug.Log("hello");
                 dialogueText.text = line;
                 dialogueSound.pitch = Random.Range(lowPitch, highPitch);
                 dialogueSound.Play();
