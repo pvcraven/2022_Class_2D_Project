@@ -47,8 +47,8 @@ public class LeviNPCMove : MonoBehaviour
         npcAnimator.SetFloat("npcHorizontalSpeed", speed);
         npcAnimator.SetFloat("npcVerticalSpeed", speed);
         Debug.Log("speed: " + speed);
-        Debug.Log("npcHS: " + npcAnimator.GetParameter("npcHorizontalSpeed"));
-        Debug.Log("npcVS: " + npcAnimator.GetParameter("npcVerticalSpeed"));
+        //Debug.Log("npcHS: " + npcAnimator.GetParameter("npcHorizontalSpeed"));
+        //Debug.Log("npcVS: " + npcAnimator.GetParameter("npcVerticalSpeed"));
 
         if (isWalking)
         {
