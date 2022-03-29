@@ -84,7 +84,7 @@ public class Character_Robbie : MonoBehaviour
 
             if(ghostSeen && ghost.position.y > -50)
             {
-                ghost.Translate(-.015f, 0, 0);
+                ghost.Translate(-.0275f, 0, 0);
             }
         }
 
@@ -238,12 +238,10 @@ public class Character_Robbie : MonoBehaviour
         dialogueText.color = color;
         while((line = dialogueReader.ReadLine()) != " ")
         {
-            Debug.Log("Hello");
             dialogueText.text = line;
             yield return new WaitForSeconds(.5f);
             while((line = dialogueReader.ReadLine()) != "")
             {
-                Debug.Log("hello");
                 dialogueText.text = line;
                 dialogueSound.pitch = Random.Range(lowPitch, highPitch);
                 dialogueSound.Play();
