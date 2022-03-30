@@ -10578,6 +10578,8 @@ GameObject:
   - component: {fileID: 670162697}
   - component: {fileID: 670162696}
   - component: {fileID: 670162695}
+  - component: {fileID: 670162699}
+  - component: {fileID: 670162700}
   m_Layer: 0
   m_Name: NPC_Idle_ZachWemhoff_0
   m_TagString: Untagged
@@ -10669,6 +10671,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &670162699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670162694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86fbae68e61b94149ab69c9e40de9dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 670162695}
+  moveSpeed: 1
+  decisionTime: {x: 1, y: 4}
+--- !u!50 &670162700
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670162694}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &691653220
 GameObject:
   m_ObjectHideFlags: 0
@@ -37710,7 +37748,7 @@ GameObject:
   - component: {fileID: 1968149263}
   m_Layer: 0
   m_Name: ZachWemhoff_character_idle_front_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
