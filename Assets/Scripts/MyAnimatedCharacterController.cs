@@ -59,6 +59,8 @@ public class MyAnimatedCharacterController : MonoBehaviour
         // Set player velocity
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
         animator.SetFloat("HorizontalSpeed", Mathf.Abs(horizontal));
+
+
     }
 
     void OnTriggerEnter2D(Collider2D colliderEvent)

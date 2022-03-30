@@ -25,6 +25,10 @@ public class Character_Robbie : MonoBehaviour
     float moveLimiter = 0.7f;
     public float runSpeed = 5.0f;
     public Animator animator;
+
+    public Animator ghostAnimator;
+    private bool ghostSeen;
+    public Transform ghost;
     
     public GameObject scoreGO;
     public Text scoreText;
@@ -54,6 +58,7 @@ public class Character_Robbie : MonoBehaviour
         characterOriginX = transform.position.x;
         characterOriginY = transform.position.y;
 
+        ghostSeen = false;
         hasDied = false;
 
         scoreText.fontSize = 20;
@@ -70,6 +75,17 @@ public class Character_Robbie : MonoBehaviour
 
             animator.SetFloat("Speed X", horizontal);
             animator.SetFloat("Speed Y", vertical);
+
+            if(gameObject.transform.position.y > 35.5f && gameObject.transform.position.x > 32f)
+            {
+                ghostAnimator.SetBool("FloatingAway", true);
+                ghostSeen = true;
+            }
+
+            if(ghostSeen && ghost.position.y > -50)
+            {
+                ghost.Translate(-.0275f, 0, 0);
+            }
         }
 
         if(Input.GetKeyDown("space"))
@@ -103,6 +119,13 @@ public class Character_Robbie : MonoBehaviour
                 if(grandpasGift != null && !(dialogueInfo.interactedOnce))
                 {
                     StartCoroutine(grandpasGift.GiftPlayer(this.gameObject.GetComponent<Character_Robbie>()));
+                }
+
+                Percy_Movement percyMovement = hit.transform.gameObject.GetComponent<Percy_Movement>();
+                if(percyMovement != null)
+                {
+                    percyMovement.interacting = true;
+                    StartCoroutine(percyMovement.BeginWalkingAgain());
                 }
 
                 //Finds the correct dialogue info for the NPC

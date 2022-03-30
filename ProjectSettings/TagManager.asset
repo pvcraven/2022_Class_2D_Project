@@ -14,6 +14,7 @@ TagManager:
   - cookie
   - icecream
   - EanDeadly
+  - Destroyable
   layers:
   - Default
   - TransparentFX
