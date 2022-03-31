@@ -9,13 +9,17 @@ public class LeviBenesCharController : MonoBehaviour
 
     Rigidbody2D body;
 
-
+    // Movement Variables
     float horizontal;
     float vertical;
     float moveLimiter = 0.7f;
-
     public float runSpeed = 5.0f;
 
+    // Bullet Variables
+    public GameObject bulletPrefab;
+    public float bulletSpeed;
+
+    // Sound Variables
     public AudioSource sound;
     public AudioSource increaseScoreSound;
     public AudioSource decreaseScoreSound;
@@ -31,12 +35,35 @@ public class LeviBenesCharController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
-
+    // Get vector angle
+    public float GetYRotFromVec(Vector2 v1)
+    {
+        float _r = Mathf.Atan2(v1.y, v1.x);
+        float _d = (_r / Mathf.PI) * 180;
+        return _d;
+    }
     void Update()
     {
         // Get our axis values
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
+        // Has the mouse been pressed?
+        if (Input.GetMouseButtonDown(0))
+        {
+            var bullet = Instantiate(bulletPrefab, body.position, Quaternion.identity);
+            var bulletbody = bullet.GetComponent<Rigidbody2D>();
+            var mousePos = Input.mousePosition;
+
+            Vector3 target3 = Camera.main.ScreenToWorldPoint(mousePos);
+            target3.z = 0;
+            Vector2 direction = (target3 - transform.position).normalized;
+
+            float angle = GetYRotFromVec(direction);
+
+            bulletbody.rotation = angle;
+            bulletbody.velocity = direction * bulletSpeed;
+        }
     }
 
     void FixedUpdate()
