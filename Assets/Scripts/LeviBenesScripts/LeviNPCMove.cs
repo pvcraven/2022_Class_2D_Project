@@ -84,5 +84,6 @@ public class LeviNPCMove : MonoBehaviour
         isWalking = true;
 
         walkCounter = walkTime;
+        waitTime = Random.Range(0, 5);
     }
 }
