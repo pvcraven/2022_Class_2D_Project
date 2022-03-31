@@ -19,7 +19,6 @@ public class ZachAmbrose_Bullet_Script : MonoBehaviour
         Debug.Log("Trigger");
         if(collision.tag == "Enemy")
         {
-            Debug.Log("Enemy");
 
             Destroy(collision.gameObject);
 

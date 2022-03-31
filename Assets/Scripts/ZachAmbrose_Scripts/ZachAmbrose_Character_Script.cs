@@ -151,16 +151,10 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         bool Enemy = col.gameObject.tag.Equals("Enemy");
-        if (Enemy && score < 20)
+        if (Enemy)
         {
             gameObject.transform.position = spawnPosition;
             AudioSource.PlayClipAtPoint(deathSound, transform.position);
-        }
-
-        if (col.gameObject.tag.Equals("Enemy") && score >= 20) {
-            col.gameObject.SetActive(false);
-            //Play score increase sound
-            AudioSource.PlayClipAtPoint(enemyDeathSound, transform.position);
         }
     }
 }
