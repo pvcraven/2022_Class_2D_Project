@@ -8,6 +8,8 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
     public int score = 0;
 
     Rigidbody2D body;
+    public GameObject projectilePrefab;
+    public GameObject playerStaff;
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
@@ -19,6 +21,8 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
 
     public Vector3 spawnPosition;
     public float runSpeed = 5.0f;
+
+    public float projectileSpeed;
 
     public AudioClip increaseScoreSound;
     public AudioClip enemyDeathSound;
@@ -32,6 +36,15 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        playerStaff.SetActive(false);
+    }
+
+    public float GetYRotFromVec(Vector2 v1)
+    {
+        float _r = Mathf.Atan2(v1.y, v1.x);
+        float _d = (_r / Mathf.PI) * 180;
+
+        return _d;
     }
 
     void Update()
@@ -39,6 +52,34 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
         // Get our axis values
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
+        if (score >= 20)
+        {
+            
+            playerStaff.SetActive(true);
+            
+            if (Input.GetMouseButtonDown(0))
+            {
+
+                var projectile = Instantiate(projectilePrefab, body.position, Quaternion.identity);
+
+                var projectileBody = projectile.GetComponent<Rigidbody2D>();
+
+                var mousePosition = Input.mousePosition;
+
+                Vector3 target3 = Camera.main.ScreenToWorldPoint(mousePosition);
+
+                target3.z = 0;
+
+                Vector2 direction = (target3 - transform.position).normalized;
+
+                float angle = GetYRotFromVec(direction);
+
+                projectileBody.rotation = angle;
+
+                projectileBody.velocity = direction * projectileSpeed;
+            }
+        }
     }
 
     void FixedUpdate()
@@ -116,7 +157,7 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
             AudioSource.PlayClipAtPoint(deathSound, transform.position);
         }
 
-        if (col.gameObject.tag.Equals("Enemy") && score >= 14) {
+        if (col.gameObject.tag.Equals("Enemy") && score >= 20) {
             col.gameObject.SetActive(false);
             //Play score increase sound
             AudioSource.PlayClipAtPoint(enemyDeathSound, transform.position);
