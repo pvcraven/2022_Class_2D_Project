@@ -680,8 +680,8 @@ GameObject:
   - component: {fileID: 199746241}
   - component: {fileID: 199746243}
   - component: {fileID: 199746245}
-  - component: {fileID: 199746244}
   - component: {fileID: 199746246}
+  - component: {fileID: 199746244}
   m_Layer: 0
   m_Name: character_daniel
   m_TagString: Untagged
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 199746240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0fbfd343d1d6844ca425982bbc9e85a, type: 3}
+  m_Script: {fileID: 11500000, guid: 188801d10e120cd4589237547472be14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
@@ -793,6 +793,7 @@ MonoBehaviour:
   sound: {fileID: 0}
   scoreIncreaseSound: {fileID: 0}
   scoreDecreaseSound: {fileID: 0}
+  bulletPrefab: {fileID: 2033237686132230854, guid: 3ce9c084a8c62924c9c8bcead1aa6454, type: 3}
 --- !u!58 &199746245
 CircleCollider2D:
   m_ObjectHideFlags: 0
