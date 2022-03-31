@@ -52,10 +52,12 @@ public class LeviBenesCharController : MonoBehaviour
 
         if (horizontal > 0.1)
         {
-            spriteRenderer.flipX = false;
+            //spriteRenderer.flipX = false;
+            transform.localScale = new Vector3(1, 1, 1);
         } else if (horizontal < -0.1)
         {
-            spriteRenderer.flipX = true;
+            //spriteRenderer.flipX = true;
+            transform.localScale = new Vector3(-1,1,1);
         }
 
         // Set player velocity

@@ -7,11 +7,6 @@ public class LeviNPCMove : MonoBehaviour
 {
     Rigidbody2D npcrb;
 
-    float npcHorizontal;
-    float npcVertical;
-    float speed;
-    Vector3 lastPos = Vector3.zero;
-
     public float moveSpeed;
     public bool isWalking;
 
@@ -42,16 +37,9 @@ public class LeviNPCMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Get our axis values
-        speed = (transform.position - lastPos).magnitude;
-        npcAnimator.SetFloat("npcHorizontalSpeed", speed);
-        npcAnimator.SetFloat("npcVerticalSpeed", speed);
-        Debug.Log("speed: " + speed);
-        //Debug.Log("npcHS: " + npcAnimator.GetParameter("npcHorizontalSpeed"));
-        //Debug.Log("npcVS: " + npcAnimator.GetParameter("npcVerticalSpeed"));
-
         if (isWalking)
         {
+            npcAnimator.Play("LeviPineappleRunAnim");
             walkCounter -= Time.deltaTime;
 
             if(walkCounter < 0)
@@ -68,16 +56,19 @@ public class LeviNPCMove : MonoBehaviour
                     break;
                 case 1:
                     npcrb.velocity = new Vector2(moveSpeed, 0);
+                    npcSpriteRenderer.flipX = false;
                     break;
                 case 2:
                     npcrb.velocity = new Vector2(0, -moveSpeed);
                     break;
                 case 3:
                     npcrb.velocity = new Vector2(-moveSpeed, 0);
+                    npcSpriteRenderer.flipX = true;
                     break;
             }
         } else
         {
+            npcAnimator.Play("LeviPineappleIdleAnim");
             waitCounter -= Time.deltaTime;
             npcrb.velocity = Vector2.zero;
             if(waitCounter < 0)
@@ -85,19 +76,6 @@ public class LeviNPCMove : MonoBehaviour
                 ChooseDirection();
             }
         }
-
-        if (npcHorizontal > 0.1)
-        {
-            npcSpriteRenderer.flipX = false;
-        }
-        else if (npcHorizontal < -0.1)
-        {
-            npcSpriteRenderer.flipX = true;
-        }
-
-        // Set player velocity
-        npcAnimator.SetFloat("npcHorizontalSpeed", Mathf.Abs(npcHorizontal));
-        npcAnimator.SetFloat("npcVerticalSpeed", Mathf.Abs(npcVertical));
     }
 
     public void ChooseDirection()
@@ -106,5 +84,6 @@ public class LeviNPCMove : MonoBehaviour
         isWalking = true;
 
         walkCounter = walkTime;
+        waitTime = Random.Range(0, 5);
     }
 }
