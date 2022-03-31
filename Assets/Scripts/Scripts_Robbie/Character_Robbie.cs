@@ -17,7 +17,7 @@ public class Character_Robbie : MonoBehaviour
     public LayerMask interactable;
     public float boxCastDistance;
 
-    bool canMove;
+    public bool canMove;
     bool hasDied; // Keeps track of whether or not the player has any deaths
 
     float horizontal;
