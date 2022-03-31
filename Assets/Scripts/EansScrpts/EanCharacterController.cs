@@ -9,9 +9,6 @@ public class EanCharacterController : MonoBehaviour
     public int health = 3;
     public int maxHealth = 3;
     public int lives = 3;
-    public Sprite stillSprite = null;
-    public Sprite rightSprite = null;
-    public Sprite leftSprite = null;
     public AudioSource winSound = null;
     public AudioSource gameOverSound = null;
 
@@ -27,7 +24,7 @@ public class EanCharacterController : MonoBehaviour
     public AudioSource coinSound;
 
     private bool canJump = true;
-    
+    private Animator animator;
 
     void Start()
     {
@@ -35,6 +32,7 @@ public class EanCharacterController : MonoBehaviour
         // (required to have one)
         body = GetComponent<Rigidbody2D>();
         spriteRender = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -54,15 +52,16 @@ public class EanCharacterController : MonoBehaviour
 
     void FixedUpdate()
     {
+        animator.SetBool("Walking", body.velocity.x != 0);
         if (body.velocity.x == 0)
-        {
-            spriteRender.sprite = stillSprite;
+        { 
+            spriteRender.flipX = false;
         } else if (body.velocity.x > 0)
         {
-            spriteRender.sprite = rightSprite;
+            spriteRender.flipX = false;
         } else
         {
-            spriteRender.sprite = leftSprite;
+            spriteRender.flipX = true;
         }
     }
 
@@ -91,8 +90,8 @@ public class EanCharacterController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D colliderEvent)
     {
         // Did we run into an object that will affect our score?
-        ScoreScript scoreObject = colliderEvent.gameObject.GetComponent(typeof(ScoreScript))
-                                  as ScoreScript;
+        EanCoin scoreObject = colliderEvent.gameObject.GetComponent(typeof(EanCoin))
+                                  as EanCoin;
 
        
         if (colliderEvent.gameObject.tag == "EanGround")

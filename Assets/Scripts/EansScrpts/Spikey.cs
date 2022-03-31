@@ -8,8 +8,6 @@ public class Spikey : MonoBehaviour
     public float speed;
     float startX;
     bool goingRight = true;
-    public Sprite rightSprite = null;
-    public Sprite leftSprite = null;
     Rigidbody2D body;
     SpriteRenderer spriteRender;
 
@@ -24,9 +22,9 @@ public class Spikey : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        spriteRender.flipX = !goingRight;
         if (goingRight)
         {
-            spriteRender.sprite = rightSprite;
             if (transform.position.x < targetX)
             {
                 body.velocity = new Vector2(speed, 0);
@@ -36,7 +34,6 @@ public class Spikey : MonoBehaviour
             }
         } else
         {
-            spriteRender.sprite = leftSprite;
             if (transform.position.x > startX)
             {
                 body.velocity = new Vector2(-speed, 0);
