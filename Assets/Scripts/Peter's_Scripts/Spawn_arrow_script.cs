@@ -9,14 +9,8 @@ public class Spawn_arrow_script : MonoBehaviour
 
     public float arrowSpeed = 80000f;
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void SpawnArrow(string s)
     {
-        Debug.Log("PrintEvent: " + s + " called at: " + Time.time);
         // Spawning my arrow
         GameObject arrow = (GameObject)Instantiate(arrowPrefab);
         if (bowSprite.flipX)
@@ -32,4 +26,5 @@ public class Spawn_arrow_script : MonoBehaviour
         }
 
     }
+
 }

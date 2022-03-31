@@ -12,25 +12,30 @@ public class Peter_Controller_Script : MonoBehaviour
     float vertical;
     float moveLimiter = 0.7f;
 
-    private Vector3 right_bow_pos = new Vector3(.51f, 0f, 0f);
-    private Vector3 left_bow_pos = new Vector3(-.51f, 0f, 0f);
-
     public Vector3 respawnPos;
     public float runSpeed = 5.0f;
 
+    // Audio variables
     public AudioSource death_audio;
     public AudioSource positive_pickup_audio;
     public AudioSource negative_pickup_audio;
 
+    // For my bow and arrow animation
     public GameObject bow_child;
     public SpriteRenderer bow_arrow;
     public Animator bowAnimator;
+    private Vector3 right_bow_pos = new Vector3(.51f, 0f, 0f);
+    private Vector3 left_bow_pos = new Vector3(-.51f, 0f, 0f);
 
+    // Character animation variables
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
     void Start()
     {
+        // Making the bow start "inactive"
+        bow_child.SetActive(false);
+
         // Get the rigid body component for the player character.
         // (required to have one)
         body = GetComponent<Rigidbody2D>();
@@ -133,6 +138,13 @@ public class Peter_Controller_Script : MonoBehaviour
             gameObject.transform.position = respawnPos;
             death_audio.Play();
         }
-    }
 
+        // Used to enable the bow which you don't start with
+        if (col.gameObject.tag.Equals("RangerUpgrade"))
+        {
+            bow_child.SetActive(true);
+            Destroy(col.gameObject);
+        }
+    }
+    
 }

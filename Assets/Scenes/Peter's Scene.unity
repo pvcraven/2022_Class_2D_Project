@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 1077956}
   m_Layer: 0
   m_Name: Peter's_Tree (145)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 5664702}
   m_Layer: 0
   m_Name: Peter's_Tree (191)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 7011365}
   m_Layer: 0
   m_Name: Peter's_Tree (355)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -485,7 +485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7011363}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.33, y: -0.2800002, z: 0}
+  m_LocalPosition: {x: -17.39, y: -0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1258237211}
@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 9849565}
   m_Layer: 0
   m_Name: Peter's_Tree (197)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 14691342}
   m_Layer: 0
   m_Name: Peter's_Tree (258)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 20566549}
   m_Layer: 0
   m_Name: Peter's_Tree (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 21253783}
   m_Layer: 0
   m_Name: Peter's_Tree (158)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1159,7 +1159,7 @@ GameObject:
   - component: {fileID: 29620922}
   m_Layer: 0
   m_Name: Peter's_Tree (70)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1276,7 +1276,7 @@ GameObject:
   - component: {fileID: 30829025}
   m_Layer: 0
   m_Name: Peter's_Tree (157)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1393,7 +1393,7 @@ GameObject:
   - component: {fileID: 34451471}
   m_Layer: 0
   m_Name: Peter's_Tree (163)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1510,7 +1510,7 @@ GameObject:
   - component: {fileID: 39570544}
   m_Layer: 0
   m_Name: Peter's_Tree (26)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1624,9 +1624,10 @@ GameObject:
   m_Component:
   - component: {fileID: 40870133}
   - component: {fileID: 40870132}
+  - component: {fileID: 40870134}
   m_Layer: 0
   m_Name: Peters_Ranger_Armour
-  m_TagString: Untagged
+  m_TagString: RangerUpgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1696,6 +1697,32 @@ Transform:
   m_Father: {fileID: 1073010532}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &40870134
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40870131}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &41715304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,7 +1736,7 @@ GameObject:
   - component: {fileID: 41715306}
   m_Layer: 0
   m_Name: Peter's_Tree (377)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1928,7 +1955,7 @@ GameObject:
   - component: {fileID: 43729791}
   m_Layer: 0
   m_Name: Peter's_Tree (307)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2147,7 +2174,7 @@ GameObject:
   - component: {fileID: 49764663}
   m_Layer: 0
   m_Name: Peter's_Tree (344)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2264,7 +2291,7 @@ GameObject:
   - component: {fileID: 50119260}
   m_Layer: 0
   m_Name: Peter's_Tree (25)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2381,7 +2408,7 @@ GameObject:
   - component: {fileID: 51465097}
   m_Layer: 0
   m_Name: Peter's_Tree (140)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2498,7 +2525,7 @@ GameObject:
   - component: {fileID: 66785148}
   m_Layer: 0
   m_Name: Peter's_Tree (59)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2717,7 +2744,7 @@ GameObject:
   - component: {fileID: 67274260}
   m_Layer: 0
   m_Name: Peter's_Tree (164)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3263,7 +3290,7 @@ GameObject:
   - component: {fileID: 80322780}
   m_Layer: 0
   m_Name: Peter's_Tree (153)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3380,7 +3407,7 @@ GameObject:
   - component: {fileID: 85619262}
   m_Layer: 0
   m_Name: Peter's_Tree (433)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3599,7 +3626,7 @@ GameObject:
   - component: {fileID: 96818608}
   m_Layer: 0
   m_Name: Peter's_Tree (313)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3818,7 +3845,7 @@ GameObject:
   - component: {fileID: 100472637}
   m_Layer: 0
   m_Name: Peter's_Tree (102)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4058,7 +4085,7 @@ GameObject:
   - component: {fileID: 100983922}
   m_Layer: 0
   m_Name: Peter's_Tree (387)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4175,7 +4202,7 @@ GameObject:
   - component: {fileID: 102615301}
   m_Layer: 0
   m_Name: Peter's_Tree (335)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4292,7 +4319,7 @@ GameObject:
   - component: {fileID: 102746983}
   m_Layer: 0
   m_Name: Peter's_Tree (376)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4409,7 +4436,7 @@ GameObject:
   - component: {fileID: 104315546}
   m_Layer: 0
   m_Name: Peter's_Tree (323)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4526,7 +4553,7 @@ GameObject:
   - component: {fileID: 106239058}
   m_Layer: 0
   m_Name: Peter's_Tree (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4643,7 +4670,7 @@ GameObject:
   - component: {fileID: 107011111}
   m_Layer: 0
   m_Name: Peter's_Tree (286)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4760,7 +4787,7 @@ GameObject:
   - component: {fileID: 116114788}
   m_Layer: 0
   m_Name: Peter's_Tree (310)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4877,7 +4904,7 @@ GameObject:
   - component: {fileID: 117127828}
   m_Layer: 0
   m_Name: Peter's_Tree (91)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4994,7 +5021,7 @@ GameObject:
   - component: {fileID: 117318243}
   m_Layer: 0
   m_Name: Peter's_Tree (106)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5336,7 +5363,7 @@ GameObject:
   - component: {fileID: 134821255}
   m_Layer: 0
   m_Name: Peter's_Tree (139)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5576,7 +5603,7 @@ GameObject:
   - component: {fileID: 139774895}
   m_Layer: 0
   m_Name: Peter's_Tree (289)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5693,7 +5720,7 @@ GameObject:
   - component: {fileID: 141453784}
   m_Layer: 0
   m_Name: Peter's_Tree (34)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5933,7 +5960,7 @@ GameObject:
   - component: {fileID: 160130864}
   m_Layer: 0
   m_Name: Peter's_Tree (301)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6581,7 +6608,7 @@ GameObject:
   - component: {fileID: 173971199}
   m_Layer: 0
   m_Name: Peter's_Tree (128)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6821,7 +6848,7 @@ GameObject:
   - component: {fileID: 179673317}
   m_Layer: 0
   m_Name: Peter's_Tree (252)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6938,7 +6965,7 @@ GameObject:
   - component: {fileID: 181566421}
   m_Layer: 0
   m_Name: Peter's_Tree (129)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7178,7 +7205,7 @@ GameObject:
   - component: {fileID: 184135115}
   m_Layer: 0
   m_Name: Peter's_Tree (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7499,7 +7526,7 @@ GameObject:
   - component: {fileID: 189882636}
   m_Layer: 0
   m_Name: Peter's_Tree (109)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7822,7 +7849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowPrefab: {fileID: 2910096621514599393, guid: be83db6c44229b14b8062c592ce46cd1, type: 3}
   bowSprite: {fileID: 191942946}
-  arrowSpeed: 8
+  arrowSpeed: 9
 --- !u!1 &192637027
 GameObject:
   m_ObjectHideFlags: 0
@@ -7963,7 +7990,7 @@ GameObject:
   - component: {fileID: 193041315}
   m_Layer: 0
   m_Name: Peter's_Tree (186)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8182,7 +8209,7 @@ GameObject:
   - component: {fileID: 195927495}
   m_Layer: 0
   m_Name: Peter's_Tree (424)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8299,7 +8326,7 @@ GameObject:
   - component: {fileID: 196387492}
   m_Layer: 0
   m_Name: Peter's_Tree (419)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8539,7 +8566,7 @@ GameObject:
   - component: {fileID: 201943248}
   m_Layer: 0
   m_Name: Peter's_Tree (190)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8656,7 +8683,7 @@ GameObject:
   - component: {fileID: 203503154}
   m_Layer: 0
   m_Name: Peter's_Tree (326)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8773,7 +8800,7 @@ GameObject:
   - component: {fileID: 206889857}
   m_Layer: 0
   m_Name: Peter's_Tree (48)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8890,7 +8917,7 @@ GameObject:
   - component: {fileID: 207330599}
   m_Layer: 0
   m_Name: Peter's_Tree (347)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9007,7 +9034,7 @@ GameObject:
   - component: {fileID: 207741896}
   m_Layer: 0
   m_Name: Peter's_Tree (180)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9124,7 +9151,7 @@ GameObject:
   - component: {fileID: 210459845}
   m_Layer: 0
   m_Name: Peter's_Tree (337)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9273,7 +9300,7 @@ GameObject:
   - component: {fileID: 213347234}
   m_Layer: 0
   m_Name: Peter's_Tree (114)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9390,7 +9417,7 @@ GameObject:
   - component: {fileID: 214227123}
   m_Layer: 0
   m_Name: Peter's_Tree (266)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9507,7 +9534,7 @@ GameObject:
   - component: {fileID: 220431170}
   m_Layer: 0
   m_Name: Peter's_Tree (156)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9624,7 +9651,7 @@ GameObject:
   - component: {fileID: 220990628}
   m_Layer: 0
   m_Name: Peter's_Tree (346)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9843,7 +9870,7 @@ GameObject:
   - component: {fileID: 232362360}
   m_Layer: 0
   m_Name: Peter's_Tree (338)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9960,7 +9987,7 @@ GameObject:
   - component: {fileID: 235788829}
   m_Layer: 0
   m_Name: Peter's_Tree (187)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10077,7 +10104,7 @@ GameObject:
   - component: {fileID: 238103190}
   m_Layer: 0
   m_Name: Peter's_Tree (196)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10296,7 +10323,7 @@ GameObject:
   - component: {fileID: 239540136}
   m_Layer: 0
   m_Name: Peter's_Tree (242)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10515,7 +10542,7 @@ GameObject:
   - component: {fileID: 245367896}
   m_Layer: 0
   m_Name: Peter's_Tree (82)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10755,7 +10782,7 @@ GameObject:
   - component: {fileID: 259477472}
   m_Layer: 0
   m_Name: Peter's_Tree (65)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10872,7 +10899,7 @@ GameObject:
   - component: {fileID: 259869467}
   m_Layer: 0
   m_Name: Peter's_Tree (231)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11091,7 +11118,7 @@ GameObject:
   - component: {fileID: 273877773}
   m_Layer: 0
   m_Name: Peter's_Tree (345)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11208,7 +11235,7 @@ GameObject:
   - component: {fileID: 276036415}
   m_Layer: 0
   m_Name: Peter's_Tree (141)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11631,7 +11658,7 @@ GameObject:
   - component: {fileID: 282740502}
   m_Layer: 0
   m_Name: Peter's_Tree (329)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11748,7 +11775,7 @@ GameObject:
   - component: {fileID: 288968836}
   m_Layer: 0
   m_Name: Peter's_Tree (327)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11988,6 +12015,186 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!1 &301035383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 301035384}
+  - component: {fileID: 301035389}
+  - component: {fileID: 301035388}
+  - component: {fileID: 301035387}
+  - component: {fileID: 301035386}
+  - component: {fileID: 301035385}
+  m_Layer: 0
+  m_Name: character_LeviBenes (9)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &301035384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301035383}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.35, y: 15.83, z: 10.716515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1465034398}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &301035385
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301035383}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a2bcb0f8789d9614c8d5d48d1290af39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &301035386
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301035383}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.43404388, y: 0.75722146}
+      - {x: -0.50133705, y: -0.5199292}
+      - {x: -0.26345444, y: -0.77914643}
+      - {x: -0.49120522, y: -1}
+      - {x: 0.5, y: -1}
+      - {x: 0.30928993, y: -0.7741842}
+      - {x: 0.49383163, y: -0.51555645}
+      - {x: 0.4560299, y: 0.67713326}
+      - {x: 0.3627491, y: 0.7704126}
+--- !u!50 &301035387
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301035383}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
+--- !u!114 &301035388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301035383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17fba61727c9aa94dbb9df4e28103609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move_speed: 8
+  left_x: 1
+  right_x: 20
+  top_y: -4.6
+  bottom_y: -4.6
+  waitTime: 15
+  animationTime: 3
+  enemyAnimator: {fileID: 301035385}
+--- !u!212 &301035389
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301035383}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 001c7a18a42543145853617dcae36796, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &307048541
 GameObject:
   m_ObjectHideFlags: 0
@@ -12001,7 +12208,7 @@ GameObject:
   - component: {fileID: 307048543}
   m_Layer: 0
   m_Name: Peter's_Tree (370)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12118,7 +12325,7 @@ GameObject:
   - component: {fileID: 307708627}
   m_Layer: 0
   m_Name: Peter's_Tree (352)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12235,7 +12442,7 @@ GameObject:
   - component: {fileID: 307979030}
   m_Layer: 0
   m_Name: Peter's_Tree (406)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12352,7 +12559,7 @@ GameObject:
   - component: {fileID: 309794581}
   m_Layer: 0
   m_Name: Peter's_Tree (138)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12469,7 +12676,7 @@ GameObject:
   - component: {fileID: 311532106}
   m_Layer: 0
   m_Name: Peter's_Tree (170)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12811,7 +13018,7 @@ GameObject:
   - component: {fileID: 316605534}
   m_Layer: 0
   m_Name: Peter's_Tree (99)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13153,7 +13360,7 @@ GameObject:
   - component: {fileID: 320649793}
   m_Layer: 0
   m_Name: Peter's_Tree (149)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13270,7 +13477,7 @@ GameObject:
   - component: {fileID: 320987665}
   m_Layer: 0
   m_Name: Peter's_Tree (80)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13510,7 +13717,7 @@ GameObject:
   - component: {fileID: 328083443}
   m_Layer: 0
   m_Name: Peter's_Tree (309)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13852,7 +14059,7 @@ GameObject:
   - component: {fileID: 338237741}
   m_Layer: 0
   m_Name: Peter's_Tree (49)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13969,7 +14176,7 @@ GameObject:
   - component: {fileID: 340533814}
   m_Layer: 0
   m_Name: Peter's_Tree (47)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14311,7 +14518,7 @@ GameObject:
   - component: {fileID: 348878588}
   m_Layer: 0
   m_Name: Peter's_Tree (39)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14551,7 +14758,7 @@ GameObject:
   - component: {fileID: 350942104}
   m_Layer: 0
   m_Name: Peter's_Tree (119)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14668,7 +14875,7 @@ GameObject:
   - component: {fileID: 351385397}
   m_Layer: 0
   m_Name: Peter's_Tree (259)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14785,7 +14992,7 @@ GameObject:
   - component: {fileID: 351896675}
   m_Layer: 0
   m_Name: Peter's_Tree (405)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15127,7 +15334,7 @@ GameObject:
   - component: {fileID: 361256939}
   m_Layer: 0
   m_Name: Peter's_Tree (101)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15469,7 +15676,7 @@ GameObject:
   - component: {fileID: 366187090}
   m_Layer: 0
   m_Name: Peter's_Tree (204)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15586,7 +15793,7 @@ GameObject:
   - component: {fileID: 368204228}
   m_Layer: 0
   m_Name: Peter's_Tree (221)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15703,7 +15910,7 @@ GameObject:
   - component: {fileID: 368634923}
   m_Layer: 0
   m_Name: Peter's_Tree (285)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16045,7 +16252,7 @@ GameObject:
   - component: {fileID: 380662567}
   m_Layer: 0
   m_Name: Peter's_Tree (426)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16162,7 +16369,7 @@ GameObject:
   - component: {fileID: 381715659}
   m_Layer: 0
   m_Name: Peter's_Tree (395)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16402,7 +16609,7 @@ GameObject:
   - component: {fileID: 382176608}
   m_Layer: 0
   m_Name: Peter's_Tree (55)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16519,7 +16726,7 @@ GameObject:
   - component: {fileID: 382405367}
   m_Layer: 0
   m_Name: Peter's_Tree (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16738,7 +16945,7 @@ GameObject:
   - component: {fileID: 385619987}
   m_Layer: 0
   m_Name: Peter's_Tree (413)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16978,7 +17185,7 @@ GameObject:
   - component: {fileID: 393065266}
   m_Layer: 0
   m_Name: Peter's_Tree (56)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17095,7 +17302,7 @@ GameObject:
   - component: {fileID: 397091323}
   m_Layer: 0
   m_Name: Peter's_Tree (116)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17212,7 +17419,7 @@ GameObject:
   - component: {fileID: 400194023}
   m_Layer: 0
   m_Name: Peter's_Tree (394)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17431,7 +17638,7 @@ GameObject:
   - component: {fileID: 406641486}
   m_Layer: 0
   m_Name: Peter's_Tree (430)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17548,7 +17755,7 @@ GameObject:
   - component: {fileID: 406750385}
   m_Layer: 0
   m_Name: Peter's_Tree (136)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17665,7 +17872,7 @@ GameObject:
   - component: {fileID: 408082363}
   m_Layer: 0
   m_Name: Peter's_Tree (350)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17986,7 +18193,7 @@ GameObject:
   - component: {fileID: 417186031}
   m_Layer: 0
   m_Name: Peter's_Tree (223)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18103,7 +18310,7 @@ GameObject:
   - component: {fileID: 424984815}
   m_Layer: 0
   m_Name: Peter's_Tree (263)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18220,7 +18427,7 @@ GameObject:
   - component: {fileID: 429891343}
   m_Layer: 0
   m_Name: Peter's_Tree (412)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18337,7 +18544,7 @@ GameObject:
   - component: {fileID: 432143857}
   m_Layer: 0
   m_Name: Peter's_Tree (257)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18577,7 +18784,7 @@ GameObject:
   - component: {fileID: 433000839}
   m_Layer: 0
   m_Name: Peter's_Tree (202)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18796,7 +19003,7 @@ GameObject:
   - component: {fileID: 436409667}
   m_Layer: 0
   m_Name: Peter's_Tree (37)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18913,7 +19120,7 @@ GameObject:
   - component: {fileID: 436448585}
   m_Layer: 0
   m_Name: Peter's_Tree (306)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19030,7 +19237,7 @@ GameObject:
   - component: {fileID: 440729640}
   m_Layer: 0
   m_Name: Peter's_Tree (398)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19147,7 +19354,7 @@ GameObject:
   - component: {fileID: 441833005}
   m_Layer: 0
   m_Name: Peter's_Tree (391)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19264,7 +19471,7 @@ GameObject:
   - component: {fileID: 444130309}
   m_Layer: 0
   m_Name: Peter's_Tree (95)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60762,7 +60969,7 @@ GameObject:
   - component: {fileID: 448858842}
   m_Layer: 0
   m_Name: Peter's_Tree (236)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60866,6 +61073,186 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &452159676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 452159677}
+  - component: {fileID: 452159682}
+  - component: {fileID: 452159681}
+  - component: {fileID: 452159680}
+  - component: {fileID: 452159679}
+  - component: {fileID: 452159678}
+  m_Layer: 0
+  m_Name: character_LeviBenes (7)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &452159677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452159676}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.08, y: 15.82, z: 10.716515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1465034398}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &452159678
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452159676}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a2bcb0f8789d9614c8d5d48d1290af39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &452159679
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452159676}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.43404388, y: 0.75722146}
+      - {x: -0.50133705, y: -0.5199292}
+      - {x: -0.26345444, y: -0.77914643}
+      - {x: -0.49120522, y: -1}
+      - {x: 0.5, y: -1}
+      - {x: 0.30928993, y: -0.7741842}
+      - {x: 0.49383163, y: -0.51555645}
+      - {x: 0.4560299, y: 0.67713326}
+      - {x: 0.3627491, y: 0.7704126}
+--- !u!50 &452159680
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452159676}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &452159681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452159676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17fba61727c9aa94dbb9df4e28103609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move_speed: 4
+  left_x: -15.5
+  right_x: 0.25
+  top_y: -4.6
+  bottom_y: -4.6
+  waitTime: 0
+  animationTime: 3e+18
+  enemyAnimator: {fileID: 452159678}
+--- !u!212 &452159682
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452159676}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 001c7a18a42543145853617dcae36796, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &459078845
 GameObject:
   m_ObjectHideFlags: 0
@@ -60879,7 +61266,7 @@ GameObject:
   - component: {fileID: 459078847}
   m_Layer: 0
   m_Name: Peter's_Tree (375)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60996,7 +61383,7 @@ GameObject:
   - component: {fileID: 461029824}
   m_Layer: 0
   m_Name: Peter's_Tree (16)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61338,7 +61725,7 @@ GameObject:
   - component: {fileID: 467714850}
   m_Layer: 0
   m_Name: Peter's_Tree (357)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61350,13 +61737,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467714848}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.013548968, w: 0.99990827}
   m_LocalPosition: {x: -16.19, y: 1.0100002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1258237211}
   m_RootOrder: 357
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.553}
 --- !u!60 &467714850
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -61455,7 +61842,7 @@ GameObject:
   - component: {fileID: 473942262}
   m_Layer: 0
   m_Name: Peter's_Tree (36)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61674,7 +62061,7 @@ GameObject:
   - component: {fileID: 481360386}
   m_Layer: 0
   m_Name: Peter's_Tree (417)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61893,7 +62280,7 @@ GameObject:
   - component: {fileID: 483800289}
   m_Layer: 0
   m_Name: Peter's_Tree (348)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62010,7 +62397,7 @@ GameObject:
   - component: {fileID: 484460364}
   m_Layer: 0
   m_Name: Peter's_Tree (410)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62127,7 +62514,7 @@ GameObject:
   - component: {fileID: 485800989}
   m_Layer: 0
   m_Name: Peter's_Tree (422)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62448,7 +62835,7 @@ GameObject:
   - component: {fileID: 491317072}
   m_Layer: 0
   m_Name: Peter's_Tree (379)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62953,7 +63340,7 @@ GameObject:
   - component: {fileID: 497850793}
   m_Layer: 0
   m_Name: Peter's_Tree (445)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63070,7 +63457,7 @@ GameObject:
   - component: {fileID: 499058442}
   m_Layer: 0
   m_Name: Peter's_Tree
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63134,7 +63521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499058438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.89, y: -0.21999979, z: 0}
+  m_LocalPosition: {x: -21.95, y: -0.15999937, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1258237211}
@@ -63391,7 +63778,7 @@ GameObject:
   - component: {fileID: 504060077}
   m_Layer: 0
   m_Name: Peter's_Tree (79)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63508,7 +63895,7 @@ GameObject:
   - component: {fileID: 504472535}
   m_Layer: 0
   m_Name: Peter's_Tree (148)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63612,6 +63999,186 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &504795455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504795456}
+  - component: {fileID: 504795461}
+  - component: {fileID: 504795460}
+  - component: {fileID: 504795459}
+  - component: {fileID: 504795458}
+  - component: {fileID: 504795457}
+  m_Layer: 0
+  m_Name: character_LeviBenes (6)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &504795456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504795455}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.77, y: 15.69, z: 10.716515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1465034398}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &504795457
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504795455}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a2bcb0f8789d9614c8d5d48d1290af39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &504795458
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504795455}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.43404388, y: 0.75722146}
+      - {x: -0.50133705, y: -0.5199292}
+      - {x: -0.26345444, y: -0.77914643}
+      - {x: -0.49120522, y: -1}
+      - {x: 0.5, y: -1}
+      - {x: 0.30928993, y: -0.7741842}
+      - {x: 0.49383163, y: -0.51555645}
+      - {x: 0.4560299, y: 0.67713326}
+      - {x: 0.3627491, y: 0.7704126}
+--- !u!50 &504795459
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504795455}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &504795460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504795455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17fba61727c9aa94dbb9df4e28103609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move_speed: 4
+  left_x: -15.5
+  right_x: 0.25
+  top_y: -4.6
+  bottom_y: -4.6
+  waitTime: 0
+  animationTime: 3e+18
+  enemyAnimator: {fileID: 504795457}
+--- !u!212 &504795461
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504795455}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 001c7a18a42543145853617dcae36796, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &505921881
 GameObject:
   m_ObjectHideFlags: 0
@@ -63625,7 +64192,7 @@ GameObject:
   - component: {fileID: 505921882}
   m_Layer: 0
   m_Name: Peter's_Tree (23)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63869,7 +64436,7 @@ GameObject:
   - component: {fileID: 512290612}
   m_Layer: 0
   m_Name: Peter's_Tree (253)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63986,7 +64553,7 @@ GameObject:
   - component: {fileID: 520412385}
   m_Layer: 0
   m_Name: Peter's_Tree (125)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64103,7 +64670,7 @@ GameObject:
   - component: {fileID: 522013168}
   m_Layer: 0
   m_Name: Peter's_Tree (243)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64220,7 +64787,7 @@ GameObject:
   - component: {fileID: 527890062}
   m_Layer: 0
   m_Name: Peter's_Tree (177)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64337,7 +64904,7 @@ GameObject:
   - component: {fileID: 529366983}
   m_Layer: 0
   m_Name: Peter's_Tree (382)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64556,7 +65123,7 @@ GameObject:
   - component: {fileID: 538483857}
   m_Layer: 0
   m_Name: Peter's_Tree (58)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64673,7 +65240,7 @@ GameObject:
   - component: {fileID: 539950393}
   m_Layer: 0
   m_Name: Peter's_Tree (224)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64892,7 +65459,7 @@ GameObject:
   - component: {fileID: 541944600}
   m_Layer: 0
   m_Name: Peter's_Tree (300)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65438,7 +66005,7 @@ GameObject:
   - component: {fileID: 556283024}
   m_Layer: 0
   m_Name: Peter's_Tree (167)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65882,7 +66449,7 @@ GameObject:
   - component: {fileID: 567972336}
   m_Layer: 0
   m_Name: Peter's_Tree (43)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66101,7 +66668,7 @@ GameObject:
   - component: {fileID: 571029307}
   m_Layer: 0
   m_Name: Peter's_Tree (362)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66341,7 +66908,7 @@ GameObject:
   - component: {fileID: 583142152}
   m_Layer: 0
   m_Name: Peter's_Tree (271)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66662,7 +67229,7 @@ GameObject:
   - component: {fileID: 592871019}
   m_Layer: 0
   m_Name: Peter's_Tree (217)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66881,7 +67448,7 @@ GameObject:
   - component: {fileID: 601835820}
   m_Layer: 0
   m_Name: Peter's_Tree (85)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66998,7 +67565,7 @@ GameObject:
   - component: {fileID: 606866406}
   m_Layer: 0
   m_Name: Peter's_Tree (312)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67115,7 +67682,7 @@ GameObject:
   - component: {fileID: 608487359}
   m_Layer: 0
   m_Name: Peter's_Tree (371)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67266,7 +67833,7 @@ GameObject:
   - component: {fileID: 609971408}
   m_Layer: 0
   m_Name: Peter's_Tree (103)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67383,7 +67950,7 @@ GameObject:
   - component: {fileID: 612564328}
   m_Layer: 0
   m_Name: Peter's_Tree (401)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67500,7 +68067,7 @@ GameObject:
   - component: {fileID: 619739726}
   m_Layer: 0
   m_Name: Peter's_Tree (200)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67740,7 +68307,7 @@ GameObject:
   - component: {fileID: 631147810}
   m_Layer: 0
   m_Name: Peter's_Tree (87)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68069,6 +68636,186 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &634649721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634649722}
+  - component: {fileID: 634649727}
+  - component: {fileID: 634649726}
+  - component: {fileID: 634649725}
+  - component: {fileID: 634649724}
+  - component: {fileID: 634649723}
+  m_Layer: 0
+  m_Name: character_LeviBenes (4)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &634649722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634649721}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.22, y: -1.53, z: 10.716515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1465034398}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &634649723
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634649721}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a2bcb0f8789d9614c8d5d48d1290af39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &634649724
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634649721}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.43404388, y: 0.75722146}
+      - {x: -0.50133705, y: -0.5199292}
+      - {x: -0.26345444, y: -0.77914643}
+      - {x: -0.49120522, y: -1}
+      - {x: 0.5, y: -1}
+      - {x: 0.30928993, y: -0.7741842}
+      - {x: 0.49383163, y: -0.51555645}
+      - {x: 0.4560299, y: 0.67713326}
+      - {x: 0.3627491, y: 0.7704126}
+--- !u!50 &634649725
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634649721}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
+--- !u!114 &634649726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634649721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17fba61727c9aa94dbb9df4e28103609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move_speed: 5
+  left_x: -16
+  right_x: 0.25
+  top_y: -4.6
+  bottom_y: -4.6
+  waitTime: 15
+  animationTime: 3
+  enemyAnimator: {fileID: 634649723}
+--- !u!212 &634649727
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634649721}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 001c7a18a42543145853617dcae36796, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &636534228
 GameObject:
   m_ObjectHideFlags: 0
@@ -68184,7 +68931,7 @@ GameObject:
   - component: {fileID: 642755483}
   m_Layer: 0
   m_Name: Peter's_Tree (51)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68301,7 +69048,7 @@ GameObject:
   - component: {fileID: 646927948}
   m_Layer: 0
   m_Name: Peter's_Tree (208)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68418,7 +69165,7 @@ GameObject:
   - component: {fileID: 651117443}
   m_Layer: 0
   m_Name: Peter's_Tree (295)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68739,7 +69486,7 @@ GameObject:
   - component: {fileID: 652151050}
   m_Layer: 0
   m_Name: Peter's_Tree (351)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68856,7 +69603,7 @@ GameObject:
   - component: {fileID: 653460641}
   m_Layer: 0
   m_Name: Peter's_Tree (272)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68973,7 +69720,7 @@ GameObject:
   - component: {fileID: 654216753}
   m_Layer: 0
   m_Name: Peter's_Tree (429)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69417,7 +70164,7 @@ GameObject:
   - component: {fileID: 671902416}
   m_Layer: 0
   m_Name: Peter's_Tree (277)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69534,7 +70281,7 @@ GameObject:
   - component: {fileID: 674705126}
   m_Layer: 0
   m_Name: Peter's_Tree (432)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69651,7 +70398,7 @@ GameObject:
   - component: {fileID: 677790830}
   m_Layer: 0
   m_Name: Peter's_Tree (130)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69768,7 +70515,7 @@ GameObject:
   - component: {fileID: 677942986}
   m_Layer: 0
   m_Name: Peter's_Tree (423)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69987,7 +70734,7 @@ GameObject:
   - component: {fileID: 681256316}
   m_Layer: 0
   m_Name: Peter's_Tree (121)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70104,7 +70851,7 @@ GameObject:
   - component: {fileID: 685267580}
   m_Layer: 0
   m_Name: Peter's_Tree (63)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70323,7 +71070,7 @@ GameObject:
   - component: {fileID: 691372351}
   m_Layer: 0
   m_Name: Peter's_Tree (392)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70440,7 +71187,7 @@ GameObject:
   - component: {fileID: 694494153}
   m_Layer: 0
   m_Name: Peter's_Tree (195)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70557,7 +71304,7 @@ GameObject:
   - component: {fileID: 694857501}
   m_Layer: 0
   m_Name: Peter's_Tree (237)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70674,7 +71421,7 @@ GameObject:
   - component: {fileID: 695419095}
   m_Layer: 0
   m_Name: Peter's_Tree (320)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70791,7 +71538,7 @@ GameObject:
   - component: {fileID: 696066865}
   m_Layer: 0
   m_Name: Peter's_Tree (229)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70908,7 +71655,7 @@ GameObject:
   - component: {fileID: 697247888}
   m_Layer: 0
   m_Name: Peter's_Tree (126)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71229,7 +71976,7 @@ GameObject:
   - component: {fileID: 704693848}
   m_Layer: 0
   m_Name: Peter's_Tree (112)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71346,7 +72093,7 @@ GameObject:
   - component: {fileID: 705241337}
   m_Layer: 0
   m_Name: Peter's_Tree (416)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71463,7 +72210,7 @@ GameObject:
   - component: {fileID: 707839036}
   m_Layer: 0
   m_Name: Peter's_Tree (66)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71580,7 +72327,7 @@ GameObject:
   - component: {fileID: 710783921}
   m_Layer: 0
   m_Name: Peter's_Tree (446)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71799,7 +72546,7 @@ GameObject:
   - component: {fileID: 713189777}
   m_Layer: 0
   m_Name: Peter's_Tree (336)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71916,7 +72663,7 @@ GameObject:
   - component: {fileID: 714940365}
   m_Layer: 0
   m_Name: Peter's_Tree (407)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72033,7 +72780,7 @@ GameObject:
   - component: {fileID: 716726508}
   m_Layer: 0
   m_Name: Peter's_Tree (427)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72252,7 +72999,7 @@ GameObject:
   - component: {fileID: 718610813}
   m_Layer: 0
   m_Name: Peter's_Tree (322)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72492,7 +73239,7 @@ GameObject:
   - component: {fileID: 718836455}
   m_Layer: 0
   m_Name: Peter's_Tree (146)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72711,7 +73458,7 @@ GameObject:
   - component: {fileID: 731304494}
   m_Layer: 0
   m_Name: Peter's_Tree (239)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72828,7 +73575,7 @@ GameObject:
   - component: {fileID: 733711740}
   m_Layer: 0
   m_Name: Peter's_Tree (81)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73047,7 +73794,7 @@ GameObject:
   - component: {fileID: 744818335}
   m_Layer: 0
   m_Name: Peter's_Tree (304)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73266,7 +74013,7 @@ GameObject:
   - component: {fileID: 747818912}
   m_Layer: 0
   m_Name: Peter's_Tree (182)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73608,7 +74355,7 @@ GameObject:
   - component: {fileID: 754553691}
   m_Layer: 0
   m_Name: Peter's_Tree (247)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73874,7 +74621,7 @@ GameObject:
   - component: {fileID: 764273043}
   m_Layer: 0
   m_Name: Peter's_Tree (20)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73991,7 +74738,7 @@ GameObject:
   - component: {fileID: 768407902}
   m_Layer: 0
   m_Name: Peter's_Tree (448)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74333,7 +75080,7 @@ GameObject:
   - component: {fileID: 785687206}
   m_Layer: 0
   m_Name: Peter's_Tree (64)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74450,7 +75197,7 @@ GameObject:
   - component: {fileID: 797080398}
   m_Layer: 0
   m_Name: Peter's_Tree (276)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74669,7 +75416,7 @@ GameObject:
   - component: {fileID: 807484092}
   m_Layer: 0
   m_Name: Peter's_Tree (110)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74786,7 +75533,7 @@ GameObject:
   - component: {fileID: 816200134}
   m_Layer: 0
   m_Name: Peter's_Tree (386)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74903,7 +75650,7 @@ GameObject:
   - component: {fileID: 817795406}
   m_Layer: 0
   m_Name: Peter's_Tree (137)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75224,7 +75971,7 @@ GameObject:
   - component: {fileID: 825004295}
   m_Layer: 0
   m_Name: Peter's_Tree (93)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75341,7 +76088,7 @@ GameObject:
   - component: {fileID: 831122267}
   m_Layer: 0
   m_Name: Peter's_Tree (228)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75458,7 +76205,7 @@ GameObject:
   - component: {fileID: 834631907}
   m_Layer: 0
   m_Name: Peter's_Tree (225)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75575,7 +76322,7 @@ GameObject:
   - component: {fileID: 838649883}
   m_Layer: 0
   m_Name: Peter's_Tree (388)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75794,7 +76541,7 @@ GameObject:
   - component: {fileID: 843703341}
   m_Layer: 0
   m_Name: Peter's_Tree (360)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75911,7 +76658,7 @@ GameObject:
   - component: {fileID: 843776183}
   m_Layer: 0
   m_Name: Peter's_Tree (54)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76130,7 +76877,7 @@ GameObject:
   - component: {fileID: 852088103}
   m_Layer: 0
   m_Name: Peter's_Tree (52)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76247,7 +76994,7 @@ GameObject:
   - component: {fileID: 852115551}
   m_Layer: 0
   m_Name: Peter's_Tree (278)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76364,7 +77111,7 @@ GameObject:
   - component: {fileID: 854729326}
   m_Layer: 0
   m_Name: Peter's_Tree (440)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76481,7 +77228,7 @@ GameObject:
   - component: {fileID: 856434255}
   m_Layer: 0
   m_Name: Peter's_Tree (46)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76598,7 +77345,7 @@ GameObject:
   - component: {fileID: 856441869}
   m_Layer: 0
   m_Name: Peter's_Tree (84)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76715,7 +77462,7 @@ GameObject:
   - component: {fileID: 857304815}
   m_Layer: 0
   m_Name: Peter's_Tree (98)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77036,7 +77783,7 @@ GameObject:
   - component: {fileID: 888323823}
   m_Layer: 0
   m_Name: Peter's_Tree (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77153,7 +77900,7 @@ GameObject:
   - component: {fileID: 890021887}
   m_Layer: 0
   m_Name: Peter's_Tree (298)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77270,7 +78017,7 @@ GameObject:
   - component: {fileID: 893567840}
   m_Layer: 0
   m_Name: Peter's_Tree (303)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77387,7 +78134,7 @@ GameObject:
   - component: {fileID: 906006754}
   m_Layer: 0
   m_Name: Peter's_Tree (281)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77504,7 +78251,7 @@ GameObject:
   - component: {fileID: 908564814}
   m_Layer: 0
   m_Name: Peter's_Tree (283)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77846,7 +78593,7 @@ GameObject:
   - component: {fileID: 913430956}
   m_Layer: 0
   m_Name: Peter's_Tree (89)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78086,7 +78833,7 @@ GameObject:
   - component: {fileID: 920294557}
   m_Layer: 0
   m_Name: Peter's_Tree (400)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78203,7 +78950,7 @@ GameObject:
   - component: {fileID: 920424034}
   m_Layer: 0
   m_Name: Peter's_Tree (113)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78545,7 +79292,7 @@ GameObject:
   - component: {fileID: 928121313}
   m_Layer: 0
   m_Name: Peter's_Tree (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78764,7 +79511,7 @@ GameObject:
   - component: {fileID: 936201855}
   m_Layer: 0
   m_Name: Peter's_Tree (421)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78881,7 +79628,7 @@ GameObject:
   - component: {fileID: 936442342}
   m_Layer: 0
   m_Name: Peter's_Tree (444)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78998,7 +79745,7 @@ GameObject:
   - component: {fileID: 942559204}
   m_Layer: 0
   m_Name: Peter's_Tree (404)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79217,7 +79964,7 @@ GameObject:
   - component: {fileID: 947568722}
   m_Layer: 0
   m_Name: Peter's_Tree (368)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79420,7 +80167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move_speed: 4
-  left_x: -16
+  left_x: 1
   right_x: 21
   top_y: -4.6
   bottom_y: -4.6
@@ -79514,7 +80261,7 @@ GameObject:
   - component: {fileID: 953557403}
   m_Layer: 0
   m_Name: Peter's_Tree (273)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79631,7 +80378,7 @@ GameObject:
   - component: {fileID: 960320131}
   m_Layer: 0
   m_Name: Peter's_Tree (380)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79748,7 +80495,7 @@ GameObject:
   - component: {fileID: 975507516}
   m_Layer: 0
   m_Name: Peter's_Tree (316)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79865,7 +80612,7 @@ GameObject:
   - component: {fileID: 976145253}
   m_Layer: 0
   m_Name: Peter's_Tree (77)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80330,7 +81077,7 @@ GameObject:
   - component: {fileID: 982347928}
   m_Layer: 0
   m_Name: Peter's_Tree (431)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80447,7 +81194,7 @@ GameObject:
   - component: {fileID: 984619372}
   m_Layer: 0
   m_Name: Peter's_Tree (293)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80564,7 +81311,7 @@ GameObject:
   - component: {fileID: 986217484}
   m_Layer: 0
   m_Name: Peter's_Tree (118)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80681,7 +81428,7 @@ GameObject:
   - component: {fileID: 989222559}
   m_Layer: 0
   m_Name: Peter's_Tree (86)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80921,7 +81668,7 @@ GameObject:
   - component: {fileID: 991170334}
   m_Layer: 0
   m_Name: Peter's_Tree (199)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81140,7 +81887,7 @@ GameObject:
   - component: {fileID: 994913279}
   m_Layer: 0
   m_Name: Peter's_Tree (290)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81257,7 +82004,7 @@ GameObject:
   - component: {fileID: 999552680}
   m_Layer: 0
   m_Name: Peter's_Tree (366)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81374,7 +82121,7 @@ GameObject:
   - component: {fileID: 1001430885}
   m_Layer: 0
   m_Name: Peter's_Tree (261)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81593,7 +82340,7 @@ GameObject:
   - component: {fileID: 1008804415}
   m_Layer: 0
   m_Name: Peter's_Tree (142)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81710,7 +82457,7 @@ GameObject:
   - component: {fileID: 1012951243}
   m_Layer: 0
   m_Name: Peter's_Tree (443)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81827,7 +82574,7 @@ GameObject:
   - component: {fileID: 1016995475}
   m_Layer: 0
   m_Name: Peter's_Tree (174)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82046,7 +82793,7 @@ GameObject:
   - component: {fileID: 1017723328}
   m_Layer: 0
   m_Name: Peter's_Tree (24)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82163,7 +82910,7 @@ GameObject:
   - component: {fileID: 1018406806}
   m_Layer: 0
   m_Name: Peter's_Tree (185)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82280,7 +83027,7 @@ GameObject:
   - component: {fileID: 1019777061}
   m_Layer: 0
   m_Name: Peter's_Tree (61)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82499,7 +83246,7 @@ GameObject:
   - component: {fileID: 1022187256}
   m_Layer: 0
   m_Name: Peter's_Tree (318)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82616,7 +83363,7 @@ GameObject:
   - component: {fileID: 1023600269}
   m_Layer: 0
   m_Name: Peter's_Tree (317)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82979,7 +83726,7 @@ GameObject:
   - component: {fileID: 1028153974}
   m_Layer: 0
   m_Name: Peter's_Tree (282)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83096,7 +83843,7 @@ GameObject:
   - component: {fileID: 1029429980}
   m_Layer: 0
   m_Name: Peter's_Tree (268)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83336,7 +84083,7 @@ GameObject:
   - component: {fileID: 1036671676}
   m_Layer: 0
   m_Name: Peter's_Tree (428)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83453,7 +84200,7 @@ GameObject:
   - component: {fileID: 1039984891}
   m_Layer: 0
   m_Name: Peter's_Tree (159)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83897,7 +84644,7 @@ GameObject:
   - component: {fileID: 1052488036}
   m_Layer: 0
   m_Name: Peter's_Tree (53)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84014,7 +84761,7 @@ GameObject:
   - component: {fileID: 1056961627}
   m_Layer: 0
   m_Name: Peter's_Tree (133)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84592,7 +85339,7 @@ GameObject:
   - component: {fileID: 1073617157}
   m_Layer: 0
   m_Name: Peter's_Tree (409)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84709,7 +85456,7 @@ GameObject:
   - component: {fileID: 1080243724}
   m_Layer: 0
   m_Name: Peter's_Tree (160)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85030,7 +85777,7 @@ GameObject:
   - component: {fileID: 1081905814}
   m_Layer: 0
   m_Name: Peter's_Tree (131)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85147,7 +85894,7 @@ GameObject:
   - component: {fileID: 1084331118}
   m_Layer: 0
   m_Name: Peter's_Tree (291)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85264,7 +86011,7 @@ GameObject:
   - component: {fileID: 1084632290}
   m_Layer: 0
   m_Name: Peter's_Tree (205)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85381,7 +86128,7 @@ GameObject:
   - component: {fileID: 1086655479}
   m_Layer: 0
   m_Name: Peter's_Tree (251)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85804,7 +86551,7 @@ GameObject:
   - component: {fileID: 1093360253}
   m_Layer: 0
   m_Name: Peter's_Tree (161)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85921,7 +86668,7 @@ GameObject:
   - component: {fileID: 1094445603}
   m_Layer: 0
   m_Name: Peter's_Tree (117)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86365,7 +87112,7 @@ GameObject:
   - component: {fileID: 1111356514}
   m_Layer: 0
   m_Name: Peter's_Tree (374)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86482,7 +87229,7 @@ GameObject:
   - component: {fileID: 1121034214}
   m_Layer: 0
   m_Name: Peter's_Tree (255)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86599,7 +87346,7 @@ GameObject:
   - component: {fileID: 1126829285}
   m_Layer: 0
   m_Name: Peter's_Tree (178)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86716,7 +87463,7 @@ GameObject:
   - component: {fileID: 1130084026}
   m_Layer: 0
   m_Name: Peter's_Tree (165)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86833,7 +87580,7 @@ GameObject:
   - component: {fileID: 1131283098}
   m_Layer: 0
   m_Name: Peter's_Tree (123)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87175,7 +87922,7 @@ GameObject:
   - component: {fileID: 1135847615}
   m_Layer: 0
   m_Name: Peter's_Tree (442)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87394,7 +88141,7 @@ GameObject:
   - component: {fileID: 1142847029}
   m_Layer: 0
   m_Name: Peter's_Tree (358)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87838,7 +88585,7 @@ GameObject:
   - component: {fileID: 1158778766}
   m_Layer: 0
   m_Name: Peter's_Tree (302)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88180,7 +88927,7 @@ GameObject:
   - component: {fileID: 1164460514}
   m_Layer: 0
   m_Name: Peter's_Tree (439)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88399,7 +89146,7 @@ GameObject:
   - component: {fileID: 1174886303}
   m_Layer: 0
   m_Name: Peter's_Tree (384)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88639,7 +89386,7 @@ GameObject:
   - component: {fileID: 1181760242}
   m_Layer: 0
   m_Name: Peter's_Tree (168)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88960,7 +89707,7 @@ GameObject:
   - component: {fileID: 1186649279}
   m_Layer: 0
   m_Name: Peter's_Tree (220)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89077,7 +89824,7 @@ GameObject:
   - component: {fileID: 1188322805}
   m_Layer: 0
   m_Name: Peter's_Tree (17)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89194,7 +89941,7 @@ GameObject:
   - component: {fileID: 1188807607}
   m_Layer: 0
   m_Name: Peter's_Tree (173)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89434,7 +90181,7 @@ GameObject:
   - component: {fileID: 1195602175}
   m_Layer: 0
   m_Name: Peter's_Tree (213)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89755,7 +90502,7 @@ GameObject:
   - component: {fileID: 1202506491}
   m_Layer: 0
   m_Name: Peter's_Tree (206)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89872,7 +90619,7 @@ GameObject:
   - component: {fileID: 1211868399}
   m_Layer: 0
   m_Name: Peter's_Tree (356)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89989,7 +90736,7 @@ GameObject:
   - component: {fileID: 1216334589}
   m_Layer: 0
   m_Name: Peter's_Tree (96)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90262,7 +91009,7 @@ GameObject:
   - component: {fileID: 1219218821}
   m_Layer: 0
   m_Name: Peter's_Tree (127)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90379,7 +91126,7 @@ GameObject:
   - component: {fileID: 1221505538}
   m_Layer: 0
   m_Name: Peter's_Tree (434)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90598,7 +91345,7 @@ GameObject:
   - component: {fileID: 1230248984}
   m_Layer: 0
   m_Name: Peter's_Tree (230)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90715,7 +91462,7 @@ GameObject:
   - component: {fileID: 1230267746}
   m_Layer: 0
   m_Name: Peter's_Tree (198)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90832,7 +91579,7 @@ GameObject:
   - component: {fileID: 1234338865}
   m_Layer: 0
   m_Name: Peter's_Tree (14)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91051,7 +91798,7 @@ GameObject:
   - component: {fileID: 1239684494}
   m_Layer: 0
   m_Name: Peter's_Tree (353)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91168,7 +91915,7 @@ GameObject:
   - component: {fileID: 1240693928}
   m_Layer: 0
   m_Name: Peter's_Tree (250)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91408,7 +92155,7 @@ GameObject:
   - component: {fileID: 1244663753}
   m_Layer: 0
   m_Name: Peter's_Tree (399)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91525,7 +92272,7 @@ GameObject:
   - component: {fileID: 1245933564}
   m_Layer: 0
   m_Name: Peter's_Tree (216)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91744,7 +92491,7 @@ GameObject:
   - component: {fileID: 1249183887}
   m_Layer: 0
   m_Name: Peter's_Tree (267)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91861,7 +92608,7 @@ GameObject:
   - component: {fileID: 1249566549}
   m_Layer: 0
   m_Name: Peter's_Tree (269)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92101,7 +92848,7 @@ GameObject:
   - component: {fileID: 1254926483}
   m_Layer: 0
   m_Name: Peter's_Tree (210)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92216,7 +92963,7 @@ GameObject:
   - component: {fileID: 1258237211}
   m_Layer: 0
   m_Name: Trees
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92695,7 +93442,7 @@ GameObject:
   - component: {fileID: 1258608992}
   m_Layer: 0
   m_Name: Peter's_Tree (314)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92812,7 +93559,7 @@ GameObject:
   - component: {fileID: 1260900819}
   m_Layer: 0
   m_Name: Peter's_Tree (435)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92916,6 +93663,186 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1263728674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263728675}
+  - component: {fileID: 1263728680}
+  - component: {fileID: 1263728679}
+  - component: {fileID: 1263728678}
+  - component: {fileID: 1263728677}
+  - component: {fileID: 1263728676}
+  m_Layer: 0
+  m_Name: character_LeviBenes (8)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263728675
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263728674}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.39, y: 15.82, z: 10.716515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1465034398}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1263728676
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263728674}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a2bcb0f8789d9614c8d5d48d1290af39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &1263728677
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263728674}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.43404388, y: 0.75722146}
+      - {x: -0.50133705, y: -0.5199292}
+      - {x: -0.26345444, y: -0.77914643}
+      - {x: -0.49120522, y: -1}
+      - {x: 0.5, y: -1}
+      - {x: 0.30928993, y: -0.7741842}
+      - {x: 0.49383163, y: -0.51555645}
+      - {x: 0.4560299, y: 0.67713326}
+      - {x: 0.3627491, y: 0.7704126}
+--- !u!50 &1263728678
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263728674}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &1263728679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263728674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17fba61727c9aa94dbb9df4e28103609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move_speed: 4
+  left_x: -14
+  right_x: -13
+  top_y: 16
+  bottom_y: 15
+  waitTime: 0
+  animationTime: 3e+18
+  enemyAnimator: {fileID: 1263728676}
+--- !u!212 &1263728680
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263728674}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 001c7a18a42543145853617dcae36796, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1264448222
 GameObject:
   m_ObjectHideFlags: 0
@@ -92929,7 +93856,7 @@ GameObject:
   - component: {fileID: 1264448224}
   m_Layer: 0
   m_Name: Peter's_Tree (193)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93148,7 +94075,7 @@ GameObject:
   - component: {fileID: 1269695709}
   m_Layer: 0
   m_Name: Peter's_Tree (68)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93265,7 +94192,7 @@ GameObject:
   - component: {fileID: 1271116763}
   m_Layer: 0
   m_Name: Peter's_Tree (76)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93484,7 +94411,7 @@ GameObject:
   - component: {fileID: 1273170634}
   m_Layer: 0
   m_Name: Peter's_Tree (284)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93724,7 +94651,7 @@ GameObject:
   - component: {fileID: 1276842631}
   m_Layer: 0
   m_Name: Peter's_Tree (260)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93841,7 +94768,7 @@ GameObject:
   - component: {fileID: 1287065606}
   m_Layer: 0
   m_Name: Peter's_Tree (12)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93958,7 +94885,7 @@ GameObject:
   - component: {fileID: 1289849518}
   m_Layer: 0
   m_Name: Peter's_Tree (385)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94075,7 +95002,7 @@ GameObject:
   - component: {fileID: 1293575864}
   m_Layer: 0
   m_Name: Peter's_Tree (35)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94192,7 +95119,7 @@ GameObject:
   - component: {fileID: 1299871909}
   m_Layer: 0
   m_Name: Peter's_Tree (105)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94309,7 +95236,7 @@ GameObject:
   - component: {fileID: 1300772360}
   m_Layer: 0
   m_Name: Peter's_Tree (436)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94426,7 +95353,7 @@ GameObject:
   - component: {fileID: 1307329262}
   m_Layer: 0
   m_Name: Peter's_Tree (254)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95161,7 +96088,7 @@ GameObject:
   - component: {fileID: 1316177669}
   m_Layer: 0
   m_Name: Peter's_Tree (408)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95380,7 +96307,7 @@ GameObject:
   - component: {fileID: 1321203202}
   m_Layer: 0
   m_Name: Peter's_Tree (325)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95497,7 +96424,7 @@ GameObject:
   - component: {fileID: 1334614760}
   m_Layer: 0
   m_Name: Peter's_Tree (222)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95737,7 +96664,7 @@ GameObject:
   - component: {fileID: 1340737651}
   m_Layer: 0
   m_Name: Peter's_Tree (122)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95956,7 +96883,7 @@ GameObject:
   - component: {fileID: 1345571124}
   m_Layer: 0
   m_Name: Peter's_Tree (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96073,7 +97000,7 @@ GameObject:
   - component: {fileID: 1345984723}
   m_Layer: 0
   m_Name: Peter's_Tree (30)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96190,7 +97117,7 @@ GameObject:
   - component: {fileID: 1346430616}
   m_Layer: 0
   m_Name: Peter's_Tree (331)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96307,7 +97234,7 @@ GameObject:
   - component: {fileID: 1348571515}
   m_Layer: 0
   m_Name: Peter's_Tree (104)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96424,7 +97351,7 @@ GameObject:
   - component: {fileID: 1349197623}
   m_Layer: 0
   m_Name: Peter's_Tree (378)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96541,7 +97468,7 @@ GameObject:
   - component: {fileID: 1351666884}
   m_Layer: 0
   m_Name: Peter's_Tree (226)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96658,7 +97585,7 @@ GameObject:
   - component: {fileID: 1351879024}
   m_Layer: 0
   m_Name: Peter's_Tree (152)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96775,7 +97702,7 @@ GameObject:
   - component: {fileID: 1353347447}
   m_Layer: 0
   m_Name: Peter's_Tree (256)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97342,7 +98269,7 @@ GameObject:
   - component: {fileID: 1364263054}
   m_Layer: 0
   m_Name: Peter's_Tree (227)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97459,7 +98386,7 @@ GameObject:
   - component: {fileID: 1366242922}
   m_Layer: 0
   m_Name: Peter's_Tree (83)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97576,7 +98503,7 @@ GameObject:
   - component: {fileID: 1366300825}
   m_Layer: 0
   m_Name: Peter's_Tree (414)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97693,7 +98620,7 @@ GameObject:
   - component: {fileID: 1372771359}
   m_Layer: 0
   m_Name: Peter's_Tree (94)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98014,7 +98941,7 @@ GameObject:
   - component: {fileID: 1376464241}
   m_Layer: 0
   m_Name: Peter's_Tree (235)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98131,7 +99058,7 @@ GameObject:
   - component: {fileID: 1376824765}
   m_Layer: 0
   m_Name: Peter's_Tree (280)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98494,7 +99421,7 @@ GameObject:
   - component: {fileID: 1380355195}
   m_Layer: 0
   m_Name: Peter's_Tree (287)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98938,7 +99865,7 @@ GameObject:
   - component: {fileID: 1398137787}
   m_Layer: 0
   m_Name: Peter's_Tree (361)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99055,7 +99982,7 @@ GameObject:
   - component: {fileID: 1399985621}
   m_Layer: 0
   m_Name: Peter's_Tree (219)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99172,7 +100099,7 @@ GameObject:
   - component: {fileID: 1401778517}
   m_Layer: 0
   m_Name: Peter's_Tree (333)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99289,7 +100216,7 @@ GameObject:
   - component: {fileID: 1402163466}
   m_Layer: 0
   m_Name: Peter's_Tree (166)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99406,7 +100333,7 @@ GameObject:
   - component: {fileID: 1407321096}
   m_Layer: 0
   m_Name: Peter's_Tree (13)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99523,7 +100450,7 @@ GameObject:
   - component: {fileID: 1409470409}
   m_Layer: 0
   m_Name: Peter's_Tree (390)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99640,7 +100567,7 @@ GameObject:
   - component: {fileID: 1412250864}
   m_Layer: 0
   m_Name: Peter's_Tree (249)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99859,7 +100786,7 @@ GameObject:
   - component: {fileID: 1413923746}
   m_Layer: 0
   m_Name: Peter's_Tree (147)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99976,7 +100903,7 @@ GameObject:
   - component: {fileID: 1414495849}
   m_Layer: 0
   m_Name: Peter's_Tree (72)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100195,7 +101122,7 @@ GameObject:
   - component: {fileID: 1415901716}
   m_Layer: 0
   m_Name: Peter's_Tree (332)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100312,7 +101239,7 @@ GameObject:
   - component: {fileID: 1418152089}
   m_Layer: 0
   m_Name: Peter's_Tree (209)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100633,7 +101560,7 @@ GameObject:
   - component: {fileID: 1428988198}
   m_Layer: 0
   m_Name: Peter's_Tree (108)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100750,7 +101677,7 @@ GameObject:
   - component: {fileID: 1431642425}
   m_Layer: 0
   m_Name: Peter's_Tree (207)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100867,7 +101794,7 @@ GameObject:
   - component: {fileID: 1434736981}
   m_Layer: 0
   m_Name: Peter's_Tree (248)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101086,7 +102013,7 @@ GameObject:
   - component: {fileID: 1440528793}
   m_Layer: 0
   m_Name: Peter's_Tree (21)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101203,7 +102130,7 @@ GameObject:
   - component: {fileID: 1441243355}
   m_Layer: 0
   m_Name: Peter's_Tree (383)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101443,7 +102370,7 @@ GameObject:
   - component: {fileID: 1447857177}
   m_Layer: 0
   m_Name: Peter's_Tree (319)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101560,7 +102487,7 @@ GameObject:
   - component: {fileID: 1448535466}
   m_Layer: 0
   m_Name: Peter's_Tree (189)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101677,7 +102604,7 @@ GameObject:
   - component: {fileID: 1453948992}
   m_Layer: 0
   m_Name: Peter's_Tree (57)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102118,6 +103045,12 @@ Transform:
   - {fileID: 1495825816}
   - {fileID: 2024780099}
   - {fileID: 1622260784}
+  - {fileID: 634649722}
+  - {fileID: 1745275344}
+  - {fileID: 504795456}
+  - {fileID: 452159677}
+  - {fileID: 1263728675}
+  - {fileID: 301035384}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102257,7 +103190,7 @@ GameObject:
   - component: {fileID: 1468131493}
   m_Layer: 0
   m_Name: Peter's_Tree (172)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102374,7 +103307,7 @@ GameObject:
   - component: {fileID: 1471666919}
   m_Layer: 0
   m_Name: Peter's_Tree (33)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102491,7 +103424,7 @@ GameObject:
   - component: {fileID: 1472183396}
   m_Layer: 0
   m_Name: Peter's_Tree (330)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102812,7 +103745,7 @@ GameObject:
   - component: {fileID: 1476136574}
   m_Layer: 0
   m_Name: Peter's_Tree (107)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103031,7 +103964,7 @@ GameObject:
   - component: {fileID: 1480524419}
   m_Layer: 0
   m_Name: Peter's_Tree (299)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103250,7 +104183,7 @@ GameObject:
   - component: {fileID: 1487464806}
   m_Layer: 0
   m_Name: Peter's_Tree (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103772,7 +104705,7 @@ GameObject:
   - component: {fileID: 1501957870}
   m_Layer: 0
   m_Name: Peter's_Tree (418)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103889,7 +104822,7 @@ GameObject:
   - component: {fileID: 1506836572}
   m_Layer: 0
   m_Name: Peter's_Tree (75)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104108,7 +105041,7 @@ GameObject:
   - component: {fileID: 1515327041}
   m_Layer: 0
   m_Name: Peter's_Tree (275)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104225,7 +105158,7 @@ GameObject:
   - component: {fileID: 1516914101}
   m_Layer: 0
   m_Name: Peter's_Tree (74)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104342,7 +105275,7 @@ GameObject:
   - component: {fileID: 1518931502}
   m_Layer: 0
   m_Name: Peter's_Tree (270)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110312,7 +111245,7 @@ GameObject:
   - component: {fileID: 1528560901}
   m_Layer: 0
   m_Name: Peter's_Tree (162)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110429,7 +111362,7 @@ GameObject:
   - component: {fileID: 1530625999}
   m_Layer: 0
   m_Name: Peter's_Tree (192)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110648,7 +111581,7 @@ GameObject:
   - component: {fileID: 1536234374}
   m_Layer: 0
   m_Name: Peter's_Tree (155)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110765,7 +111698,7 @@ GameObject:
   - component: {fileID: 1542626146}
   m_Layer: 0
   m_Name: Peter's_Tree (73)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110984,7 +111917,7 @@ GameObject:
   - component: {fileID: 1545457020}
   m_Layer: 0
   m_Name: Peter's_Tree (246)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111101,7 +112034,7 @@ GameObject:
   - component: {fileID: 1545953675}
   m_Layer: 0
   m_Name: Peter's_Tree (334)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111575,7 +112508,7 @@ GameObject:
   - component: {fileID: 1560496117}
   m_Layer: 0
   m_Name: Peter's_Tree (232)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111815,7 +112748,7 @@ GameObject:
   - component: {fileID: 1565495009}
   m_Layer: 0
   m_Name: Peter's_Tree (245)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111932,7 +112865,7 @@ GameObject:
   - component: {fileID: 1568966331}
   m_Layer: 0
   m_Name: Peter's_Tree (175)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112172,7 +113105,7 @@ GameObject:
   - component: {fileID: 1572483048}
   m_Layer: 0
   m_Name: Peter's_Tree (124)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112289,7 +113222,7 @@ GameObject:
   - component: {fileID: 1574336667}
   m_Layer: 0
   m_Name: Peter's_Tree (143)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112508,7 +113441,7 @@ GameObject:
   - component: {fileID: 1577070234}
   m_Layer: 0
   m_Name: Peter's_Tree (438)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112625,7 +113558,7 @@ GameObject:
   - component: {fileID: 1588030443}
   m_Layer: 0
   m_Name: Peter's_Tree (447)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112742,7 +113675,7 @@ GameObject:
   - component: {fileID: 1592765349}
   m_Layer: 0
   m_Name: Peter's_Tree (425)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112859,7 +113792,7 @@ GameObject:
   - component: {fileID: 1594221038}
   m_Layer: 0
   m_Name: Peter's_Tree (328)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112976,7 +113909,7 @@ GameObject:
   - component: {fileID: 1599709084}
   m_Layer: 0
   m_Name: Peter's_Tree (179)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113195,7 +114128,7 @@ GameObject:
   - component: {fileID: 1609825305}
   m_Layer: 0
   m_Name: Peter's_Tree (296)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113312,7 +114245,7 @@ GameObject:
   - component: {fileID: 1610826759}
   m_Layer: 0
   m_Name: Peter's_Tree (367)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113429,7 +114362,7 @@ GameObject:
   - component: {fileID: 1614332536}
   m_Layer: 0
   m_Name: Peter's_Tree (305)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113546,7 +114479,7 @@ GameObject:
   - component: {fileID: 1616677080}
   m_Layer: 0
   m_Name: Peter's_Tree (279)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113663,7 +114596,7 @@ GameObject:
   - component: {fileID: 1622037574}
   m_Layer: 0
   m_Name: Peter's_Tree (292)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114266,7 +115199,7 @@ GameObject:
   - component: {fileID: 1636038347}
   m_Layer: 0
   m_Name: Peter's_Tree (27)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114383,7 +115316,7 @@ GameObject:
   - component: {fileID: 1638073028}
   m_Layer: 0
   m_Name: Peter's_Tree (15)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114500,7 +115433,7 @@ GameObject:
   - component: {fileID: 1642378963}
   m_Layer: 0
   m_Name: Peter's_Tree (264)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114617,7 +115550,7 @@ GameObject:
   - component: {fileID: 1643903579}
   m_Layer: 0
   m_Name: Peter's_Tree (45)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115061,7 +115994,7 @@ GameObject:
   - component: {fileID: 1648160148}
   m_Layer: 0
   m_Name: Peter's_Tree (339)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115280,7 +116213,7 @@ GameObject:
   - component: {fileID: 1654181450}
   m_Layer: 0
   m_Name: Peter's_Tree (297)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115499,7 +116432,7 @@ GameObject:
   - component: {fileID: 1668596384}
   m_Layer: 0
   m_Name: Peter's_Tree (342)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115661,7 +116594,7 @@ GameObject:
   - component: {fileID: 1677047746}
   m_Layer: 0
   m_Name: Peter's_Tree (42)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116253,7 +117186,7 @@ GameObject:
   - component: {fileID: 1684794094}
   m_Layer: 0
   m_Name: Peter's_Tree (40)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116472,7 +117405,7 @@ GameObject:
   - component: {fileID: 1688133173}
   m_Layer: 0
   m_Name: Peter's_Tree (19)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116790,9 +117723,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1697113525}
   - component: {fileID: 1697113524}
+  - component: {fileID: 1697113526}
   m_Layer: 0
   m_Name: Peters_Peter_Pan_Hat
-  m_TagString: Untagged
+  m_TagString: RangerUpgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116862,6 +117796,32 @@ Transform:
   m_Father: {fileID: 1073010532}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1697113526
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697113523}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1698275422
 GameObject:
   m_ObjectHideFlags: 0
@@ -116875,7 +117835,7 @@ GameObject:
   - component: {fileID: 1698275424}
   m_Layer: 0
   m_Name: Peter's_Tree (240)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116992,7 +117952,7 @@ GameObject:
   - component: {fileID: 1699808963}
   m_Layer: 0
   m_Name: Peter's_Tree (28)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117109,7 +118069,7 @@ GameObject:
   - component: {fileID: 1702507428}
   m_Layer: 0
   m_Name: Peter's_Tree (393)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117349,7 +118309,7 @@ GameObject:
   - component: {fileID: 1704297779}
   m_Layer: 0
   m_Name: Peter's_Tree (411)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117466,7 +118426,7 @@ GameObject:
   - component: {fileID: 1705351091}
   m_Layer: 0
   m_Name: Peter's_Tree (60)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117583,7 +118543,7 @@ GameObject:
   - component: {fileID: 1705882386}
   m_Layer: 0
   m_Name: Peter's_Tree (97)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117802,7 +118762,7 @@ GameObject:
   - component: {fileID: 1705957500}
   m_Layer: 0
   m_Name: Peter's_Tree (233)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117919,7 +118879,7 @@ GameObject:
   - component: {fileID: 1706146524}
   m_Layer: 0
   m_Name: Peter's_Tree (32)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118017,7 +118977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706146523}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.97, y: -2.01, z: 0}
+  m_LocalPosition: {x: -22.03, y: -1.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1258237211}
@@ -118120,7 +119080,7 @@ GameObject:
   - component: {fileID: 1709204215}
   m_Layer: 0
   m_Name: Peter's_Tree (41)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118237,7 +119197,7 @@ GameObject:
   - component: {fileID: 1713003299}
   m_Layer: 0
   m_Name: Peter's_Tree (244)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118354,7 +119314,7 @@ GameObject:
   - component: {fileID: 1713533787}
   m_Layer: 0
   m_Name: Peter's_Tree (154)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118798,7 +119758,7 @@ GameObject:
   - component: {fileID: 1723708091}
   m_Layer: 0
   m_Name: Peter's_Tree (22)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119218,7 +120178,7 @@ GameObject:
   - component: {fileID: 1743638188}
   m_Layer: 0
   m_Name: Peter's_Tree (44)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119322,6 +120282,186 @@ Transform:
   m_Father: {fileID: 1258237211}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1745275343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1745275344}
+  - component: {fileID: 1745275349}
+  - component: {fileID: 1745275348}
+  - component: {fileID: 1745275347}
+  - component: {fileID: 1745275346}
+  - component: {fileID: 1745275345}
+  m_Layer: 0
+  m_Name: character_LeviBenes (5)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1745275344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745275343}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.75, y: 9.93, z: 10.716515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1465034398}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1745275345
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745275343}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a2bcb0f8789d9614c8d5d48d1290af39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &1745275346
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745275343}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.43404388, y: 0.75722146}
+      - {x: -0.50133705, y: -0.5199292}
+      - {x: -0.26345444, y: -0.77914643}
+      - {x: -0.49120522, y: -1}
+      - {x: 0.5, y: -1}
+      - {x: 0.30928993, y: -0.7741842}
+      - {x: 0.49383163, y: -0.51555645}
+      - {x: 0.4560299, y: 0.67713326}
+      - {x: 0.3627491, y: 0.7704126}
+--- !u!50 &1745275347
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745275343}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
+--- !u!114 &1745275348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745275343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17fba61727c9aa94dbb9df4e28103609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move_speed: 2
+  left_x: -15.5
+  right_x: 3
+  top_y: -4.6
+  bottom_y: -4.6
+  waitTime: 15
+  animationTime: 3
+  enemyAnimator: {fileID: 1745275345}
+--- !u!212 &1745275349
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745275343}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 001c7a18a42543145853617dcae36796, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1746731421
 GameObject:
   m_ObjectHideFlags: 0
@@ -119683,7 +120823,7 @@ GameObject:
   - component: {fileID: 1754198458}
   m_Layer: 0
   m_Name: Peter's_Tree (373)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120004,7 +121144,7 @@ GameObject:
   - component: {fileID: 1765221437}
   m_Layer: 0
   m_Name: Peter's_Tree (171)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120121,7 +121261,7 @@ GameObject:
   - component: {fileID: 1766033010}
   m_Layer: 0
   m_Name: Peter's_Tree (288)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120238,7 +121378,7 @@ GameObject:
   - component: {fileID: 1774956926}
   m_Layer: 0
   m_Name: Peter's_Tree (262)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120355,7 +121495,7 @@ GameObject:
   - component: {fileID: 1778698618}
   m_Layer: 0
   m_Name: Peter's_Tree (120)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120504,7 +121644,7 @@ GameObject:
   - component: {fileID: 1782975489}
   m_Layer: 0
   m_Name: Peter's_Tree (324)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120621,7 +121761,7 @@ GameObject:
   - component: {fileID: 1783255981}
   m_Layer: 0
   m_Name: Peter's_Tree (234)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120984,7 +122124,7 @@ GameObject:
   - component: {fileID: 1798629419}
   m_Layer: 0
   m_Name: Peter's_Tree (111)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121203,7 +122343,7 @@ GameObject:
   - component: {fileID: 1800277081}
   m_Layer: 0
   m_Name: Peter's_Tree (50)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121320,7 +122460,7 @@ GameObject:
   - component: {fileID: 1803949306}
   m_Layer: 0
   m_Name: Peter's_Tree (194)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121539,7 +122679,7 @@ GameObject:
   - component: {fileID: 1810065862}
   m_Layer: 0
   m_Name: Peter's_Tree (90)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121656,7 +122796,7 @@ GameObject:
   - component: {fileID: 1817521938}
   m_Layer: 0
   m_Name: Peter's_Tree (321)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121875,7 +123015,7 @@ GameObject:
   - component: {fileID: 1820342542}
   m_Layer: 0
   m_Name: Peter's_Tree (369)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122094,7 +123234,7 @@ GameObject:
   - component: {fileID: 1821006073}
   m_Layer: 0
   m_Name: Peter's_Tree (62)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122211,7 +123351,7 @@ GameObject:
   - component: {fileID: 1829611104}
   m_Layer: 0
   m_Name: Peter's_Tree (294)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122451,7 +123591,7 @@ GameObject:
   - component: {fileID: 1837092510}
   m_Layer: 0
   m_Name: Peter's_Tree (241)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122670,7 +123810,7 @@ GameObject:
   - component: {fileID: 1841524817}
   m_Layer: 0
   m_Name: Peter's_Tree (308)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122889,7 +124029,7 @@ GameObject:
   - component: {fileID: 1844539770}
   m_Layer: 0
   m_Name: Peter's_Tree (132)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123006,7 +124146,7 @@ GameObject:
   - component: {fileID: 1851193804}
   m_Layer: 0
   m_Name: Peter's_Tree (402)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123246,7 +124386,7 @@ GameObject:
   - component: {fileID: 1863847989}
   m_Layer: 0
   m_Name: Peter's_Tree (203)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123486,7 +124626,7 @@ GameObject:
   - component: {fileID: 1870232588}
   m_Layer: 0
   m_Name: Peter's_Tree (201)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123603,7 +124743,7 @@ GameObject:
   - component: {fileID: 1872810340}
   m_Layer: 0
   m_Name: Peter's_Tree (150)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123720,7 +124860,7 @@ GameObject:
   - component: {fileID: 1875549827}
   m_Layer: 0
   m_Name: Peter's_Tree (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124041,7 +125181,7 @@ GameObject:
   - component: {fileID: 1901905199}
   m_Layer: 0
   m_Name: Peter's_Tree (341)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124158,7 +125298,7 @@ GameObject:
   - component: {fileID: 1908571535}
   m_Layer: 0
   m_Name: Peter's_Tree (78)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124725,7 +125865,7 @@ GameObject:
   - component: {fileID: 1925291971}
   m_Layer: 0
   m_Name: Peter's_Tree (211)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124842,7 +125982,7 @@ GameObject:
   - component: {fileID: 1925903438}
   m_Layer: 0
   m_Name: Peter's_Tree (151)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124959,7 +126099,7 @@ GameObject:
   - component: {fileID: 1930427001}
   m_Layer: 0
   m_Name: Peter's_Tree (215)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125178,7 +126318,7 @@ GameObject:
   - component: {fileID: 1932957890}
   m_Layer: 0
   m_Name: Peter's_Tree (403)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125295,7 +126435,7 @@ GameObject:
   - component: {fileID: 1940263391}
   m_Layer: 0
   m_Name: Peter's_Tree (343)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125412,7 +126552,7 @@ GameObject:
   - component: {fileID: 1944076735}
   m_Layer: 0
   m_Name: Peter's_Tree (144)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125529,7 +126669,7 @@ GameObject:
   - component: {fileID: 1951659712}
   m_Layer: 0
   m_Name: Peter's_Tree (31)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125748,7 +126888,7 @@ GameObject:
   - component: {fileID: 1959283898}
   m_Layer: 0
   m_Name: Peter's_Tree (311)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125865,7 +127005,7 @@ GameObject:
   - component: {fileID: 1965463805}
   m_Layer: 0
   m_Name: Peter's_Tree (38)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125982,7 +127122,7 @@ GameObject:
   - component: {fileID: 1965645182}
   m_Layer: 0
   m_Name: Peter's_Tree (372)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126201,7 +127341,7 @@ GameObject:
   - component: {fileID: 1968404266}
   m_Layer: 0
   m_Name: Peter's_Tree (359)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126318,7 +127458,7 @@ GameObject:
   - component: {fileID: 1968972288}
   m_Layer: 0
   m_Name: Peter's_Tree (18)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126435,7 +127575,7 @@ GameObject:
   - component: {fileID: 1970675616}
   m_Layer: 0
   m_Name: Peter's_Tree (354)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126448,7 +127588,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970675614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.4, y: -1.9900007, z: 0}
+  m_LocalPosition: {x: -17.46, y: -2.2200003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1258237211}
@@ -126756,7 +127896,7 @@ GameObject:
   - component: {fileID: 1977018258}
   m_Layer: 0
   m_Name: Peter's_Tree (67)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126873,7 +128013,7 @@ GameObject:
   - component: {fileID: 1977316378}
   m_Layer: 0
   m_Name: Peter's_Tree (29)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126990,7 +128130,7 @@ GameObject:
   - component: {fileID: 1979142341}
   m_Layer: 0
   m_Name: Peter's_Tree (71)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127107,7 +128247,7 @@ GameObject:
   - component: {fileID: 1984703608}
   m_Layer: 0
   m_Name: Peter's_Tree (265)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127326,7 +128466,7 @@ GameObject:
   - component: {fileID: 1992624426}
   m_Layer: 0
   m_Name: Peter's_Tree (92)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127770,7 +128910,7 @@ GameObject:
   - component: {fileID: 2002851072}
   m_Layer: 0
   m_Name: Peter's_Tree (420)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127887,7 +129027,7 @@ GameObject:
   - component: {fileID: 2006304169}
   m_Layer: 0
   m_Name: Peter's_Tree (183)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128106,7 +129246,7 @@ GameObject:
   - component: {fileID: 2015853713}
   m_Layer: 0
   m_Name: Peter's_Tree (188)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128325,7 +129465,7 @@ GameObject:
   - component: {fileID: 2016658944}
   m_Layer: 0
   m_Name: Peter's_Tree (349)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128622,7 +129762,7 @@ GameObject:
   - component: {fileID: 2025276660}
   m_Layer: 0
   m_Name: Peter's_Tree (315)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128739,7 +129879,7 @@ GameObject:
   - component: {fileID: 2027772261}
   m_Layer: 0
   m_Name: Peter's_Tree (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128958,7 +130098,7 @@ GameObject:
   - component: {fileID: 2038120699}
   m_Layer: 0
   m_Name: Peter's_Tree (181)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129075,7 +130215,7 @@ GameObject:
   - component: {fileID: 2038582606}
   m_Layer: 0
   m_Name: Peter's_Tree (184)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129192,7 +130332,7 @@ GameObject:
   - component: {fileID: 2039546932}
   m_Layer: 0
   m_Name: Peter's_Tree (274)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129432,7 +130572,7 @@ GameObject:
   - component: {fileID: 2043471989}
   m_Layer: 0
   m_Name: Peter's_Tree (176)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129759,7 +130899,7 @@ GameObject:
   - component: {fileID: 2049130536}
   m_Layer: 0
   m_Name: Peter's_Tree (212)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130305,7 +131445,7 @@ GameObject:
   - component: {fileID: 2065203517}
   m_Layer: 0
   m_Name: Peter's_Tree (437)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130422,7 +131562,7 @@ GameObject:
   - component: {fileID: 2071124687}
   m_Layer: 0
   m_Name: Peter's_Tree (69)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130539,7 +131679,7 @@ GameObject:
   - component: {fileID: 2075391376}
   m_Layer: 0
   m_Name: Peter's_Tree (214)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130656,7 +131796,7 @@ GameObject:
   - component: {fileID: 2075496940}
   m_Layer: 0
   m_Name: Peter's_Tree (238)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131223,7 +132363,7 @@ GameObject:
   - component: {fileID: 2081156908}
   m_Layer: 0
   m_Name: Peter's_Tree (135)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131340,7 +132480,7 @@ GameObject:
   - component: {fileID: 2085709197}
   m_Layer: 0
   m_Name: Peter's_Tree (441)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131457,7 +132597,7 @@ GameObject:
   - component: {fileID: 2086199049}
   m_Layer: 0
   m_Name: Peter's_Tree (134)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131574,7 +132714,7 @@ GameObject:
   - component: {fileID: 2088415550}
   m_Layer: 0
   m_Name: Peter's_Tree (415)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131691,7 +132831,7 @@ GameObject:
   - component: {fileID: 2090291592}
   m_Layer: 0
   m_Name: Peter's_Tree (100)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131808,7 +132948,7 @@ GameObject:
   - component: {fileID: 2091227193}
   m_Layer: 0
   m_Name: Peter's_Tree (397)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132129,7 +133269,7 @@ GameObject:
   - component: {fileID: 2105278740}
   m_Layer: 0
   m_Name: Peter's_Tree (381)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132369,7 +133509,7 @@ GameObject:
   - component: {fileID: 2111316842}
   m_Layer: 0
   m_Name: Peter's_Tree (115)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132690,7 +133830,7 @@ GameObject:
   - component: {fileID: 2121660815}
   m_Layer: 0
   m_Name: Peter's_Tree (88)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133486,7 +134626,7 @@ GameObject:
   - component: {fileID: 2129779725}
   m_Layer: 0
   m_Name: Peter's_Tree (389)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133603,7 +134743,7 @@ GameObject:
   - component: {fileID: 2129939370}
   m_Layer: 0
   m_Name: Peter's_Tree (365)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133720,7 +134860,7 @@ GameObject:
   - component: {fileID: 2134343975}
   m_Layer: 0
   m_Name: Peter's_Tree (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133939,7 +135079,7 @@ GameObject:
   - component: {fileID: 2135544294}
   m_Layer: 0
   m_Name: Peter's_Tree (218)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134056,7 +135196,7 @@ GameObject:
   - component: {fileID: 2143152047}
   m_Layer: 0
   m_Name: Peter's_Tree (169)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134173,7 +135313,7 @@ GameObject:
   - component: {fileID: 2144641432}
   m_Layer: 0
   m_Name: Peter's_Tree (396)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134290,7 +135430,7 @@ GameObject:
   - component: {fileID: 2146560884}
   m_Layer: 0
   m_Name: Peter's_Tree (340)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

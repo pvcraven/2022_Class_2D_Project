@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Peter_Enemy_Script : MonoBehaviour
 {
-    // Game object that will be moving
-    //public GameObject game_object;
-
     // Generic varibales to move the enemy between two points (including diagonally)
     public int move_speed = 2;
     public float left_x = 0;
@@ -47,7 +44,6 @@ public class Peter_Enemy_Script : MonoBehaviour
             move_vertical = 0;
 
             animationTimer += Time.deltaTime;
-            Debug.Log("Time2: " + Time.deltaTime);
 
             if (animationTimer > animationTime)
             {
@@ -63,7 +59,6 @@ public class Peter_Enemy_Script : MonoBehaviour
         {
             enemyAnimator.SetBool("Moving", true);
             timer += Time.deltaTime;
-            Debug.Log("Time: " + Time.deltaTime);
             // Checking x values (to not move x axis make each = "spawn" position)
             if (transform.position.x < left_x)
             {
