@@ -27,4 +27,8 @@ public class RockThrow : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void destroy(){
+        Destroy(gameObject);
+    }
 }
