@@ -10,6 +10,7 @@ public class VampireThatThrowsRocks : MonoBehaviour
     public float bulletSpeed;
     public Character_Robbie character;
     private bool throwingRock;
+    public Transform vampire;
 
     public float GetYRotFromVec(Vector2 v1)
     {
@@ -29,8 +30,11 @@ public class VampireThatThrowsRocks : MonoBehaviour
         if(character.canMove && !throwingRock) StartCoroutine(ThrowRock());
         if(!character.canMove)
         {
-           //for children of vampire
-           //destroy
+            foreach(Transform rock in gameObject.transform)
+            {
+                RockThrow rockThrow = rock.GetComponent<RockThrow>();
+                if(rockThrow != null) rockThrow.destroy();
+            }
         }
     }
 
@@ -39,6 +43,7 @@ public class VampireThatThrowsRocks : MonoBehaviour
         throwingRock = true;
         // Create the bullet
         var bullet = Instantiate(bulletPrefab, body.position, Quaternion.identity);
+        bullet.transform.parent = vampire;
         // Get a reference to the bullet's rigid body
         var bulletbody = bullet.GetComponent<Rigidbody2D>();
         // Where is the mouse on the screen?
