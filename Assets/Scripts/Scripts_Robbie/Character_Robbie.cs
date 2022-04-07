@@ -29,6 +29,7 @@ public class Character_Robbie : MonoBehaviour
     public Animator ghostAnimator;
     private bool ghostSeen;
     public Transform ghost;
+    public GameObject ghostParticles;
     
     public GameObject scoreGO;
     public Text scoreText;
@@ -80,11 +81,16 @@ public class Character_Robbie : MonoBehaviour
             {
                 ghostAnimator.SetBool("FloatingAway", true);
                 ghostSeen = true;
+                ghostParticles.SetActive(true);
             }
 
             if(ghostSeen && ghost.position.y > -50)
             {
                 ghost.Translate(-.0275f, 0, 0);
+            }
+            else if(ghostSeen)
+            {
+                Destroy(ghost.gameObject);
             }
         }
 

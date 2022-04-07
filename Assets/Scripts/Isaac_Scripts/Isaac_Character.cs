@@ -18,6 +18,10 @@ public class Isaac_Character : MonoBehaviour
 
     public AudioSource fruitSound;
 
+    public float bulletSpeed = 5.0f;
+
+    public GameObject bulletPrefab;
+
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
@@ -30,11 +34,40 @@ public class Isaac_Character : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    public float GetYRotFromVec(Vector2 v1)
+    {
+        float _r = Mathf.Atan2(v1.y, v1.x);
+        float _d = (_r / Mathf.PI) * 180;
+
+        return _d;
+    }
+
     void Update()
     {
         // Get our axis values
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            var bullet = Instantiate(bulletPrefab, body.position, Quaternion.identity);
+
+            var bulletbody = bullet.GetComponent<Rigidbody2D>();
+
+            var mousePosition = Input.mousePosition;
+
+            Vector3 target3 = Camera.main.ScreenToWorldPoint(mousePosition);
+
+            target3.z = 0;
+
+            Vector2 direction = (target3 - transform.position).normalized;
+
+            float angle = GetYRotFromVec(direction);
+
+            bulletbody.rotation = angle;
+
+            bulletbody.velocity = direction * bulletSpeed;
+        }
     }
 
     void FixedUpdate()

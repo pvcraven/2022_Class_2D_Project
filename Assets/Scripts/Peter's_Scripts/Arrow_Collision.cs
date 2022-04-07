@@ -7,13 +7,17 @@ public class Arrow_Collision : MonoBehaviour
     Vector3 _origin;
     public float maxDistance = 50.0f;
 
+    public GameObject burstPrefab;
+    Rigidbody2D body;
+
+
     // Start is called before the first frame update
     void Start()
     {
         // Get position we started at, so we can see how far the bullet traveled.
         _origin = transform.position;
+        body = GetComponent<Rigidbody2D>();
     }
-
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,13 +27,16 @@ public class Arrow_Collision : MonoBehaviour
             // Destroy item we hit
             Destroy(collision.gameObject);
             // Cause bullet to destroy itself
-            // Put this outside the if to get deleted when hitting non-destroyable objects
+            // Put this outside the if to get deleted when hitting non-destroyable objects (it will also destroy upon hitting your character or a pickup)
             Destroy(gameObject);
+            // Create blood burst effect
+            var burst = Instantiate(burstPrefab, body.position, Quaternion.identity);
+
         }
         else if (collision.tag == "Obstacle")
         {
             // Cause bullet to destroy itself
-            // Put this outside the if to get deleted when hitting non-destroyable objects
+            // Put this outside the if to get deleted when hitting non-destroyable objects (it will also destroy upon hitting your character or a pickup)
             Destroy(gameObject);
         }
     }

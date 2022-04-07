@@ -6,12 +6,15 @@ public class BulletScript_ZachWemhoff : MonoBehaviour
 {
     Vector3 _origin;
     public float maxDistance = 8.0f;
+    public GameObject burstPrefab;
+    Rigidbody2D body;
 
     // Start is called before the first frame update
     void Start()
     {
         // Get position we started at, so we can see how far the bullet traveled.
         _origin = transform.position;
+        body = GetComponent<Rigidbody2D>();
     }
 
 
@@ -27,6 +30,7 @@ public class BulletScript_ZachWemhoff : MonoBehaviour
             // Cause bullet to destroy itself
             // Put this outside the if to get deleted when hitting non-destroyable objects
             Destroy(gameObject);
+            var burst = Instantiate(burstPrefab, body.position, Quaternion.identity);
         }
     }
 
