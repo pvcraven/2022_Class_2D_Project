@@ -8,6 +8,7 @@ public class Arrow_Collision : MonoBehaviour
     public float maxDistance = 50.0f;
 
     public GameObject burstPrefab;
+    public GameObject smashArrowPrefab;
     Rigidbody2D body;
 
 
@@ -38,6 +39,9 @@ public class Arrow_Collision : MonoBehaviour
             // Cause bullet to destroy itself
             // Put this outside the if to get deleted when hitting non-destroyable objects (it will also destroy upon hitting your character or a pickup)
             Destroy(gameObject);
+            // Create arrow smashing effect
+            var burst = Instantiate(smashArrowPrefab, body.position, Quaternion.identity);
+
         }
     }
 

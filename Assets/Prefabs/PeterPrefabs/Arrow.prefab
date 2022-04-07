@@ -151,3 +151,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 50
   burstPrefab: {fileID: 6235505834109688101, guid: c5107d5b5c282324db4b98b1082e0fdf, type: 3}
+  smashArrowPrefab: {fileID: 7276785232872615352, guid: 8ec6ef886b973a44a93f2626a52c2267, type: 3}
