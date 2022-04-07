@@ -145,3 +145,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 8
+  burstPrefab: {fileID: 6117901772417305235, guid: 3a278448f3ad36f49a53668c7ddde3d6, type: 3}
