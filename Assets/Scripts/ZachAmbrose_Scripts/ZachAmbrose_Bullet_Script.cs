@@ -8,21 +8,27 @@ public class ZachAmbrose_Bullet_Script : MonoBehaviour
     Vector3 _origin;
     public float maxDistance = 8.0f;
 
+    public GameObject burstPrefab;
+    Rigidbody2D body;
+
     // Start is called before the first frame update
     void Start()
     {
         _origin = transform.position;
+        body = GetComponent<Rigidbody2D>();
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger");
+       
         if(collision.tag == "Enemy")
         {
 
             Destroy(collision.gameObject);
-
             Destroy(gameObject);
+
+            var burst = Instantiate(burstPrefab, body.position, Quaternion.identity);
+            Debug.Log("Burst2" + burst);
         }
 
     }
