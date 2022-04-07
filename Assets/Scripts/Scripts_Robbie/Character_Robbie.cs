@@ -88,6 +88,10 @@ public class Character_Robbie : MonoBehaviour
             {
                 ghost.Translate(-.0275f, 0, 0);
             }
+            else if(ghostSeen)
+            {
+                Destroy(ghost.gameObject);
+            }
         }
 
         if(Input.GetKeyDown("space"))
