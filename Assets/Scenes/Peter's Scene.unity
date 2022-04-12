@@ -63658,6 +63658,7 @@ GameObject:
   - component: {fileID: 493684762}
   - component: {fileID: 493684763}
   - component: {fileID: 493684761}
+  - component: {fileID: 493684764}
   m_Layer: 0
   m_Name: Peter_Bluerberry_Man
   m_TagString: Untagged
@@ -63828,6 +63829,19 @@ MonoBehaviour:
   bow_child: {fileID: 191942944}
   bow_arrow: {fileID: 191942946}
   bowAnimator: {fileID: 191942947}
+--- !u!114 &493684764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493684757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700cae424f253344d9ef0ad4a48bfaf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackTimeLimit: 0.5
 --- !u!1 &494330619
 GameObject:
   m_ObjectHideFlags: 0
