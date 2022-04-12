@@ -208,7 +208,12 @@ public class Character_Robbie : MonoBehaviour
 
     IEnumerator ReadDialogue(StreamReader dialogueReader)
     {
+        //Stop the player from moving
+        body.velocity = new Vector2(0, 0);
+        animator.SetFloat("Speed X", 0);
+        animator.SetFloat("Speed Y", 0);
         canMove = false;
+
         string line;
         scoreGO.SetActive(false);
         dialogueText.gameObject.SetActive(true);
@@ -237,6 +242,10 @@ public class Character_Robbie : MonoBehaviour
 
     IEnumerator ReadDialogue(StreamReader dialogueReader, AudioSource dialogueSound, Color color, float lowPitch, float highPitch, bool interactedOnce, DialogueHolder dialogueInfo)
     {
+        //Stop the player from moving
+        body.velocity = new Vector2(0, 0);
+        animator.SetFloat("Speed X", 0);
+        animator.SetFloat("Speed Y", 0);
         canMove = false;
         string line;
         scoreGO.SetActive(false);
