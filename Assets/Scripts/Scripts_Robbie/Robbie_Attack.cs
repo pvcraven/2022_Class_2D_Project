@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Robbie_Attack : MonoBehaviour
 {
-// How frequently can we attack?
+    // How frequently can we attack?
      public float attackTimeLimit = 0.5f;
 
      // Countdown timer for attacks
@@ -14,22 +14,10 @@ public class Robbie_Attack : MonoBehaviour
      public Transform attackPos;
      // Radius of attack circle
      public float attackRange;
-
+     // What layer will the enemies be on?
+     public LayerMask enemyLayer;
      // How much damage to deal
      public int damage = 3;
-
-    //character information needed
-     public Character_Robbie character;
-     BoxCollider2D bc2d;
-
-     //information needed for boxcast
-     public float boxCastDistance;
-     public LayerMask interactable;
-
-     void Start()
-     {
-         bc2d = GetComponent<BoxCollider2D>();
-     }
 
      void Update()
      {
@@ -37,32 +25,46 @@ public class Robbie_Attack : MonoBehaviour
          if (attackCountdownTimer <= 0)
          {
              // We can attack. See if user hit space bar.
-             if(Input.GetKeyDown("j"))
-            {
-                RaycastHit2D hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.down, boxCastDistance, interactable);
-                if (!hit)
-                {
-                    hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.up, boxCastDistance, interactable);
-                }
-                if (!hit)
-                {
-                    hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.right, boxCastDistance, interactable);
-                }
-                if (!hit)
-                {
-                    hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.left, boxCastDistance, interactable);
-                }
-                if (hit && character.canMove)
-                {
-                    character.canMove = false;
+             if (Input.GetKey(KeyCode.J))
+             {
+                 Debug.Log("Attack");
+                 // Reset the countdown timer
+                 attackCountdownTimer = attackTimeLimit;
+                 // What enemies did we hit?
+                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemyLayer);
+                 // Loop through each enemy we hit
+                 for(int i=0; i < enemiesToDamage.Length; i++)
+                 {
+                     // Get the enemy script attached to this object
+                     PlantedPumpkin enemyScript = enemiesToDamage[i].GetComponent<PlantedPumpkin>();
+                     // If there is an enemy script
+                     if (enemyScript)
+                     {
+                         // Damage
+                         enemiesToDamage[i].GetComponent<PlantedPumpkin>().health -= damage;
+                         // Print health levels
+                         Debug.Log(enemiesToDamage[i].GetComponent<PlantedPumpkin>().health);
 
-                }
-            }
+                         // --- ToDo: destroy enemy here when health <= 0
+                     }
+                     else
+                     {
+                         // We hit an enemy, but there's no script attached to it.
+                         Debug.Log("Enemy Script not present");
+                     }
+                 }
+             }
          }
          else
          {
              // Attack timer needs count-down
              attackCountdownTimer -= Time.deltaTime;
          }
+     }
+     // Used to draw a circle when we are selecting the player in the scene view
+     void OnDrawGizmosSelected()
+     {
+         Gizmos.color = Color.red;
+         Gizmos.DrawWireSphere(attackPos.position, attackRange);
      }
 }
