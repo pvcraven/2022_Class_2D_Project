@@ -14,6 +14,8 @@ public class ZachAmbrose_Enemy_Script : MonoBehaviour
     public float top_y = 0;
     public float bottom_y = 0;
 
+    public int health = 6;
+
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
