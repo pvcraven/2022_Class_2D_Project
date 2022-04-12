@@ -26,6 +26,11 @@ public class Peter_Controller_Script : MonoBehaviour
     public Animator bowAnimator;
     private Vector3 right_bow_pos = new Vector3(.51f, 0f, 0f);
     private Vector3 left_bow_pos = new Vector3(-.51f, 0f, 0f);
+    
+    // For my hit box
+    public GameObject hit_box_child;
+    private Vector3 right_hit_box_pos = new Vector3(.9f, -.16f, 0f);
+    private Vector3 left_hit_box_pos = new Vector3(-.9f, -.16f, 0f);
 
     // Character animation variables
     private SpriteRenderer spriteRenderer;
@@ -67,18 +72,28 @@ public class Peter_Controller_Script : MonoBehaviour
             vertical *= moveLimiter;
         }
 
+        // Fliping objects when moving side to side
         if (horizontal > 0.1)
         {
-
             spriteRenderer.flipX = true;
+
+            // Moving and fliping bow
             bow_arrow.flipX = false;
             bow_child.transform.position = gameObject.transform.position + right_bow_pos;
+
+            //Moving meelee hit box
+            hit_box_child.transform.position = gameObject.transform.position + right_hit_box_pos;
         }
         if (horizontal < -0.1)
         {
             spriteRenderer.flipX = false;
+
+            // Moving and flipping bow
             bow_arrow.flipX = true;
             bow_child.transform.position = gameObject.transform.position + left_bow_pos;
+
+            //Moving meelee hit box
+            hit_box_child.transform.position = gameObject.transform.position + left_hit_box_pos;
         }
 
         // Set player velocity
