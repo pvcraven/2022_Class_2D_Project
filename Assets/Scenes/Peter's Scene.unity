@@ -12829,7 +12829,7 @@ GameObject:
   - component: {fileID: 301035387}
   - component: {fileID: 301035386}
   - component: {fileID: 301035385}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: character_LeviBenes (9)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -12941,6 +12941,7 @@ MonoBehaviour:
   right_x: 20
   top_y: -4.6
   bottom_y: -4.6
+  health: 2
   waitTime: 15
   animationTime: 3
   enemyAnimator: {fileID: 301035385}
@@ -61813,7 +61814,7 @@ GameObject:
   - component: {fileID: 452159680}
   - component: {fileID: 452159679}
   - component: {fileID: 452159678}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: character_LeviBenes (7)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -61925,6 +61926,7 @@ MonoBehaviour:
   right_x: 0.25
   top_y: -4.6
   bottom_y: -4.6
+  health: 2
   waitTime: 0
   animationTime: 3e+18
   enemyAnimator: {fileID: 452159678}
@@ -63730,6 +63732,7 @@ Transform:
   m_Children:
   - {fileID: 1707406450}
   - {fileID: 191942945}
+  - {fileID: 1126524771}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63829,6 +63832,7 @@ MonoBehaviour:
   bow_child: {fileID: 191942944}
   bow_arrow: {fileID: 191942946}
   bowAnimator: {fileID: 191942947}
+  hit_box_child: {fileID: 1126524770}
 --- !u!114 &493684764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63842,6 +63846,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackTimeLimit: 0.5
+  attackPos: {fileID: 1126524771}
+  attackRange: 0.75
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  damage: 1
 --- !u!1 &494330619
 GameObject:
   m_ObjectHideFlags: 0
@@ -64630,7 +64640,7 @@ GameObject:
   - component: {fileID: 504795459}
   - component: {fileID: 504795458}
   - component: {fileID: 504795457}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: character_LeviBenes (6)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -64742,6 +64752,7 @@ MonoBehaviour:
   right_x: 0.25
   top_y: -4.6
   bottom_y: -4.6
+  health: 2
   waitTime: 0
   animationTime: 3e+18
   enemyAnimator: {fileID: 504795457}
@@ -69513,7 +69524,7 @@ GameObject:
   - component: {fileID: 634649725}
   - component: {fileID: 634649724}
   - component: {fileID: 634649723}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: character_LeviBenes (4)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -69625,6 +69636,7 @@ MonoBehaviour:
   right_x: 0.25
   top_y: -4.6
   bottom_y: -4.6
+  health: 2
   waitTime: 15
   animationTime: 3
   enemyAnimator: {fileID: 634649723}
@@ -81548,7 +81560,7 @@ GameObject:
   - component: {fileID: 953163930}
   - component: {fileID: 953163931}
   - component: {fileID: 953163932}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: character_LeviBenes
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -81637,6 +81649,7 @@ MonoBehaviour:
   right_x: 21
   top_y: -4.6
   bottom_y: -4.6
+  health: 2
   waitTime: 15
   animationTime: 3
   enemyAnimator: {fileID: 953163932}
@@ -88924,6 +88937,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1126524770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126524771}
+  m_Layer: 0
+  m_Name: HitBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1126524771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126524770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9, y: -0.16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 493684759}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1126829283
 GameObject:
   m_ObjectHideFlags: 0
@@ -95179,7 +95222,7 @@ GameObject:
   - component: {fileID: 1263728678}
   - component: {fileID: 1263728677}
   - component: {fileID: 1263728676}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: character_LeviBenes (8)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -95291,6 +95334,7 @@ MonoBehaviour:
   right_x: -13
   top_y: 16
   bottom_y: 15
+  health: 2
   waitTime: 0
   animationTime: 3e+18
   enemyAnimator: {fileID: 1263728676}
@@ -106453,7 +106497,7 @@ GameObject:
   - component: {fileID: 1495825819}
   - component: {fileID: 1495825818}
   - component: {fileID: 1495825817}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: character_LeviBenes (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -106565,6 +106609,7 @@ MonoBehaviour:
   right_x: 22.96
   top_y: 16
   bottom_y: 1.5
+  health: 2
   waitTime: 7.5
   animationTime: 3
   enemyAnimator: {fileID: 1495825817}
@@ -117269,7 +117314,7 @@ GameObject:
   - component: {fileID: 1622260787}
   - component: {fileID: 1622260786}
   - component: {fileID: 1622260785}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: character_LeviBenes (3)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -117381,6 +117426,7 @@ MonoBehaviour:
   right_x: 22.9
   top_y: 16
   bottom_y: 1.5
+  health: 2
   waitTime: 12.5
   animationTime: 3
   enemyAnimator: {fileID: 1622260785}
@@ -122939,7 +122985,7 @@ GameObject:
   - component: {fileID: 1745275347}
   - component: {fileID: 1745275346}
   - component: {fileID: 1745275345}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: character_LeviBenes (5)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -123051,6 +123097,7 @@ MonoBehaviour:
   right_x: 3
   top_y: -4.6
   bottom_y: -4.6
+  health: 2
   waitTime: 15
   animationTime: 3
   enemyAnimator: {fileID: 1745275345}
@@ -132472,7 +132519,7 @@ GameObject:
   - component: {fileID: 2024780102}
   - component: {fileID: 2024780101}
   - component: {fileID: 2024780100}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: character_LeviBenes (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -132584,6 +132631,7 @@ MonoBehaviour:
   right_x: 22.9
   top_y: 16
   bottom_y: 1.5
+  health: 2
   waitTime: 7.5
   animationTime: 3
   enemyAnimator: {fileID: 2024780100}

@@ -11,6 +11,9 @@ public class Peter_Enemy_Script : MonoBehaviour
     public float top_y = 0;
     public float bottom_y = 0;
 
+    // To keep track of Health
+    public int health = 2;
+
     int move_horizontal = 1;
     int move_vertical = 1;
 
@@ -78,6 +81,12 @@ public class Peter_Enemy_Script : MonoBehaviour
             {
                 move_vertical = 1;
             }
+        }
+
+        // Killing enemy if hp <= 0
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
