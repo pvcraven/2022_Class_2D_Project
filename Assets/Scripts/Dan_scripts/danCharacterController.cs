@@ -49,7 +49,7 @@ public class danCharacterController : MonoBehaviour
             // Get the body of the bullet
             var bulletbody = bullet.GetComponent<Rigidbody2D>();
             // Move the bullet to the right
-            bulletbody.velocity = new Vector2(4, 0);
+            bulletbody.velocity = new Vector2(0, 0);
         }
     }
 
