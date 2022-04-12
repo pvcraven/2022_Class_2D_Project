@@ -7,6 +7,8 @@ public class LeviNPCMove : MonoBehaviour
 {
     Rigidbody2D npcrb;
 
+    public int health = 5;
+
     public float moveSpeed;
     public bool isWalking;
 
@@ -75,6 +77,10 @@ public class LeviNPCMove : MonoBehaviour
             {
                 ChooseDirection();
             }
+        }
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 

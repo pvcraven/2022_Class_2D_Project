@@ -979,6 +979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee096777480ecd44a0ce0f26d4e177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
   moveSpeed: 2
   isWalking: 0
   walkTime: 1
@@ -5330,6 +5331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee096777480ecd44a0ce0f26d4e177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
   moveSpeed: 2
   isWalking: 0
   walkTime: 1
@@ -60101,6 +60103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee096777480ecd44a0ce0f26d4e177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
   moveSpeed: 2
   isWalking: 0
   walkTime: 1
@@ -60915,6 +60918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee096777480ecd44a0ce0f26d4e177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
   moveSpeed: 2
   isWalking: 0
   walkTime: 1
@@ -61260,6 +61264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee096777480ecd44a0ce0f26d4e177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
   moveSpeed: 2
   isWalking: 0
   walkTime: 1
@@ -63020,6 +63025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee096777480ecd44a0ce0f26d4e177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
   moveSpeed: 2
   isWalking: 0
   walkTime: 1
@@ -64501,6 +64507,7 @@ GameObject:
   - component: {fileID: 1060179552}
   - component: {fileID: 1060179551}
   - component: {fileID: 1060179550}
+  - component: {fileID: 1060179553}
   m_Layer: 0
   m_Name: LeviKnight16Idle_0
   m_TagString: Untagged
@@ -64660,6 +64667,28 @@ MonoBehaviour:
   sound: {fileID: 0}
   increaseScoreSound: {fileID: 2071544685}
   decreaseScoreSound: {fileID: 1252328713}
+--- !u!114 &1060179553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060179546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a51e566b227b643bdabce659cd1f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 0.5
+  attackPos: {fileID: 1154995190}
+  attackRange: 1
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  damage: 3
+  weaponOffset: {x: 0, y: 0}
+  weaponRotation: 135
+  swingSpeed: 10
 --- !u!1 &1090429865
 GameObject:
   m_ObjectHideFlags: 0
@@ -90856,6 +90885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee096777480ecd44a0ce0f26d4e177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
   moveSpeed: 2
   isWalking: 0
   walkTime: 1
@@ -94754,6 +94784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee096777480ecd44a0ce0f26d4e177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
   moveSpeed: 2
   isWalking: 0
   walkTime: 1
@@ -98799,6 +98830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee096777480ecd44a0ce0f26d4e177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
   moveSpeed: 2
   isWalking: 0
   walkTime: 1
