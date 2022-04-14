@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneSammy.unity
     guid: a1bcc1c344c3e7644bd11c5481c2b81d
   - enabled: 1
+    path: Assets/Scenes/SceneSammytwo.unity
+    guid: 87ae5bc79b5e347488d8128f147c5434
+  - enabled: 1
     path: Assets/Scenes/ZachAmbrose_Scene.unity
     guid: 1d78477bf39fdb54f9d7b75053c3d6ea
   - enabled: 1
