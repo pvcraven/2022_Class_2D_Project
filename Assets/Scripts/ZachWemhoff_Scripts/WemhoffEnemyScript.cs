@@ -5,7 +5,6 @@ using UnityEngine;
 public class WemhoffEnemyScript : MonoBehaviour
 {
     public int health;
-    public int speed;
 
     private Animator anim;
 
@@ -22,8 +21,6 @@ public class WemhoffEnemyScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
     }
 
     public void TakeDamage(int damage)
