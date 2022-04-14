@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Peter_Controller_Script : MonoBehaviour
@@ -20,12 +22,24 @@ public class Peter_Controller_Script : MonoBehaviour
     public AudioSource positive_pickup_audio;
     public AudioSource negative_pickup_audio;
 
+    // Text Instruction Variables
+    public Text dialogueText;
+    public string sword_instruction_path;
+    public string bow_instruction_path;
+
+    // For my sword
+    public GameObject sword_child;
+    public SpriteRenderer sword_sprite;
+    private Vector3 right_sword_pos = new Vector3(.55f, 0f, 0f);
+    private Vector3 left_sword_pos = new Vector3(-.55f, 0f, 0f);
+
     // For my bow and arrow animation
     public GameObject bow_child;
     public SpriteRenderer bow_arrow;
     public Animator bowAnimator;
     private Vector3 right_bow_pos = new Vector3(.51f, 0f, 0f);
     private Vector3 left_bow_pos = new Vector3(-.51f, 0f, 0f);
+    private bool ranger_upgrade = false;
     
     // For my hit box
     public GameObject hit_box_child;
@@ -40,6 +54,9 @@ public class Peter_Controller_Script : MonoBehaviour
     {
         // Making the bow start "inactive"
         bow_child.SetActive(false);
+
+        // Playing the text intro
+        StartCoroutine(ReadInstructions(new StreamReader(sword_instruction_path)));
 
         // Get the rigid body component for the player character.
         // (required to have one)
@@ -57,7 +74,18 @@ public class Peter_Controller_Script : MonoBehaviour
         // Dealing with firing my bow
         if (Input.GetKeyDown("space"))
         {
+            // Set bow child to true if ranger upgrade and sword to false
+            if(ranger_upgrade)
+            {
+                bow_child.SetActive(true);
+                sword_child.SetActive(false);
+            }
             bowAnimator.SetBool("FireKey", true);
+        }
+        if (Input.GetKeyDown("x"))
+        {
+            bow_child.SetActive(false);
+            sword_child.SetActive(true);
         }
     }
 
@@ -83,6 +111,9 @@ public class Peter_Controller_Script : MonoBehaviour
 
             //Moving meelee hit box
             hit_box_child.transform.position = gameObject.transform.position + right_hit_box_pos;
+            sword_child.transform.position = gameObject.transform.position + right_sword_pos;
+            sword_child.transform.rotation = Quaternion.Euler(0f, 0f, -30f);
+            sword_sprite.flipX = false;
         }
         if (horizontal < -0.1)
         {
@@ -94,6 +125,9 @@ public class Peter_Controller_Script : MonoBehaviour
 
             //Moving meelee hit box
             hit_box_child.transform.position = gameObject.transform.position + left_hit_box_pos;
+            sword_child.transform.position = gameObject.transform.position + left_sword_pos;
+            sword_child.transform.rotation = Quaternion.Euler(0f, 0f, 30f);
+            sword_sprite.flipX = true;
         }
 
         // Set player velocity
@@ -141,7 +175,7 @@ public class Peter_Controller_Script : MonoBehaviour
         // Dispaly our score
         GUIStyle guiStyle = new GUIStyle(GUI.skin.label);
         guiStyle.fontSize = 24; //modify the font height
-        GUI.Label(new Rect(10, 10, 100, 50), "Score: " + score, guiStyle);
+        GUI.Label(new Rect(10, 20, 100, 50), "Score: " + score, guiStyle);
     }
 
     // Handeling enemy collisions
@@ -158,8 +192,37 @@ public class Peter_Controller_Script : MonoBehaviour
         if (col.gameObject.tag.Equals("RangerUpgrade"))
         {
             bow_child.SetActive(true);
+            sword_child.SetActive(false);
             Destroy(col.gameObject);
+            ranger_upgrade = true;
+            // Playing the bow instructions
+            StartCoroutine(ReadInstructions(new StreamReader(bow_instruction_path)));
         }
     }
-    
+
+    IEnumerator ReadInstructions(StreamReader dialogueReader)
+    {
+        // This code is adapted from Robbie's code
+
+        string line;
+        dialogueText.gameObject.SetActive(true);
+
+        while ((line = dialogueReader.ReadLine()) != " ")
+        {
+            dialogueText.text = line;
+            yield return new WaitForSeconds(.5f);
+            while ((line = dialogueReader.ReadLine()) != "")
+            {
+                dialogueText.text = line;
+                yield return new WaitForSeconds(.5f);
+            }
+        }
+
+        yield return new WaitForSeconds(1f);
+
+        // Close the reader and the coroutine
+        dialogueReader.Close();
+        StopCoroutine(ReadInstructions(dialogueReader));
+    }
+
 }

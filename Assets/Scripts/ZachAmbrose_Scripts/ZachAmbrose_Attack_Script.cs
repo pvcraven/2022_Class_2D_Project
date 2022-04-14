@@ -41,8 +41,8 @@ public class ZachAmbrose_Attack_Script : MonoBehaviour
                     {
                         // Deal Damage
                         enemiesToDamage[i].GetComponent<ZachAmbrose_Enemy_Script>().health -= damage;
-                    
                         Debug.Log(enemiesToDamage[i].GetComponent<ZachAmbrose_Enemy_Script>().health);
+
                     }
                     else
                     {
