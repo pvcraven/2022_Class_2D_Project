@@ -8,6 +8,7 @@ public class movingNPC : MonoBehaviour
     
     public float magnitude = 4f;
     public float waitTime = 3f;
+    public int health = 12;
 
     private float idleTimer = 0f;
     private float movingTimer = 0f;

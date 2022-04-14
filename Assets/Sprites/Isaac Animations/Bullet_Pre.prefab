@@ -144,4 +144,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab63121529c3d9841bd3be34921058c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 8
+  maxDistance: 4
+  burstPrefab: {fileID: 7177115668783762144, guid: fa9529816a483c9418d46cd2abe4280c, type: 3}
