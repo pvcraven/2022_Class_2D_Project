@@ -13,19 +13,24 @@ public class PlantedPumpkin : MonoBehaviour
 
     public int scoreHandOff;
 
+    public Animator pumpkinAnimator;
+
     // Update is called once per frame
     void Update()
     {
         if(health <= 0)
         {
             character.score += scoreHandOff;
+            StartCoroutine(character.TurnOnScoreTemporarily());
             Destroy(gameObject);
         }
     }
 
     public IEnumerator ShakePumpkin()
     {
-        yield return new WaitForSeconds(1f);
+        pumpkinAnimator.SetBool("Shaking", true);
+        yield return new WaitForSeconds(.4f);
+        pumpkinAnimator.SetBool("Shaking", false);
         StopCoroutine(ShakePumpkin());
     }
 }

@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9a2b500ca930cf74cbf369421c878f80, type: 3}
+  m_Sprite: {fileID: -8535103375665007275, guid: 8ef7422e605a9fc4f96e5e21d32069ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 697f325f968a643479c423a32abd859a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 0}
   health: 3
   pumpkinPrefab: {fileID: 5838206698868900641, guid: 10dcbcc572263a440a5d6fe561797c5e, type: 3}
   body: {fileID: 4711715690629767033}

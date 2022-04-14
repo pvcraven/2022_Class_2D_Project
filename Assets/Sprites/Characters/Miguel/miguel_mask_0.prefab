@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 304370680789575514}
   - component: {fileID: 1172980287585142675}
   - component: {fileID: 7608308839233736553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: miguel_mask_0
   m_TagString: Destroyable
   m_Icon: {fileID: 0}
@@ -155,3 +155,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnitude: 4
   waitTime: 3
+  health: 12
