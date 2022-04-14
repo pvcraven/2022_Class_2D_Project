@@ -36,19 +36,19 @@ public class miguelAttack : MonoBehaviour
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     // Get the enemy script attached to this object
-                    MiguelEnemyScript enemyScript = enemiesToDamage[i].GetComponent<MiguelEnemyScript>();
+                    movingNPC enemyScript = enemiesToDamage[i].GetComponent<movingNPC>();
                     // If there is an enemy script
                     if (enemyScript)
                     {
                         // Damage
-                        enemiesToDamage[i].GetComponent<MiguelEnemyScript>().health -= damage;
+                        enemiesToDamage[i].GetComponent<movingNPC>().health -= damage;
                         // Print health levels
-                        Debug.Log(enemiesToDamage[i].GetComponent<MiguelEnemyScript>().health);
+                        Debug.Log(enemiesToDamage[i].GetComponent<movingNPC>().health);
 
                         // --- ToDo: destroy enemy here when health <= 0
-                        if (enemiesToDamage[i].GetComponent<MiguelEnemyScript>().health <= 0)
+                        if (enemiesToDamage[i].GetComponent<movingNPC>().health <= 0)
                         {
-                            Destroy(enemiesToDamage[i]);
+                            Destroy(enemiesToDamage[i].gameObject);
                         }
                     }
                     else
