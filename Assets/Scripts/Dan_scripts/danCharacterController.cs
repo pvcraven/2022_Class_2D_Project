@@ -25,6 +25,8 @@ public class danCharacterController : MonoBehaviour
 
     public GameObject bulletPrefab;
 
+    public float bulletSpeed = 0f;
+
     void Start()
     {
         // Get the rigid body component for the player character.
@@ -35,21 +37,44 @@ public class danCharacterController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    // Get the angle of a vector
+    public float GetYRotFromVec(Vector2 v1)
+    {
+        float _r = Mathf.Atan2(v1.y, v1.x);
+        float _d = (_r / Mathf.PI) * 180;
+
+        return _d;
+    }
+
     void Update()
     {
         // Get our axis values
-        horizontal = Input.GetAxisRaw("Horizontal"); 
+        horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
-        // Mouse pressed?
+        // Has the mouse been pressed?
         if (Input.GetMouseButtonDown(0))
         {
-            // Make a bullet
+            // -- Fire a bullet
+
+            // Create the bullet
             var bullet = Instantiate(bulletPrefab, body.position, Quaternion.identity);
-            // Get the body of the bullet
+            // Get a reference to the bullet's rigid body
             var bulletbody = bullet.GetComponent<Rigidbody2D>();
-            // Move the bullet to the right
-            bulletbody.velocity = new Vector2(0, 0);
+            // Where is the mouse on the screen?
+            var mousePosition = Input.mousePosition;
+            // Where is the mouse in the world?
+            Vector3 target3 = Camera.main.ScreenToWorldPoint(mousePosition);
+            // Set the z value of this vector 3
+            target3.z = 0;
+            // What is the normalized vector from the player to the mouse?
+            Vector2 direction = (target3 - transform.position).normalized;
+            // What is the angle in degrees?
+            float angle = GetYRotFromVec(direction);
+            // Rotate the bullet
+            bulletbody.rotation = angle;
+            // Give the bullet speed
+            bulletbody.velocity = direction * bulletSpeed;
         }
     }
 
