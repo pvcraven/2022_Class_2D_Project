@@ -10,6 +10,9 @@ public class Peter_Attack_Script : MonoBehaviour
     // Countdown timer for attacks
     private float attackCountdownTimer = 0;
 
+    // Blood Burst Prefab
+    public GameObject burstPrefab;
+
     // An empty parented that says where to attack
     public Transform attackPos;
     // Radius of attack circle
@@ -25,7 +28,7 @@ public class Peter_Attack_Script : MonoBehaviour
         if (attackCountdownTimer <= 0)
         {
             // We can attack. See if user hit space bar.
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.X))
             {
                 Debug.Log("Attack");
                 // Reset the countdown timer
@@ -44,6 +47,7 @@ public class Peter_Attack_Script : MonoBehaviour
                         enemyScript.health -= damage;
                         // Print health levels
                         Debug.Log(enemyScript.health);
+                        var burst = Instantiate(burstPrefab, attackPos.position, Quaternion.identity);
                     }
                     else
                     {
