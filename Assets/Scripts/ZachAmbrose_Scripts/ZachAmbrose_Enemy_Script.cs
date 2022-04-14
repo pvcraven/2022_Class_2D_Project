@@ -28,6 +28,13 @@ public class ZachAmbrose_Enemy_Script : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
+    void Update()
+    {
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void FixedUpdate()
     {

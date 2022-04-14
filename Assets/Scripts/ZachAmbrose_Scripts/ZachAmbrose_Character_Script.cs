@@ -92,14 +92,16 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
             horizontal *= moveLimiter;
             vertical *= moveLimiter;
         }
-        
-        if (horizontal > 0.1)
-            spriteRenderer.flipX = false;
-        
-        else if (horizontal < -0.1)
-            spriteRenderer.flipX = true;
-        
 
+        if (horizontal > 0.1)
+        {
+            spriteRenderer.flipX = false;
+        }
+
+        else if (horizontal < -0.1)
+        {
+            spriteRenderer.flipX = true;
+        }
         // Set player velocity
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
         animator.SetFloat("HorizontalSpeed", Mathf.Abs(horizontal));

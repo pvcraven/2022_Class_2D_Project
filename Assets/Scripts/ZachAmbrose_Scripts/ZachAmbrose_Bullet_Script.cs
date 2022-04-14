@@ -26,9 +26,8 @@ public class ZachAmbrose_Bullet_Script : MonoBehaviour
 
             Destroy(collision.gameObject);
             Destroy(gameObject);
-
             var burst = Instantiate(burstPrefab, body.position, Quaternion.identity);
-            Debug.Log("Burst2" + burst);
+
         }
 
     }
