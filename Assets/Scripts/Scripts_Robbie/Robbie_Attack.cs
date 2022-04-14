@@ -19,38 +19,49 @@ public class Robbie_Attack : MonoBehaviour
      // How much damage to deal
      public int damage = 3;
 
+     public BoxCollider2D bc2d;
+     public float boxCastDistance;
+     bool canMove;
+
      void Update()
      {
+
+         canMove = gameObject.GetComponent<Character_Robbie>().canMove;
+
          // See if we can attack, via timer.
          if (attackCountdownTimer <= 0)
          {
              // We can attack. See if user hit space bar.
              if (Input.GetKey(KeyCode.J))
              {
-                 Debug.Log("Attack");
                  // Reset the countdown timer
                  attackCountdownTimer = attackTimeLimit;
                  // What enemies did we hit?
-                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemyLayer);
+                RaycastHit2D hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.down, boxCastDistance, enemyLayer);
+
+                if (!hit)
+                {
+                    hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.up, boxCastDistance, enemyLayer);
+                }
+                if (!hit)
+                {
+                    hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.right, boxCastDistance, enemyLayer);
+                }
+                if (!hit)
+                {
+                    hit = Physics2D.BoxCast(bc2d.bounds.center, bc2d.bounds.size, 0f, Vector2.left, boxCastDistance, enemyLayer);
+                }
+                if (hit && canMove)
+                {
                  // Loop through each enemy we hit
-                 for(int i=0; i < enemiesToDamage.Length; i++)
-                 {
                      // Get the enemy script attached to this object
-                     PlantedPumpkin enemyScript = enemiesToDamage[i].GetComponent<PlantedPumpkin>();
+                     PlantedPumpkin enemyScript = hit.transform.gameObject.GetComponent<PlantedPumpkin>();
                      // If there is an enemy script
                      if (enemyScript)
                      {
                          // Damage
-                         enemiesToDamage[i].GetComponent<PlantedPumpkin>().health -= damage;
-                         // Print health levels
-                         Debug.Log(enemiesToDamage[i].GetComponent<PlantedPumpkin>().health);
-
-                         // --- ToDo: destroy enemy here when health <= 0
-                     }
-                     else
-                     {
-                         // We hit an enemy, but there's no script attached to it.
-                         Debug.Log("Enemy Script not present");
+                         if(enemyScript.health > 1) StartCoroutine(enemyScript.ShakePumpkin());
+                         enemyScript.health -= damage;
                      }
                  }
              }
