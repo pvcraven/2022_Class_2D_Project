@@ -10,6 +10,8 @@ public class Bullet_Isaac : MonoBehaviour
     public GameObject burstPrefab;
     Rigidbody2D body;
 
+    private float delay = 4.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,7 @@ public class Bullet_Isaac : MonoBehaviour
             Destroy(collision.gameObject);
             var burst = Instantiate(burstPrefab, body.position, Quaternion.identity);
             Destroy(gameObject);
+            Destroy(burst.gameObject, delay);
         }
     }
 
