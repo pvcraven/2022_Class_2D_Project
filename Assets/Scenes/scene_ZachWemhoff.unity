@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &5513672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5513673}
+  m_Layer: 0
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5513673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5513672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.43, y: 0.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1968149262}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &19679892
 GameObject:
   m_ObjectHideFlags: 0
@@ -10800,7 +10830,8 @@ GameObject:
   - component: {fileID: 670162699}
   - component: {fileID: 670162700}
   - component: {fileID: 670162698}
-  m_Layer: 0
+  - component: {fileID: 670162701}
+  m_Layer: 7
   m_Name: NPC_Idle_ZachWemhoff_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10943,6 +10974,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &670162701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670162694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fe7d1e3623bdd449b6e5ca0f1b1b18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 6
 --- !u!1 &691653220
 GameObject:
   m_ObjectHideFlags: 0
@@ -38512,6 +38556,7 @@ GameObject:
   - component: {fileID: 1968149259}
   - component: {fileID: 1968149258}
   - component: {fileID: 1968149263}
+  - component: {fileID: 1968149264}
   m_Layer: 0
   m_Name: ZachWemhoff_character_idle_front_0
   m_TagString: Player
@@ -38648,6 +38693,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2019788495}
+  - {fileID: 5513673}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38668,6 +38714,26 @@ MonoBehaviour:
   coinSound: {fileID: 1100938554}
   negativeSound: {fileID: 975370607}
   bulletPrefab: {fileID: 4606539909771325837, guid: fb8ba198eccf382489d29a9b80c55ed1, type: 3}
+--- !u!114 &1968149264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968149257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c86e0cfd372dab14898d09e6b7e33d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackTimeLimit: 0.5
+  attackPos: {fileID: 5513673}
+  attackRange: 1
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  damage: 3
+  playerAnim: {fileID: 1968149260}
 --- !u!1 &2019788492
 GameObject:
   m_ObjectHideFlags: 0
