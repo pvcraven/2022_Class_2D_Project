@@ -22,6 +22,7 @@ public class PlantedPumpkin : MonoBehaviour
         {
             character.score += scoreHandOff;
             StartCoroutine(character.TurnOnScoreTemporarily());
+            character.scoreText.text = "Pumpkin Points: " + character.score;
             Destroy(gameObject);
         }
     }
