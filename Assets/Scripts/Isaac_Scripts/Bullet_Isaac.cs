@@ -7,9 +7,13 @@ public class Bullet_Isaac : MonoBehaviour
     Vector3 _origin;
     public float maxDistance = 8.0f;
 
+    public GameObject burstPrefab;
+    Rigidbody2D body;
+
     // Start is called before the first frame update
     void Start()
     {
+        body = GetComponent<Rigidbody2D>();
         _origin = transform.position;
         Debug.Log("Is Working");
     }
@@ -21,6 +25,7 @@ public class Bullet_Isaac : MonoBehaviour
         {
             Debug.Log("Destroyable");
             Destroy(collision.gameObject);
+            var burst = Instantiate(burstPrefab, body.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
