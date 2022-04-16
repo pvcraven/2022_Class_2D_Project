@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8702103235254946049}
   - component: {fileID: 8702103235254946051}
   - component: {fileID: 4711715690629767033}
+  - component: {fileID: 237089416}
   m_Layer: 7
   m_Name: Ingrained_Pumpkin_Robbie
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8702103235254946063}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.044858, y: 15.418272, z: 12.837222}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -102,6 +103,7 @@ MonoBehaviour:
   pumpkinPrefab: {fileID: 5838206698868900641, guid: 10dcbcc572263a440a5d6fe561797c5e, type: 3}
   body: {fileID: 4711715690629767033}
   scoreHandOff: 3
+  pumpkinAnimator: {fileID: 237089416}
 --- !u!61 &8702103235254946051
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -148,4 +150,23 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
+--- !u!95 &237089416
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8702103235254946063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 17b31b55d41dbc04688e79c2ccbf14d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
