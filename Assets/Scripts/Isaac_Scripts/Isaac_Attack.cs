@@ -22,6 +22,13 @@ public class Isaac_Attack : MonoBehaviour
     // How much damage to deal
     public int damage = 3;
 
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     void Update()
     {
         // See if we can attack, via timer.
@@ -31,6 +38,8 @@ public class Isaac_Attack : MonoBehaviour
             if (Input.GetKey(KeyCode.Space))
             {
                 Debug.Log("Attack");
+                animator.SetTrigger("Attack");
+
                 // Reset the countdown timer
                 attackCountdownTimer = attackTimeLimit;
                 // What enemies did we hit?
@@ -52,11 +61,13 @@ public class Isaac_Attack : MonoBehaviour
                         Debug.Log("Hit enemy");
 
                         // --- ToDo: destroy enemy here when health <= 0
+                        animator.SetTrigger("Over");
                     }
                     else
                     {
                         // We hit an enemy, but there's no script attached to it.
                         Debug.Log("Enemy Script not present");
+                        animator.SetTrigger("Over");
                     }
                 }
             }
@@ -65,6 +76,7 @@ public class Isaac_Attack : MonoBehaviour
         {
             // Attack timer needs count-down
             attackCountdownTimer -= Time.deltaTime;
+            animator.SetTrigger("Over");
         }
     }
     // Used to draw a circle when we are selecting the player in the scene view
