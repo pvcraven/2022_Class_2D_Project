@@ -5,7 +5,7 @@ using UnityEngine;
 public class miguelAttack : MonoBehaviour
 {
     // How frequently can we attack?
-    public float attackTimeLimit = 0.5f;
+    private float attackTimeLimit = 0.8f;
 
     // Countdown timer for attacks
     private float attackCountdownTimer = 0;
@@ -19,6 +19,13 @@ public class miguelAttack : MonoBehaviour
     // How much damage to deal
     public int damage = 3;
 
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     void Update()
     {
         // See if we can attack, via timer.
@@ -27,6 +34,7 @@ public class miguelAttack : MonoBehaviour
             // We can attack. See if user hit space bar.
             if (Input.GetKey(KeyCode.Space))
             {
+                animator.SetInteger("Attacking", 1);
                 Debug.Log("Attack");
                 // Reset the countdown timer
                 attackCountdownTimer = attackTimeLimit;
@@ -64,6 +72,12 @@ public class miguelAttack : MonoBehaviour
             // Attack timer needs count-down
             attackCountdownTimer -= Time.deltaTime;
         }
+
+        if (attackCountdownTimer <= 0.1)
+        {
+            animator.SetInteger("Attacking", 0);
+        }
+
     }
     // Used to draw a circle when we are selecting the player in the scene view
     void OnDrawGizmosSelected()
