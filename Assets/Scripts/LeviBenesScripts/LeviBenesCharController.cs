@@ -15,6 +15,8 @@ public class LeviBenesCharController : MonoBehaviour
     float moveLimiter = 0.7f;
     public float runSpeed = 5.0f;
 
+    public ParticleSystem dust;
+
     // Bullet Variables
     public GameObject bulletPrefab;
     public float bulletSpeed;
@@ -64,6 +66,9 @@ public class LeviBenesCharController : MonoBehaviour
             bulletbody.rotation = angle;
             bulletbody.velocity = direction * bulletSpeed;
         }
+
+        // If WASD is pressed, create dust particles
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)) dust.Play();
     }
 
     void FixedUpdate()
@@ -75,16 +80,20 @@ public class LeviBenesCharController : MonoBehaviour
             // limit movement speed diagonally, so you move at 70% speed
             horizontal *= moveLimiter;
             vertical *= moveLimiter;
+            
         }
 
         if (horizontal > 0.1)
         {
             //spriteRenderer.flipX = false;
             transform.localScale = new Vector3(1, 1, 1);
+            
+            
         } else if (horizontal < -0.1)
         {
             //spriteRenderer.flipX = true;
             transform.localScale = new Vector3(-1,1,1);
+            
         }
 
         // Set player velocity
