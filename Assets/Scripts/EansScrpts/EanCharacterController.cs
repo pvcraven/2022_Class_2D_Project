@@ -13,7 +13,7 @@ public class EanCharacterController : MonoBehaviour
     public AudioSource winSound = null;
     public AudioSource gameOverSound = null;
     public GameObject bulletPrefab;
-
+    public LayerMask enemyLayer;
 
     Rigidbody2D body;
     SpriteRenderer spriteRender;
@@ -26,6 +26,7 @@ public class EanCharacterController : MonoBehaviour
     public AudioSource coinSound;
 
     private Animator animator;
+    private float delta = 0;
 
     void Start()
     {
@@ -38,6 +39,7 @@ public class EanCharacterController : MonoBehaviour
 
     void Update()
     {
+        delta += 1;
         // Get our axis values
         horizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetKeyDown("w") && (body.velocity.y < .001 && body.velocity.y > -.001))
@@ -46,6 +48,22 @@ public class EanCharacterController : MonoBehaviour
         } else
         {
             body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
+        }
+
+        if (Input.GetKey(KeyCode.Space) && delta >= 60)
+        {
+            delta = 0;
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(transform.position, 1, enemyLayer);
+            // Loop through each enemy we hit
+            for (int i = 0; i < enemiesToDamage.Length; i++)
+            {
+                Spikey enemyScript = enemiesToDamage[i].GetComponent<Spikey>();
+                if (enemyScript != null)
+                {
+                    Debug.Log("Hit!");
+                    Destroy(enemiesToDamage[i].gameObject);
+                }
+            }
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -130,6 +148,12 @@ public class EanCharacterController : MonoBehaviour
         GUIStyle guiStyle = new GUIStyle(GUI.skin.label);
         guiStyle.fontSize = 24; //modify the font height
         GUI.Label(new Rect(10, 10, 100, 50), "Score: " + score, guiStyle);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 1);
     }
 
 
