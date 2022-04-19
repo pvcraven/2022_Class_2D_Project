@@ -20,6 +20,7 @@ public class WemhoffAttackScript : MonoBehaviour
     public int damage = 3;
     //Animation
     public Animator playerAnim;
+    
 
 
     void Update()
@@ -50,8 +51,6 @@ public class WemhoffAttackScript : MonoBehaviour
                         // Print health levels
                         Debug.Log(enemiesToDamage[i].GetComponent<WemhoffEnemyScript>().health);
 
-                        // --- ToDo: destroy enemy here when health <= 0
-
                     }
                     else
                     {
@@ -67,6 +66,8 @@ public class WemhoffAttackScript : MonoBehaviour
             attackCountdownTimer -= Time.deltaTime;
         }
     }
+
+    
     // Used to draw a circle when we are selecting the player in the scene view
     void OnDrawGizmosSelected()
     {
