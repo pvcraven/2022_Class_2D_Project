@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4010436393113231943}
   - component: {fileID: 4010436393113231942}
   - component: {fileID: 1357304316}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: dan_fireslime_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,3 +138,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   daniel_FireSlimeEnemy: {fileID: 6706549882264328431}
   speed: 1
+  health: 0

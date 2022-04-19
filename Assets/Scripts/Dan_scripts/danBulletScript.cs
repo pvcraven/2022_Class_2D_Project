@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class danBulletScript : MonoBehaviour
 {
+    public GameObject burstPrefab;
     Vector3 _origin;
     public float maxDistance = 8.0f;
 
@@ -27,6 +28,8 @@ public class danBulletScript : MonoBehaviour
             // Cause bullet to destroy itself
             // Put this outside the if to get deleted when hitting non-destroyable objects
             Destroy(gameObject);
+
+            var burst = Instantiate(burstPrefab, transform.position, Quaternion.identity);
         }
     }
 
