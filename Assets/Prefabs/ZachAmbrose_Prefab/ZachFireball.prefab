@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 8
   burstPrefab: {fileID: 1910607968898827530, guid: 96bc7b41986f71644a85a517b0e9cbfd, type: 3}
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}

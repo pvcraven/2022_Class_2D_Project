@@ -298,6 +298,7 @@ MonoBehaviour:
   top_y: 34.5
   bottom_y: 27.8
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!60 &5150449
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -415,7 +416,7 @@ GameObject:
   - component: {fileID: 12937189}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (86)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -537,7 +538,7 @@ GameObject:
   - component: {fileID: 24346749}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (350)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -659,7 +660,7 @@ GameObject:
   - component: {fileID: 28150850}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (32)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -781,7 +782,7 @@ GameObject:
   - component: {fileID: 29043622}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (204)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,7 +905,7 @@ GameObject:
   - component: {fileID: 43461664}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (386)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1075,7 +1076,7 @@ GameObject:
   - component: {fileID: 54730141}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (191)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1197,7 +1198,7 @@ GameObject:
   - component: {fileID: 56752447}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (255)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1464,6 +1465,7 @@ MonoBehaviour:
   top_y: 0
   bottom_y: 0
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!95 &73269694
 Animator:
   serializedVersion: 3
@@ -1496,7 +1498,7 @@ GameObject:
   - component: {fileID: 90282716}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (184)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1720,7 +1722,7 @@ GameObject:
   - component: {fileID: 91924500}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (382)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1842,7 +1844,7 @@ GameObject:
   - component: {fileID: 99278941}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (107)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1964,7 +1966,7 @@ GameObject:
   - component: {fileID: 99524065}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (13)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2086,7 +2088,7 @@ GameObject:
   - component: {fileID: 109478104}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (129)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2209,7 +2211,7 @@ GameObject:
   - component: {fileID: 109563056}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (338)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2331,7 +2333,7 @@ GameObject:
   - component: {fileID: 112749960}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (217)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2453,7 +2455,7 @@ GameObject:
   - component: {fileID: 120590886}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (34)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2575,7 +2577,7 @@ GameObject:
   - component: {fileID: 121473034}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (203)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2698,7 +2700,7 @@ GameObject:
   - component: {fileID: 129551491}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (38)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2820,7 +2822,7 @@ GameObject:
   - component: {fileID: 138517319}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (379)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2942,7 +2944,7 @@ GameObject:
   - component: {fileID: 146151403}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (353)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3064,7 +3066,7 @@ GameObject:
   - component: {fileID: 147245513}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (377)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3186,7 +3188,7 @@ GameObject:
   - component: {fileID: 148845079}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (175)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3308,7 +3310,7 @@ GameObject:
   - component: {fileID: 149556953}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (28)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3430,7 +3432,7 @@ GameObject:
   - component: {fileID: 154041572}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (98)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3616,7 +3618,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3675,7 +3677,7 @@ GameObject:
   - component: {fileID: 161869244}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (64)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3880,7 +3882,7 @@ GameObject:
   - component: {fileID: 174360185}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (114)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4003,7 +4005,7 @@ GameObject:
   - component: {fileID: 181874807}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4125,7 +4127,7 @@ GameObject:
   - component: {fileID: 189588600}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (141)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4249,7 +4251,7 @@ GameObject:
   - component: {fileID: 194272863}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (110)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4373,7 +4375,7 @@ GameObject:
   - component: {fileID: 201961676}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (240)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4495,7 +4497,7 @@ GameObject:
   - component: {fileID: 206086654}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (303)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4617,7 +4619,7 @@ GameObject:
   - component: {fileID: 206861947}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (197)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4739,7 +4741,7 @@ GameObject:
   - component: {fileID: 208274129}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (36)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4861,7 +4863,7 @@ GameObject:
   - component: {fileID: 208414399}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (27)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4983,7 +4985,7 @@ GameObject:
   - component: {fileID: 215508232}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (206)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5106,7 +5108,7 @@ GameObject:
   - component: {fileID: 239196004}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (90)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5228,7 +5230,7 @@ GameObject:
   - component: {fileID: 247782425}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (291)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5350,7 +5352,7 @@ GameObject:
   - component: {fileID: 249168001}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (151)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5472,7 +5474,7 @@ GameObject:
   - component: {fileID: 254831093}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (92)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5594,7 +5596,7 @@ GameObject:
   - component: {fileID: 259426742}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (14)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5716,7 +5718,7 @@ GameObject:
   - component: {fileID: 268325926}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (49)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5965,7 +5967,7 @@ GameObject:
   - component: {fileID: 303334092}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (73)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6087,7 +6089,7 @@ GameObject:
   - component: {fileID: 315912640}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (253)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6311,7 +6313,7 @@ GameObject:
   - component: {fileID: 339899438}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (166)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41115,7 +41117,7 @@ GameObject:
   - component: {fileID: 346658615}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (235)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41237,7 +41239,7 @@ GameObject:
   - component: {fileID: 352691288}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (122)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41250,7 +41252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352691286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.53, y: -8.02, z: 21.68025}
+  m_LocalPosition: {x: 10.53, y: -7.89, z: 21.68025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1132847577}
@@ -41462,7 +41464,7 @@ GameObject:
   - component: {fileID: 356674696}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (136)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41585,7 +41587,7 @@ GameObject:
   - component: {fileID: 359951125}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (249)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41907,7 +41909,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41952,7 +41954,7 @@ GameObject:
   - component: {fileID: 367333305}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (179)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42074,7 +42076,7 @@ GameObject:
   - component: {fileID: 370623737}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (188)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42196,7 +42198,7 @@ GameObject:
   - component: {fileID: 394932597}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (23)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42318,7 +42320,7 @@ GameObject:
   - component: {fileID: 396293834}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (99)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42440,7 +42442,7 @@ GameObject:
   - component: {fileID: 426303035}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (392)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42562,7 +42564,7 @@ GameObject:
   - component: {fileID: 427419165}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (113)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42685,7 +42687,7 @@ GameObject:
   - component: {fileID: 433555338}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (43)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42871,7 +42873,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42930,7 +42932,7 @@ GameObject:
   - component: {fileID: 446222164}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (97)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43051,7 +43053,7 @@ GameObject:
   - component: {fileID: 459665049}
   - component: {fileID: 459665048}
   - component: {fileID: 459665047}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ZachAmbrose_Radish (12)
   m_TagString: PickUp
   m_Icon: {fileID: 0}
@@ -43116,7 +43118,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43175,7 +43177,7 @@ GameObject:
   - component: {fileID: 465312318}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (45)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43297,7 +43299,7 @@ GameObject:
   - component: {fileID: 465882444}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (375)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43419,7 +43421,7 @@ GameObject:
   - component: {fileID: 469371885}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (18)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43541,7 +43543,7 @@ GameObject:
   - component: {fileID: 481475843}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (181)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43663,7 +43665,7 @@ GameObject:
   - component: {fileID: 483669155}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (95)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43785,7 +43787,7 @@ GameObject:
   - component: {fileID: 485145870}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (176)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43907,7 +43909,7 @@ GameObject:
   - component: {fileID: 495092574}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (207)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44030,7 +44032,7 @@ GameObject:
   - component: {fileID: 500136927}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (243)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44152,7 +44154,7 @@ GameObject:
   - component: {fileID: 501568563}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (387)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44271,7 +44273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 509142079}
   - component: {fileID: 509142078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PPVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44322,7 +44324,7 @@ GameObject:
   - component: {fileID: 511053323}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (148)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44522,7 +44524,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44567,7 +44569,7 @@ GameObject:
   - component: {fileID: 534315541}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (308)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44791,7 +44793,7 @@ GameObject:
   - component: {fileID: 550656799}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (22)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44913,7 +44915,7 @@ GameObject:
   - component: {fileID: 554543595}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (348)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45035,7 +45037,7 @@ GameObject:
   - component: {fileID: 556342705}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (196)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45157,7 +45159,7 @@ GameObject:
   - component: {fileID: 559514902}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (168)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45320,6 +45322,7 @@ MonoBehaviour:
   top_y: 19
   bottom_y: 10
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!95 &560203601
 Animator:
   serializedVersion: 3
@@ -45456,7 +45459,7 @@ GameObject:
   - component: {fileID: 569245671}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (298)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45578,7 +45581,7 @@ GameObject:
   - component: {fileID: 582894988}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (106)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45702,7 +45705,7 @@ GameObject:
   - component: {fileID: 591872658}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (264)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45824,7 +45827,7 @@ GameObject:
   - component: {fileID: 596253816}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (169)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45946,7 +45949,7 @@ GameObject:
   - component: {fileID: 596319313}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (51)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46068,7 +46071,7 @@ GameObject:
   - component: {fileID: 606111576}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (211)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46254,7 +46257,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -46415,7 +46418,7 @@ GameObject:
   - component: {fileID: 610551328}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (12)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46537,7 +46540,7 @@ GameObject:
   - component: {fileID: 611191924}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (25)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46659,7 +46662,7 @@ GameObject:
   - component: {fileID: 618474806}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (140)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46784,7 +46787,7 @@ GameObject:
   - component: {fileID: 621537908}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (199)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46906,7 +46909,7 @@ GameObject:
   - component: {fileID: 644097033}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (290)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47028,7 +47031,7 @@ GameObject:
   - component: {fileID: 647044870}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (19)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47150,7 +47153,7 @@ GameObject:
   - component: {fileID: 660681378}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (103)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47273,7 +47276,7 @@ GameObject:
   - component: {fileID: 667099081}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (170)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47395,7 +47398,7 @@ GameObject:
   - component: {fileID: 668889706}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (155)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47517,7 +47520,7 @@ GameObject:
   - component: {fileID: 669899647}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (69)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47717,7 +47720,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47762,7 +47765,7 @@ GameObject:
   - component: {fileID: 677338625}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (52)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47884,7 +47887,7 @@ GameObject:
   - component: {fileID: 683979136}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (213)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48006,7 +48009,7 @@ GameObject:
   - component: {fileID: 713665975}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (160)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48230,7 +48233,7 @@ GameObject:
   - component: {fileID: 718321554}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (60)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48352,7 +48355,7 @@ GameObject:
   - component: {fileID: 720555726}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (186)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48474,7 +48477,7 @@ GameObject:
   - component: {fileID: 734087553}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48596,7 +48599,7 @@ GameObject:
   - component: {fileID: 743681833}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (263)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48718,7 +48721,7 @@ GameObject:
   - component: {fileID: 752927730}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (231)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48840,7 +48843,7 @@ GameObject:
   - component: {fileID: 753506793}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (283)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48962,7 +48965,7 @@ GameObject:
   - component: {fileID: 754311196}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (380)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49084,7 +49087,7 @@ GameObject:
   - component: {fileID: 760758989}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (189)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49289,7 +49292,7 @@ GameObject:
   - component: {fileID: 774188106}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (374)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49411,7 +49414,7 @@ GameObject:
   - component: {fileID: 780245159}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (128)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49598,7 +49601,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49657,7 +49660,7 @@ GameObject:
   - component: {fileID: 782045930}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (384)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49779,7 +49782,7 @@ GameObject:
   - component: {fileID: 785078136}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (35)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49901,7 +49904,7 @@ GameObject:
   - component: {fileID: 788065372}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (269)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50023,7 +50026,7 @@ GameObject:
   - component: {fileID: 788490987}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (187)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50145,7 +50148,7 @@ GameObject:
   - component: {fileID: 798122831}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (241)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50397,7 +50400,7 @@ GameObject:
   - component: {fileID: 804778293}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (42)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50519,7 +50522,7 @@ GameObject:
   - component: {fileID: 804831875}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (208)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50642,7 +50645,7 @@ GameObject:
   - component: {fileID: 805015981}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (68)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50828,7 +50831,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50887,7 +50890,7 @@ GameObject:
   - component: {fileID: 817940610}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (105)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51010,7 +51013,7 @@ GameObject:
   - component: {fileID: 818906640}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (156)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51132,7 +51135,7 @@ GameObject:
   - component: {fileID: 820634997}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (120)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51255,7 +51258,7 @@ GameObject:
   - component: {fileID: 824649060}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51377,7 +51380,7 @@ GameObject:
   - component: {fileID: 830803904}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (258)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51499,7 +51502,7 @@ GameObject:
   - component: {fileID: 832289135}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (165)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51621,7 +51624,7 @@ GameObject:
   - component: {fileID: 839719571}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (47)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51928,7 +51931,7 @@ GameObject:
   - component: {fileID: 845678125}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (79)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52114,7 +52117,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52173,7 +52176,7 @@ GameObject:
   - component: {fileID: 852064946}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (40)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52550,6 +52553,7 @@ MonoBehaviour:
   top_y: 25
   bottom_y: 10
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!95 &871093333
 Animator:
   serializedVersion: 3
@@ -52686,7 +52690,7 @@ GameObject:
   - component: {fileID: 871962834}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (296)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52808,7 +52812,7 @@ GameObject:
   - component: {fileID: 876083926}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (94)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52930,7 +52934,7 @@ GameObject:
   - component: {fileID: 877161872}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (74)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53052,7 +53056,7 @@ GameObject:
   - component: {fileID: 889344087}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (58)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53174,7 +53178,7 @@ GameObject:
   - component: {fileID: 897456397}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (232)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53296,7 +53300,7 @@ GameObject:
   - component: {fileID: 899176611}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (146)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53478,6 +53482,7 @@ MonoBehaviour:
   top_y: 0
   bottom_y: 0
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!60 &901313046
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -53659,7 +53664,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -53718,7 +53723,7 @@ GameObject:
   - component: {fileID: 903146231}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (202)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53841,7 +53846,7 @@ GameObject:
   - component: {fileID: 914785094}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (198)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53963,7 +53968,7 @@ GameObject:
   - component: {fileID: 920009922}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (62)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54085,7 +54090,7 @@ GameObject:
   - component: {fileID: 931464668}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (362)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54207,7 +54212,7 @@ GameObject:
   - component: {fileID: 937874790}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (70)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54329,7 +54334,7 @@ GameObject:
   - component: {fileID: 941583532}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (21)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54451,7 +54456,7 @@ GameObject:
   - component: {fileID: 952284111}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (16)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54573,7 +54578,7 @@ GameObject:
   - component: {fileID: 958660146}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (144)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54695,7 +54700,7 @@ GameObject:
   - component: {fileID: 959921930}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (194)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54817,7 +54822,7 @@ GameObject:
   - component: {fileID: 969754050}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (126)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54940,7 +54945,7 @@ GameObject:
   - component: {fileID: 971097306}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (234)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55062,7 +55067,7 @@ GameObject:
   - component: {fileID: 973462147}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (228)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55184,7 +55189,7 @@ GameObject:
   - component: {fileID: 981356898}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (357)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55306,7 +55311,7 @@ GameObject:
   - component: {fileID: 981501002}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (41)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55428,7 +55433,7 @@ GameObject:
   - component: {fileID: 996272661}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (226)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55550,7 +55555,7 @@ GameObject:
   - component: {fileID: 1000793611}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (167)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55672,7 +55677,7 @@ GameObject:
   - component: {fileID: 1011140949}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (250)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55877,7 +55882,7 @@ GameObject:
   - component: {fileID: 1016916934}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (346)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55999,7 +56004,7 @@ GameObject:
   - component: {fileID: 1021926894}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (183)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56185,7 +56190,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -56244,7 +56249,7 @@ GameObject:
   - component: {fileID: 1039664908}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (227)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56366,7 +56371,7 @@ GameObject:
   - component: {fileID: 1045456763}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (164)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56488,7 +56493,7 @@ GameObject:
   - component: {fileID: 1069011439}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (389)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56651,7 +56656,7 @@ GameObject:
   - component: {fileID: 1077313249}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (118)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56832,6 +56837,7 @@ MonoBehaviour:
   top_y: 0
   bottom_y: -10
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!50 &1079725190
 Rigidbody2D:
   serializedVersion: 4
@@ -56951,7 +56957,7 @@ GameObject:
   - component: {fileID: 1083732098}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (158)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57073,7 +57079,7 @@ GameObject:
   - component: {fileID: 1092913017}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (177)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57195,7 +57201,7 @@ GameObject:
   - component: {fileID: 1093255709}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (205)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57318,7 +57324,7 @@ GameObject:
   - component: {fileID: 1095169236}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (182)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57556,7 +57562,6 @@ MonoBehaviour:
   runSpeed: 5
   projectileSpeed: 10
   increaseScoreSound: {fileID: 8300000, guid: 6740f2c891175964f9bd571b42bedb57, type: 3}
-  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
   deathSound: {fileID: 8300000, guid: 5753450deb827894c983b314231e3528, type: 3}
 --- !u!60 &1100685863
 PolygonCollider2D:
@@ -57648,7 +57653,7 @@ GameObject:
   - component: {fileID: 1113432393}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (359)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57848,7 +57853,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57893,7 +57898,7 @@ GameObject:
   - component: {fileID: 1126084570}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (112)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58014,7 +58019,7 @@ GameObject:
   - component: {fileID: 1132847577}
   m_Layer: 0
   m_Name: Tree obstacles
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58359,7 +58364,7 @@ GameObject:
   - component: {fileID: 1135342439}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (162)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58564,7 +58569,7 @@ GameObject:
   - component: {fileID: 1138989907}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (123)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58751,7 +58756,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58810,7 +58815,7 @@ GameObject:
   - component: {fileID: 1142452013}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (88)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58932,7 +58937,7 @@ GameObject:
   - component: {fileID: 1142505357}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (61)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59054,7 +59059,7 @@ GameObject:
   - component: {fileID: 1149194987}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (134)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59235,6 +59240,7 @@ MonoBehaviour:
   top_y: 10
   bottom_y: 0
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!50 &1151812540
 Rigidbody2D:
   serializedVersion: 4
@@ -59354,7 +59360,7 @@ GameObject:
   - component: {fileID: 1152412542}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (265)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59603,7 +59609,7 @@ GameObject:
   - component: {fileID: 1158902613}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (65)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59726,7 +59732,7 @@ GameObject:
   - component: {fileID: 1159023902}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (247)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59848,7 +59854,7 @@ GameObject:
   - component: {fileID: 1182152641}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (75)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59970,7 +59976,7 @@ GameObject:
   - component: {fileID: 1184771151}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (315)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60092,7 +60098,7 @@ GameObject:
   - component: {fileID: 1191019863}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (174)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60214,7 +60220,7 @@ GameObject:
   - component: {fileID: 1195106578}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60336,7 +60342,7 @@ GameObject:
   - component: {fileID: 1203225856}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (311)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60458,7 +60464,7 @@ GameObject:
   - component: {fileID: 1205979285}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (305)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60580,7 +60586,7 @@ GameObject:
   - component: {fileID: 1220762898}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (320)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60702,7 +60708,7 @@ GameObject:
   - component: {fileID: 1223448904}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (54)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60824,7 +60830,7 @@ GameObject:
   - component: {fileID: 1223467408}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (142)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60946,7 +60952,7 @@ GameObject:
   - component: {fileID: 1243380598}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (209)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61128,6 +61134,7 @@ MonoBehaviour:
   top_y: 0
   bottom_y: 0
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!60 &1244622297
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -61245,7 +61252,7 @@ GameObject:
   - component: {fileID: 1248911363}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (57)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61367,7 +61374,7 @@ GameObject:
   - component: {fileID: 1250352619}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (195)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61489,7 +61496,7 @@ GameObject:
   - component: {fileID: 1252760805}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61611,7 +61618,7 @@ GameObject:
   - component: {fileID: 1253094024}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (111)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61734,7 +61741,7 @@ GameObject:
   - component: {fileID: 1258266944}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (201)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61856,7 +61863,7 @@ GameObject:
   - component: {fileID: 1260253185}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (159)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61978,7 +61985,7 @@ GameObject:
   - component: {fileID: 1266271306}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (214)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62100,7 +62107,7 @@ GameObject:
   - component: {fileID: 1267424695}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (17)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62222,7 +62229,7 @@ GameObject:
   - component: {fileID: 1268169426}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (135)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62345,7 +62352,7 @@ GameObject:
   - component: {fileID: 1268323489}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (157)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62467,7 +62474,7 @@ GameObject:
   - component: {fileID: 1287601579}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (137)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62590,7 +62597,7 @@ GameObject:
   - component: {fileID: 1296848032}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (223)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62795,7 +62802,7 @@ GameObject:
   - component: {fileID: 1321967265}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (301)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63163,7 +63170,7 @@ GameObject:
   - component: {fileID: 1333126907}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (385)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63285,7 +63292,7 @@ GameObject:
   - component: {fileID: 1334006012}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (339)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63407,7 +63414,7 @@ GameObject:
   - component: {fileID: 1339134499}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (185)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63529,7 +63536,7 @@ GameObject:
   - component: {fileID: 1347320799}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (192)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63651,7 +63658,7 @@ GameObject:
   - component: {fileID: 1347753855}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (121)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63774,7 +63781,7 @@ GameObject:
   - component: {fileID: 1351317682}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (77)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63896,7 +63903,7 @@ GameObject:
   - component: {fileID: 1357737064}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (91)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64018,7 +64025,7 @@ GameObject:
   - component: {fileID: 1359463214}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (87)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64140,7 +64147,7 @@ GameObject:
   - component: {fileID: 1360188872}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (96)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64262,7 +64269,7 @@ GameObject:
   - component: {fileID: 1361798677}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (31)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64511,7 +64518,7 @@ GameObject:
   - component: {fileID: 1370292301}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (81)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64651,7 +64658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79f6e96daecf93742a6b95d952b5d97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 1
+  points: 20
 --- !u!61 &1371351099
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64697,7 +64704,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64756,7 +64763,7 @@ GameObject:
   - component: {fileID: 1373375318}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (72)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64919,6 +64926,7 @@ MonoBehaviour:
   top_y: 21
   bottom_y: 10
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!95 &1382493791
 Animator:
   serializedVersion: 3
@@ -65055,7 +65063,7 @@ GameObject:
   - component: {fileID: 1394552837}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (373)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65177,7 +65185,7 @@ GameObject:
   - component: {fileID: 1394879281}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (222)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65363,7 +65371,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65486,7 +65494,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65545,7 +65553,7 @@ GameObject:
   - component: {fileID: 1418352059}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (55)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65667,7 +65675,7 @@ GameObject:
   - component: {fileID: 1421474674}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (193)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65789,7 +65797,7 @@ GameObject:
   - component: {fileID: 1423884432}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (388)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65911,7 +65919,7 @@ GameObject:
   - component: {fileID: 1439257373}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (89)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66033,7 +66041,7 @@ GameObject:
   - component: {fileID: 1442764782}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (145)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66155,7 +66163,7 @@ GameObject:
   - component: {fileID: 1443797974}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (242)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66277,7 +66285,7 @@ GameObject:
   - component: {fileID: 1451166701}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (239)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66399,7 +66407,7 @@ GameObject:
   - component: {fileID: 1452086198}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (100)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66521,7 +66529,7 @@ GameObject:
   - component: {fileID: 1468030155}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (178)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66643,7 +66651,7 @@ GameObject:
   - component: {fileID: 1469805893}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (210)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66765,7 +66773,7 @@ GameObject:
   - component: {fileID: 1476377406}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (391)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66887,7 +66895,7 @@ GameObject:
   - component: {fileID: 1480976927}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (109)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67009,7 +67017,7 @@ GameObject:
   - component: {fileID: 1486996958}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (329)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67131,7 +67139,7 @@ GameObject:
   - component: {fileID: 1487771408}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (262)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67253,7 +67261,7 @@ GameObject:
   - component: {fileID: 1496113142}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (116)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67376,7 +67384,7 @@ GameObject:
   - component: {fileID: 1501894686}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (297)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67556,6 +67564,7 @@ MonoBehaviour:
   top_y: 6
   bottom_y: -1
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!50 &1503586701
 Rigidbody2D:
   serializedVersion: 4
@@ -67675,7 +67684,7 @@ GameObject:
   - component: {fileID: 1507239762}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (300)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67797,7 +67806,7 @@ GameObject:
   - component: {fileID: 1508985384}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (71)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67919,7 +67928,7 @@ GameObject:
   - component: {fileID: 1515542542}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (37)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68041,7 +68050,7 @@ GameObject:
   - component: {fileID: 1518299931}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (33)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68163,7 +68172,7 @@ GameObject:
   - component: {fileID: 1525339611}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68387,7 +68396,7 @@ GameObject:
   - component: {fileID: 1537628708}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68509,7 +68518,7 @@ GameObject:
   - component: {fileID: 1540782114}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (117)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68632,7 +68641,7 @@ GameObject:
   - component: {fileID: 1548163016}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (224)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68754,7 +68763,7 @@ GameObject:
   - component: {fileID: 1551862597}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (342)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68876,7 +68885,7 @@ GameObject:
   - component: {fileID: 1553755208}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (84)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68998,7 +69007,7 @@ GameObject:
   - component: {fileID: 1557518844}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (20)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69120,7 +69129,7 @@ GameObject:
   - component: {fileID: 1565707199}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (257)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69242,7 +69251,7 @@ GameObject:
   - component: {fileID: 1573032691}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (59)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69364,7 +69373,7 @@ GameObject:
   - component: {fileID: 1573506012}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (26)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69486,7 +69495,7 @@ GameObject:
   - component: {fileID: 1581628060}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (24)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69608,7 +69617,7 @@ GameObject:
   - component: {fileID: 1585288506}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (368)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69730,7 +69739,7 @@ GameObject:
   - component: {fileID: 1589430038}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (119)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69853,7 +69862,7 @@ GameObject:
   - component: {fileID: 1596445955}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (381)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69975,7 +69984,7 @@ GameObject:
   - component: {fileID: 1599138855}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (337)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70097,7 +70106,7 @@ GameObject:
   - component: {fileID: 1600148749}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (78)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70219,7 +70228,7 @@ GameObject:
   - component: {fileID: 1600984538}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (161)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70341,7 +70350,7 @@ GameObject:
   - component: {fileID: 1606339373}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (93)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70463,7 +70472,7 @@ GameObject:
   - component: {fileID: 1611356248}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (225)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70585,7 +70594,7 @@ GameObject:
   - component: {fileID: 1611455913}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (66)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70707,7 +70716,7 @@ GameObject:
   - component: {fileID: 1615735502}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (229)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70829,7 +70838,7 @@ GameObject:
   - component: {fileID: 1616064592}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (299)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70951,7 +70960,7 @@ GameObject:
   - component: {fileID: 1628756559}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (150)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71073,7 +71082,7 @@ GameObject:
   - component: {fileID: 1638989686}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (153)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71195,7 +71204,7 @@ GameObject:
   - component: {fileID: 1643654624}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (354)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71317,7 +71326,7 @@ GameObject:
   - component: {fileID: 1646524419}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (67)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71439,7 +71448,7 @@ GameObject:
   - component: {fileID: 1646742442}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (248)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71561,7 +71570,7 @@ GameObject:
   - component: {fileID: 1647495033}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (390)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71828,6 +71837,7 @@ MonoBehaviour:
   top_y: 0
   bottom_y: 0
   health: 6
+  enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!95 &1649435370
 Animator:
   serializedVersion: 3
@@ -71860,7 +71870,7 @@ GameObject:
   - component: {fileID: 1649818254}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (180)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71982,7 +71992,7 @@ GameObject:
   - component: {fileID: 1650963994}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (328)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72104,7 +72114,7 @@ GameObject:
   - component: {fileID: 1652427666}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (304)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72226,7 +72236,7 @@ GameObject:
   - component: {fileID: 1658912365}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (30)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72348,7 +72358,7 @@ GameObject:
   - component: {fileID: 1659355262}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (171)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72470,7 +72480,7 @@ GameObject:
   - component: {fileID: 1663444157}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (115)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72593,7 +72603,7 @@ GameObject:
   - component: {fileID: 1665792172}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (238)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72715,7 +72725,7 @@ GameObject:
   - component: {fileID: 1668055735}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (102)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72838,7 +72848,7 @@ GameObject:
   - component: {fileID: 1668252747}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (163)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72960,7 +72970,7 @@ GameObject:
   - component: {fileID: 1672053899}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (80)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73082,7 +73092,7 @@ GameObject:
   - component: {fileID: 1682581034}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (218)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73204,7 +73214,7 @@ GameObject:
   - component: {fileID: 1688908672}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (131)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73327,7 +73337,7 @@ GameObject:
   - component: {fileID: 1700043976}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (344)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73449,7 +73459,7 @@ GameObject:
   - component: {fileID: 1710300734}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (172)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73571,7 +73581,7 @@ GameObject:
   - component: {fileID: 1713424147}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73820,7 +73830,7 @@ GameObject:
   - component: {fileID: 1716699394}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (127)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73943,7 +73953,7 @@ GameObject:
   - component: {fileID: 1718541063}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (39)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74065,7 +74075,7 @@ GameObject:
   - component: {fileID: 1719047276}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (281)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74187,7 +74197,7 @@ GameObject:
   - component: {fileID: 1725589049}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (256)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74309,7 +74319,7 @@ GameObject:
   - component: {fileID: 1726846400}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (138)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74432,7 +74442,7 @@ GameObject:
   - component: {fileID: 1731280326}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (124)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74555,7 +74565,7 @@ GameObject:
   - component: {fileID: 1733583512}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (104)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74678,7 +74688,7 @@ GameObject:
   - component: {fileID: 1748511145}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (85)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74800,7 +74810,7 @@ GameObject:
   - component: {fileID: 1765508392}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (48)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74922,7 +74932,7 @@ GameObject:
   - component: {fileID: 1776034303}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (132)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75147,7 +75157,7 @@ GameObject:
   - component: {fileID: 1777225029}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (53)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75269,7 +75279,7 @@ GameObject:
   - component: {fileID: 1787781361}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (396)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75391,7 +75401,7 @@ GameObject:
   - component: {fileID: 1811161052}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (50)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75513,7 +75523,7 @@ GameObject:
   - component: {fileID: 1819113708}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (133)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75636,7 +75646,7 @@ GameObject:
   - component: {fileID: 1831766935}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (76)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75758,7 +75768,7 @@ GameObject:
   - component: {fileID: 1834688942}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (212)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75963,7 +75973,7 @@ GameObject:
   - component: {fileID: 1840598446}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (130)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76086,7 +76096,7 @@ GameObject:
   - component: {fileID: 1848354969}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76208,7 +76218,7 @@ GameObject:
   - component: {fileID: 1865800207}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (219)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76330,7 +76340,7 @@ GameObject:
   - component: {fileID: 1866509843}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (143)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76452,7 +76462,7 @@ GameObject:
   - component: {fileID: 1869883336}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (306)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76574,7 +76584,7 @@ GameObject:
   - component: {fileID: 1870304565}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (233)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76696,7 +76706,7 @@ GameObject:
   - component: {fileID: 1870534086}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (149)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76862,7 +76872,7 @@ GameObject:
   - component: {fileID: 1888375822}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (221)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76984,7 +76994,7 @@ GameObject:
   - component: {fileID: 1913978226}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (284)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77106,7 +77116,7 @@ GameObject:
   - component: {fileID: 1927075161}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (173)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77228,7 +77238,7 @@ GameObject:
   - component: {fileID: 1928929182}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (125)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77351,7 +77361,7 @@ GameObject:
   - component: {fileID: 1935906743}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (321)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77473,7 +77483,7 @@ GameObject:
   - component: {fileID: 1975471246}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (309)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77595,7 +77605,7 @@ GameObject:
   - component: {fileID: 1983972412}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (331)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77717,7 +77727,7 @@ GameObject:
   - component: {fileID: 1986306769}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (63)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77941,7 +77951,7 @@ GameObject:
   - component: {fileID: 1990871685}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (152)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78229,7 +78239,7 @@ GameObject:
   - component: {fileID: 2003229705}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (29)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78376,7 +78386,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78474,7 +78484,7 @@ GameObject:
   - component: {fileID: 2009819529}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (44)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78596,7 +78606,7 @@ GameObject:
   - component: {fileID: 2014072753}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (108)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78721,7 +78731,7 @@ GameObject:
   - component: {fileID: 2024420470}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (200)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78926,7 +78936,7 @@ GameObject:
   - component: {fileID: 2027348103}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (252)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79048,7 +79058,7 @@ GameObject:
   - component: {fileID: 2032913494}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (147)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79248,7 +79258,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79293,7 +79303,7 @@ GameObject:
   - component: {fileID: 2034009887}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79415,7 +79425,7 @@ GameObject:
   - component: {fileID: 2051782950}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (275)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79537,7 +79547,7 @@ GameObject:
   - component: {fileID: 2052685547}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (220)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79659,7 +79669,7 @@ GameObject:
   - component: {fileID: 2052817616}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (139)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79783,7 +79793,7 @@ GameObject:
   - component: {fileID: 2064993435}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (237)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79905,7 +79915,7 @@ GameObject:
   - component: {fileID: 2068029065}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (276)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80110,7 +80120,7 @@ GameObject:
   - component: {fileID: 2074584008}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (364)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80232,7 +80242,7 @@ GameObject:
   - component: {fileID: 2088507203}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (366)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80354,7 +80364,7 @@ GameObject:
   - component: {fileID: 2093606934}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (259)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80554,7 +80564,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c939b969fc20544dbb92592f464c5e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80599,7 +80609,7 @@ GameObject:
   - component: {fileID: 2100933995}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (244)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80721,7 +80731,7 @@ GameObject:
   - component: {fileID: 2103340671}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (101)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80843,7 +80853,7 @@ GameObject:
   - component: {fileID: 2109611461}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (360)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80965,7 +80975,7 @@ GameObject:
   - component: {fileID: 2111315539}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (46)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81087,7 +81097,7 @@ GameObject:
   - component: {fileID: 2116192422}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (190)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81209,7 +81219,7 @@ GameObject:
   - component: {fileID: 2125614558}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (154)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81331,7 +81341,7 @@ GameObject:
   - component: {fileID: 2130822879}
   m_Layer: 0
   m_Name: tree_ZachAmbrose (56)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

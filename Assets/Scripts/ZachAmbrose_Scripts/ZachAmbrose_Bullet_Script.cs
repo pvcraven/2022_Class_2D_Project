@@ -11,6 +11,8 @@ public class ZachAmbrose_Bullet_Script : MonoBehaviour
     public GameObject burstPrefab;
     Rigidbody2D body;
 
+    public AudioClip enemyDeathSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +27,14 @@ public class ZachAmbrose_Bullet_Script : MonoBehaviour
         {
 
             Destroy(collision.gameObject);
+            AudioSource.PlayClipAtPoint(enemyDeathSound, transform.position);
             Destroy(gameObject);
             var burst = Instantiate(burstPrefab, body.position, Quaternion.identity);
 
+        }
+        else if (collision.tag == "Obstacle")
+        {
+            Destroy(gameObject);
         }
 
     }

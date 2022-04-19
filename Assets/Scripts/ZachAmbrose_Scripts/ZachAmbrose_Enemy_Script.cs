@@ -16,6 +16,8 @@ public class ZachAmbrose_Enemy_Script : MonoBehaviour
 
     public int health = 6;
 
+    public AudioClip enemyDeathSound;
+
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
@@ -33,6 +35,7 @@ public class ZachAmbrose_Enemy_Script : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(enemyDeathSound, transform.position);
         }
     }
 

@@ -26,7 +26,6 @@ public class ZachAmbrose_Attack_Script : MonoBehaviour
             // We can attack. See if user hit space bar.
             if (Input.GetKey(KeyCode.Space))
             {
-                Debug.Log("Attack");
                 // Reset the countdown timer
                 attackCountdownTimer = attackTimeLimit;
                 // What enemies did we hit?
