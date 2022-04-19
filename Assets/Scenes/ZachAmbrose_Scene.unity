@@ -1464,7 +1464,7 @@ MonoBehaviour:
   right_x: 0
   top_y: 0
   bottom_y: 0
-  health: 6
+  health: 30
   enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!95 &73269694
 Animator:
@@ -57633,6 +57633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d74e5ad892cbc2b488a5535cf568e08b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1100685864}
   attackTimeLimit: 0.5
   attackPos: {fileID: 853843211}
   attackRange: 0.76
@@ -64658,7 +64659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79f6e96daecf93742a6b95d952b5d97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 20
+  points: 1
 --- !u!61 &1371351099
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71836,7 +71837,7 @@ MonoBehaviour:
   right_x: 0
   top_y: 0
   bottom_y: 0
-  health: 6
+  health: 30
   enemyDeathSound: {fileID: 8300000, guid: 1bfce19adb64c85479840be0cf6f7351, type: 3}
 --- !u!95 &1649435370
 Animator:
