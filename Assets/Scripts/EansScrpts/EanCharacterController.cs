@@ -9,8 +9,10 @@ public class EanCharacterController : MonoBehaviour
     public int health = 3;
     public int maxHealth = 3;
     public int lives = 3;
+    public float bulletSpeed;
     public AudioSource winSound = null;
     public AudioSource gameOverSound = null;
+    public GameObject bulletPrefab;
 
 
     Rigidbody2D body;
@@ -23,7 +25,6 @@ public class EanCharacterController : MonoBehaviour
     public float jumpHeight;
     public AudioSource coinSound;
 
-    private bool canJump = true;
     private Animator animator;
 
     void Start()
@@ -39,51 +40,58 @@ public class EanCharacterController : MonoBehaviour
     {
         // Get our axis values
         horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetKeyDown("w") && canJump)
+        if (Input.GetKeyDown("w") && (body.velocity.y < .001 && body.velocity.y > -.001))
         {
-            //canJump = false;
-            Debug.Log("Jump!");
             body.velocity = new Vector2(horizontal * runSpeed, jumpHeight);
         } else
         {
             body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            
+            var mousePosition = Input.mousePosition;
+            // Where is the mouse in the world?
+            Vector3 target3 = Camera.main.ScreenToWorldPoint(mousePosition);
+            //Debug.Log("Mouse down!");
+
+            Vector3 delta3 = target3 - transform.position;
+            delta3.z = 0;
+            //Debug.Log(delta3);
+            var bullet = Instantiate(bulletPrefab, body.position, Quaternion.identity);
+            // Get a reference to the bullet's rigid body
+            var bulletbody = bullet.GetComponent<Rigidbody2D>();
+            bulletbody.velocity = delta3.normalized * bulletSpeed;
+        }
     }
 
     void FixedUpdate()
     {
-        animator.SetBool("Walking", body.velocity.x != 0);
-        if (body.velocity.x == 0)
-        { 
+       
+        if (body.velocity.x >= -.01 && body.velocity.x <= .01)
+        {
+            animator.SetBool("Walking", false);
             spriteRender.flipX = false;
         } else if (body.velocity.x > 0)
         {
+            animator.SetBool("Walking", true);
             spriteRender.flipX = false;
         } else
         {
+            animator.SetBool("Walking", true);
             spriteRender.flipX = true;
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "EanGround")
-        {
-            canJump = true;
-        } else if (collision.gameObject.tag == "EanDeadly")
+        if (collision.gameObject.tag == "EanDeadly")
         {
             gameOverSound.Play();
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             // Reload the scene 
             UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex);
-        }
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "EanGround")
-        {
-            canJump = false;
         }
     }
 
@@ -93,11 +101,6 @@ public class EanCharacterController : MonoBehaviour
         EanCoin scoreObject = colliderEvent.gameObject.GetComponent(typeof(EanCoin))
                                   as EanCoin;
 
-       
-        if (colliderEvent.gameObject.tag == "EanGround")
-        {
-            canJump = true;
-        }
 
         if (scoreObject != null)
         {
@@ -128,4 +131,6 @@ public class EanCharacterController : MonoBehaviour
         guiStyle.fontSize = 24; //modify the font height
         GUI.Label(new Rect(10, 10, 100, 50), "Score: " + score, guiStyle);
     }
+
+
 }
