@@ -25,7 +25,6 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
     public float projectileSpeed;
 
     public AudioClip increaseScoreSound;
-    public AudioClip enemyDeathSound;
     public AudioClip deathSound;
 
 
@@ -147,7 +146,11 @@ public class ZachAmbrose_Character_Script : MonoBehaviour
         // Dispaly our score
         GUIStyle guiStyle = new GUIStyle(GUI.skin.label);
         guiStyle.fontSize = 20; //modify the font height
-        GUI.Label(new Rect(50, 40, 100, 50), "Score: " + score, guiStyle);
+        GUI.Label(new Rect(25, 25, 150, 25), "Score: " + score + "/20", guiStyle);
+        if (score >= 20)
+        {
+            GUI.Label(new Rect(650, 25, 200, 150), "Click to shoot fireballs!", guiStyle);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D col)
