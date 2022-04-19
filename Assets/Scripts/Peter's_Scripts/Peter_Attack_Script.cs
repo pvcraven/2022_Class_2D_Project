@@ -22,6 +22,16 @@ public class Peter_Attack_Script : MonoBehaviour
     // How much damage to deal
     public int damage = 3;
 
+    private Animator swordAnimator;
+    private GameObject weaponChild;
+
+    void Start()
+    {
+        weaponChild = GameObject.Find("PeterSword");
+        swordAnimator = weaponChild.GetComponent<Animator>();
+    }
+
+
     void Update()
     {
         // See if we can attack, via timer.
@@ -31,6 +41,7 @@ public class Peter_Attack_Script : MonoBehaviour
             if (Input.GetKey(KeyCode.X))
             {
                 Debug.Log("Attack");
+                swordAnimator.SetTrigger("swordSwing");
                 // Reset the countdown timer
                 attackCountdownTimer = attackTimeLimit;
                 // What enemies did we hit?
