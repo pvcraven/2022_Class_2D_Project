@@ -7,7 +7,9 @@ public class LeviNPCMove : MonoBehaviour
 {
     Rigidbody2D npcrb;
 
-    public int health = 5;
+    public int currentHealth;
+    public int maxHealth = 10;
+    public LeviHealthBar healthBar;
 
     public float moveSpeed;
     public bool isWalking;
@@ -29,6 +31,9 @@ public class LeviNPCMove : MonoBehaviour
         npcrb = GetComponent<Rigidbody2D>();
         npcSpriteRenderer = GetComponent<SpriteRenderer>();
         npcAnimator = GetComponent<Animator>();
+
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
 
         waitCounter = waitTime;
         walkCounter = walkTime;
@@ -78,9 +83,10 @@ public class LeviNPCMove : MonoBehaviour
                 ChooseDirection();
             }
         }
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            Debug.Log("Melee Destroy");
         }
     }
 

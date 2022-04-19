@@ -6,52 +6,30 @@ public class LeviAttackScript : MonoBehaviour
 {
     public float attackSpeed = 0.5f;
     private float attackCD = 0;
+    //public float kbForce;
 
     public Transform attackPos;
     public float attackRange;
     public LayerMask enemyLayer;
     public int damage = 3;
 
-    // Sword rotating animation variables
-    //public Vector2 weaponOffset;
-    //public float weaponRotation = 135;
-    //public float swingSpeed = 10;
-
-    //int swing = 1;
-    //GameObject anchor;
-    //Vector3 swingTarget;
-    //float swingAngle;
-    //bool isSwinging;
+    private Animator swordAnimator;
+    private GameObject weaponChild;
 
     void Start()
     {
-        //anchor = transform.parent.gameObject;
+        weaponChild = GameObject.Find("LeviFireSword_0");
+        swordAnimator = weaponChild.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Anchor rotation
-        //Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-        //Vector3 rotation = anchor.transform.eulerAngles;
-        //swingAngle = Mathf.Lerp(swingAngle, swing * 90, Time.deltaTime * swingSpeed);
-        //rotation.z = angle + swingAngle;
-        //anchor.transform.eulerAngles = rotation;
-
-        // Weapon rotation
-        //float t = swing == 1 ? 45 : -255;
-        //swingTarget.z = Mathf.Lerp(swingTarget.z, t, Time.deltaTime * swingSpeed);
-        //if (Mathf.Abs(t - swingTarget.z) < 5) isSwinging = false;
-        //transform.localRotation = Quaternion.Euler(swingTarget);
-
         if (attackCD <= 0)
         {
             if (Input.GetKey(KeyCode.Space))
             {
-                //if (isSwinging) return;
-                //swing *= -1;
-                //isSwinging = true;
+                swordAnimator.SetTrigger("swordSwing");
 
                 Debug.Log("Attack");
                 attackCD = attackSpeed;
@@ -62,9 +40,19 @@ public class LeviAttackScript : MonoBehaviour
                     LeviNPCMove enemyScript = enemiesToDamage[i].GetComponent<LeviNPCMove>();
                     if (enemyScript)
                     {
-                        enemyScript.health -= damage;
-                        Debug.Log(enemyScript.health);
-                        // Destroy object when 0 health
+                        enemyScript.currentHealth -= damage;
+                        enemyScript.healthBar.SetHealth(enemyScript.currentHealth);
+                        Debug.Log(enemyScript.currentHealth);
+                        // Object destruction handled in NPC script
+
+                        // Knockback
+                        //Rigidbody2D enemy = enemyScript.GetComponent<Rigidbody2D>();
+                        //Debug.Log("Enemy: " + enemy.position);
+                        //enemy.isKinematic = false;
+                        //Vector2 posDiff = enemy.transform.position - transform.position;
+                        //posDiff = posDiff.normalized * kbForce;
+                        //enemy.AddForce(posDiff, ForceMode2D.Impulse);
+                        //enemy.isKinematic = true;
                     } else
                     {
                         Debug.Log("No enemy script");
@@ -75,6 +63,7 @@ public class LeviAttackScript : MonoBehaviour
         else
         {
             attackCD -= Time.deltaTime;
+            swordAnimator.SetTrigger("swordSwing");
         }
     }
 
