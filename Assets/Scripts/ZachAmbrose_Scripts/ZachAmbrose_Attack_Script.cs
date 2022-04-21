@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ZachAmbrose_Attack_Script : MonoBehaviour
 {
+    public Animator animator;
+
     // How frequently can we attack?
     public float attackTimeLimit = 0.5f;
 
@@ -28,6 +30,7 @@ public class ZachAmbrose_Attack_Script : MonoBehaviour
             {
                 // Reset the countdown timer
                 attackCountdownTimer = attackTimeLimit;
+                animator.SetTrigger("Spacebar");
                 // What enemies did we hit?
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemyLayer);
                 // Loop through each enemy we hit
