@@ -27,6 +27,8 @@ public class EanCharacterController : MonoBehaviour
 
     private Animator animator;
     private float delta = 0;
+    private bool attacking = false;
+    private int attackFrame = 0;
 
     void Start()
     {
@@ -39,7 +41,7 @@ public class EanCharacterController : MonoBehaviour
 
     void Update()
     {
-        delta += 1;
+         delta += 1;
         // Get our axis values
         horizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetKeyDown("w") && (body.velocity.y < .001 && body.velocity.y > -.001))
@@ -50,10 +52,12 @@ public class EanCharacterController : MonoBehaviour
             body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
         }
 
-        if (Input.GetKey(KeyCode.Space) && delta >= 60)
+        if (Input.GetKey(KeyCode.Space) && delta > 30)
         {
+            animator.SetBool("Attacking", true);
+            Debug.Log("Attack!");
             delta = 0;
-            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(transform.position, 1, enemyLayer);
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(transform.position, .75f, enemyLayer);
             // Loop through each enemy we hit
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
@@ -64,11 +68,15 @@ public class EanCharacterController : MonoBehaviour
                     Destroy(enemiesToDamage[i].gameObject);
                 }
             }
+        } else
+        {
+            animator.SetBool("Attacking", false);
         }
 
         if (Input.GetMouseButtonDown(0))
         {
             
+            attacking = true;
             var mousePosition = Input.mousePosition;
             // Where is the mouse in the world?
             Vector3 target3 = Camera.main.ScreenToWorldPoint(mousePosition);
@@ -153,7 +161,7 @@ public class EanCharacterController : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 1);
+        Gizmos.DrawWireSphere(transform.position, .75f);
     }
 
 

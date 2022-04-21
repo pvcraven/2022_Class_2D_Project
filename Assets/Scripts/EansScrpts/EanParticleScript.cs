@@ -18,7 +18,6 @@ public class EanParticleScript : MonoBehaviour
         frame = frame + 1;
         if (frame >= lifetime * 60)
         {
-            Debug.Log("Delete!");
             Destroy(gameObject);
         }
     }
